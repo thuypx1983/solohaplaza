@@ -1,0 +1,43 @@
+/*Fix the width to ensure the next item jump to below */
+.html{
+  .tb-megamenu {
+    background-color: transparent;
+    width: 150px;
+    .nav{
+      li.tb-megamenu-item{
+
+        margin-bottom: 2px;
+        &>a.dropdown-toggle{
+          color:$color-text;
+          @include gradient($color-white,$color-silver);
+          padding: 5px;
+          border: none;
+          &:hover{
+            background-image: none;
+            background-color: $color-blue;
+            color: $color-white;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+/*Fix the width to ensure the next item jump to below */
+.tb-megamenu-item {
+width: 150px;
+}
+
+/*Moving the Sub Menu position*/
+.tb-megamenu .dropdown-menu {
+width: 150px;
+margin-left: 150px;
+top: 0px;
+}
+.tb-megamenu-nav li.tb-megamenu-item.dropdown{
+position: initial;
+}
+.tb-megamenu-nav{
+position: relative;
+}

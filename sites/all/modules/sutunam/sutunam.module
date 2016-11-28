@@ -1,0 +1,334 @@
+<?php
+
+/**
+ * Implementation of hook_form_alter()
+ */
+
+function update_field_working_height(){
+
+// Change this to your field name, obvs.
+    $field = 'field_working_height';
+
+// Update the storage tables
+    $tables = array('field_data', 'field_revision');
+    foreach ($tables as $table) {
+        $tablename = $table .'_'. $field;
+        $fieldname = $field .'_value';
+        db_change_field($tablename, $fieldname, $fieldname, array(
+            'type' => 'numeric',
+            'precision' => 10,
+            'scale' => 2,
+            'not null' => FALSE,
+        ));
+    }
+
+// Fetch the current field configuration
+    $field_config = db_query("SELECT data FROM {field_config} WHERE field_name = :field_name", array(
+        ':field_name' => $field,
+    ))
+        ->fetchObject();
+    $data = unserialize($field_config->data);
+
+// Update the settings entry
+    $data['settings'] = array(
+        'precision' => 10,
+        'scale' => 2,
+        'decimal_separator' => '.',
+    );
+
+// Store the new field config, update the field type at the same time
+    db_update('field_config')
+        ->fields(array(
+            'data' => serialize($data),
+            'type' => 'number_decimal',
+        ))
+        ->condition('field_name', $field)
+        ->execute();
+
+// If you are confident about what bundles have instances of this field you can
+// go straight to the db_query with a hardcoded entity_type / bundle.
+    $instances = field_info_field_map();
+    foreach ($instances[$field]['bundles'] as $entity_type => $bundles) {
+        foreach ($bundles as $bundle) {
+
+            // Fetch the field instance data
+            $field_config_instance = db_query("SELECT data FROM {field_config_instance}
+                                       WHERE field_name = :field_name
+                                       AND entity_type = :entity_type
+                                       AND bundle = :bundle", array(
+                ':field_name' => $field,
+                ':entity_type' => $entity_type,
+                ':bundle' => $bundle,
+            ))
+                ->fetchObject();
+            $data = unserialize($field_config_instance->data);
+
+            // Update it with the new display type
+            $data['display']['default']['type'] = 'number_decimal';
+
+            // Store it back to the database
+            db_update('field_config_instance')
+                ->fields(array('data' => serialize($data)))
+                ->condition('field_name', $field)
+                ->condition('entity_type', $entity_type)
+                ->condition('bundle', $bundle)
+                ->execute();
+
+        }
+    }
+}
+function sutunam_form_alter(&$form, &$form_state, $form_id) {
+
+    //update_field_working_height();
+    // Clear caches.
+    //field_cache_clear(TRUE);
+
+    switch ($form_id) {
+        case 'simplenews_block_form_1'://add your form_id
+            $form['submit']['#ajax'] = array(
+                'callback' => 'simplenews_form_ajax_submit',
+                'wrapper' => 'simplenews-block-form-1',
+                'method' => 'replace',
+                'effect' => 'fade',
+                'progress' => array('type' => 'none'),
+            );
+            $form['mail']['#attributes'] = array('placeholder' => t('enter your e-mail...'));
+            $form['submit']['#executes_submit_callback'] = TRUE;
+            unset($form['#submit']);
+            unset($form['#validate']);
+            break;
+        case 'views_exposed_form':
+                if($form_state['view']->name=='job_board'){
+                    $form['field_location_value_i18n']['#attributes']['class'][]='selectpicker';
+                    $form['field_type_value_i18n']['#attributes']['class'][]='selectpicker';
+                }
+            break;
+    }
+
+    if($form['#id']=='views-exposed-form-products-list-page'){
+
+        if(isset($_GET['field_working_height_value']['min'])){
+           $form['field_working_height_value']['min']['#value']=$_GET['field_working_height_value']['min'];
+            $form['field_working_height_value']['min']['#default_value']=$_GET['field_working_height_value']['min'];
+        }
+        if(isset($_GET['field_working_height_value']['max'])){
+
+            $form['field_working_height_value']['max']['#value']=$_GET['field_working_height_value']['max'];
+            $form['field_working_height_value']['max']['#default_value']=$_GET['field_working_height_value']['max'];
+        }
+    }
+
+}
+
+/**
+ * Implements hook_js_alter().
+ */
+
+
+function sutunam_js_alter(&$javascript) {
+    $settings = $javascript['settings']['data'];
+
+    foreach ($settings as $key => $value) {
+        if (isset($settings[$key]['better_exposed_filters']['slider_options']['field_working_height_value']['max'])) {
+            if(isset($_GET['field_working_height_value']['min'])){
+                $settings[$key]['better_exposed_filters']['slider_options']['field_working_height_value']['min'] = $_GET['field_working_height_value']['min'];
+            }
+            if(isset($_GET['field_working_height_value']['max'])){
+                $settings[$key]['better_exposed_filters']['slider_options']['field_working_height_value']['max']=$_GET['field_working_height_value']['max'];
+            }
+        }
+    }
+
+    $javascript['settings']['data'] = $settings;
+}
+
+/**
+ * Implements HOOK_webform_component_render_alter().
+ * overwrite placeholder in multi language
+ */
+function sutunam_webform_component_render_alter(&$element, $component) {
+    if (isset($element['#attributes']['placeholder'])) {
+        $element['#attributes']['placeholder'] = t($element['#attributes']['placeholder']);
+    }
+}
+
+
+/**
+ * hook__views_pre_build
+ * @param type $view
+ * @return type
+ */
+/*
+function sutunam_views_pre_build(&$view) {
+    $x=1;
+    if ($view->name=='products_list') {
+        $view->display['page']->handler->handlers['filter']['field_working_height_value']->options['value']['min'] = 8;
+        $view->display['page']->handler->handlers['filter']['field_working_height_value']->options['value']['min'] = 16;
+        return $view;
+    }
+}
+*/
+
+
+function sutunam_mail_alter(&$message){
+  /*  $x=1;
+   if($message['params']['node']->nid==30){
+
+       $regexp = "<products>(.*)<\/products>";
+       preg_match("/$regexp/siU", $message['body'][0], $match);
+       if(isset($match[1])){
+         $json=json_decode($match[1]);
+       }
+       $x=1;;
+   }*/
+}
+
+function simplenews_form_ajax_submit($form, &$form_state) {
+    if (!valid_email_address($form_state['values']['mail'])) {
+        drupal_set_message(t('The e-mail address %mail is not valid.', array('%mail' => $form_state['values']['mail'])), 'error');
+    }
+    else {
+        form_load_include($form_state, 'inc', 'simplenews', 'includes/simplenews.subscription');
+        simplenews_block_form_submit($form, $form_state);
+    }
+    return render($form);
+}
+
+function sutunam_block_view_alter(&$data, $block) {
+    switch ($block->delta) {
+        case 'client-block-20':
+            if(strpos($data['content'],'sub-remember')===false)
+                $data['content'] = '<div class="sub-remember"><span>'.t('Sous 24h').'</span></div>'.$data['content'];
+            break;
+    }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Fix file uploads in ajax webforms.
+ */
+function sutunam_form_webform_client_form_alter(&$form, $form_state, $form_id) {
+    $webform = $form['#node']->webform;
+    if ($webform['webform_ajax'] != WEBFORM_AJAX_NO_AJAX  AND $form_id=='webform_client_form_34') {
+        foreach (array('previous', 'next', 'submit', 'draft') as $button) {
+            if (isset($form['actions'][$button])) {
+                // Add webform-ajax-submit class and javascript to fix file uploads.
+                drupal_add_js(drupal_get_path('module', 'sutunam') . '/js/webform_ajax_file.js', array('type' => 'file', 'group' => JS_THEME));
+                $form['actions'][$button]['#attributes']['class'][] = 'webform-ajax-submit';
+            }
+        }
+    }
+
+}
+
+/**
+ * Implements hook_token_info().
+ */
+function sutunam_token_info() {
+    $info = array();
+    // Define a new token type.
+    $info['types']['job'] = array(
+        'name' => t('Job tokens'),
+        'description' => t('Job tokens.'),
+    );
+
+    // Define any new tokens.
+    $info['tokens']['job']['title'] = array(
+        'name' => t('Job tile'),
+        'description' => t('Job title'),
+    );
+    $info['tokens']['job']['body'] = array(
+        'name' => t('Job body'),
+        'description' => t('Job body'),
+    );
+    $info['tokens']['job']['location'] = array(
+        'name' => t('Job location'),
+        'description' => t('Job location'),
+    );
+    $info['tokens']['job']['type'] = array(
+        'name' => t('Job type'),
+        'description' => t('Job type'),
+    );
+    $info['tokens']['job']['place'] = array(
+        'name' => t('Job place'),
+        'description' => t('Job place'),
+    );
+    $info['tokens']['job']['public_date'] = array(
+        'name' => t('Job public_date'),
+        'description' => t('Job public_date'),
+    );
+    $info['tokens']['job']['url'] = array(
+        'name' => t('Job url'),
+        'description' => t('Job url'),
+    );
+    return $info;
+}
+
+/**
+ * Implements hook_tokens().
+ */
+function sutunam_tokens($type, $tokens, array $data = array(), array $options = array()) {
+    $replacements = array();
+
+    if ($type == 'job') {
+        if(isset($data['node']) AND $data['node']->nid==34){
+            $lang=$GLOBALS['language']->language;
+            $job=node_load($data['webform-submission']->data[6][0]);
+            // Loop through the available tokens.
+            foreach ($tokens as $name => $original) {
+                // Find our custom tokens by name.
+                switch ($name) {
+                    case 'title':
+                        // Work out the value of our token.
+                        $value = $job->title;
+                        // Give our token it's value!
+                        $replacements[$original] = $value;
+                        break;
+                    case 'body':
+                        // Work out the value of our token.
+                        $value =array_shift($job->body)[0]['value'];
+                        // Give our token it's value!
+                        $replacements[$original] = $value;
+                        break;
+                    case 'location':
+                        // Work out the value of our token.
+                        $value = array_shift($job->field_location)[0]['value'];
+                        // Give our token it's value!
+                        $replacements[$original] = $value;
+                        break;
+                    case 'type':
+                        // Work out the value of our token.
+                        $value = array_shift($job->field_type)[0]['value'];
+                        // Give our token it's value!
+                        $replacements[$original] = $value;
+                        break;
+                    case 'place':
+                        // Work out the value of our token.
+                        $value = array_shift($job->field_place)[0]['value'];
+                        // Give our token it's value!
+                        $replacements[$original] = $value;
+                        break;
+                    case 'public_date':
+                        // Work out the value of our token.
+                        $value = date('d/m/Y',$job->changed);
+                        // Give our token it's value!
+                        $replacements[$original] = $value;
+                        break;
+                    case 'url':
+                        // Work out the value of our token.
+                        $value = url('node/'.$job->nid);
+                        // Give our token it's value!
+                        $replacements[$original] = $value;
+                        break;
+                }
+            }
+        }
+
+    }
+
+    return $replacements;
+}
+
+
+

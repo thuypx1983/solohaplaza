@@ -1,0 +1,136 @@
+<?php
+/**
+ * Implements hook_node_view().
+ *
+ * Adds a Facebook like button to page nodes.
+ */
+function product_extend_node_view($node, $view_mode, $langcode) {
+    switch ($node->type) {
+        case 'product':
+            $node->content['product_mobile_action'] = array(
+                '#type' => 'item',
+                '#title' => '',
+                '#markup' => theme('product_mobile_action', array(
+                    'node' => $node)),
+            );
+            $node->content['product_extend_cart_add'] = array(
+                '#type' => 'item',
+                '#title' => '',
+                //'#markup' => '<a href="'.url('ajax/product/cart/push',array('query' => array('nid' => $node->nid))).'">'.t('Demande de devis').'</a>',
+                '#markup' => '<a class="btn-product-cart" data-pid="'.$node->nid.'" href="javascript: void(0);">'.t('Demande de devis').'</a>',
+            );
+           $node->content['product_extend_link'] = array(
+                '#type' => 'item',
+                '#title' => '',
+                '#markup' =>  theme('product_extend_link', array(
+                'item_list' => null)),
+            );
+            $node->content['product_title'] = array(
+                '#type' => 'item',
+                '#title' => '',
+                '#markup' =>  '<h1>'.$node->title.'</h1>',
+            );
+
+            $node->content['product_more_attribute'] = array(
+                '#type' => 'item',
+                '#title' => '',
+                '#markup' =>  '<div class="view-more"><span>'.t('Voir toutes les caractéristiques techniques').'</span></div>',
+            );
+            ;
+            $src=image_style_url('medium', $node->field_image['und'][0]['uri']);
+            $node->content['product_image_mobile'] = array(
+                '#type' => 'item',
+                '#title' => '',
+                '#markup' =>  '<img class="mobile-image" src="'.$src.'">',
+            );
+
+            $node->content['view_more_photo_mobile'] = array(
+                '#type' => 'item',
+                '#title' => '',
+                '#markup' =>  '<div class="action_mobile"><div class="bt_back" onClick="history.go(-1);return true;">'.t('Retour liste machines').'</div><div class="bt_scroll">'.t('Voir les photos').'</div></div>',
+            );
+            break;
+        case 'article':
+            $node->content['article_title'] = array(
+                '#type' => 'item',
+                '#title' => '',
+                '#markup' =>  '<h1>'.$node->title.'</h1>',
+            );
+            break;
+    }
+}
+
+/**
+ * Implements hook_field_extra_fields().
+ *
+ * Declare our Facebook Like button as a pseudo-field.
+ */
+function product_extend_field_extra_fields() {
+    // The levels of the array that we return correspond to the
+    // entity type, bundle and then either 'display' or 'form'.
+    // In this case, we apply to 'page' nodes, when we display them.
+    $extra['node']['product']['display'] = array(
+        // The keys here must correspond to the keys of the items
+        // that we add in our hook_node_view() or similar function.
+        // Prefix it with our module name to ensure it doesn't clash
+        // with anything from other modules.
+        'product_extend_cart_add' => array(
+            'label' => t('Add to cart'),
+            'description' => t('Add to cart button.'),
+            'weight' => 10,
+        ),
+        'product_extend_link' => array(
+            'label' => t('Links'),
+            'description' => t('some links.'),
+            'weight' => 11,
+        ),
+        'product_title' => array(
+            'label' => t('Title'),
+            'description' => t('Title.'),
+            'weight' => 12,
+        ),
+        'product_more_attribute' => array(
+            'label' => t('more attribute button'),
+            'description' => t('more attribute button.'),
+            'weight' => 13,
+        ),
+        'product_image_mobile' => array(
+            'label' => t('Mobile image'),
+            'description' => t('Mobile image.'),
+            'weight' => 13,
+        ),
+        'view_more_photo_mobile' => array(
+            'label' => t('Mobile view more photo'),
+            'description' => t('Mobile view more photo.'),
+            'weight' => 13,
+        ),
+    );
+    $extra['node']['article']['display'] = array(
+        'article_title' => array(
+            'label' => t('Title'),
+            'description' => t('Title.'),
+            'weight' => 12,
+        ),
+    );
+    return $extra;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function product_extend_theme() {
+    return array(
+        'product_extend_link' => array(
+            'variables' => array(
+                'item_list' => NULL,
+            ),
+            'template' => 'templates/product-extend-link',
+        ),
+        'product_mobile_action' => array(
+            'variables' => array(
+                'node' => NULL,
+            ),
+            'template' => 'templates/product-mobile-action',
+        ),
+    );
+}

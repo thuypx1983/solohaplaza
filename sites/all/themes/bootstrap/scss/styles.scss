@@ -1,0 +1,11 @@
+@import "vars";
+
+@import "mixin";
+
+/*global*/
+@import "global/header";
+@import "global/general";
+@import "global/footer";
+
+/*component*/
+@import "components/main-menu";
