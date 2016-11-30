@@ -1,3 +1,16 @@
+body {
+  font: 12px/1.5em Arial,Helvetica,sans-serif;
+}
 .container{
-  
+  width: 100%;
+  max-width: $bp-laptop;
+}
+.navbar{
+  &.container{
+    width: 100%;
+    max-width: $bp-laptop !important;
+  }
+}
+.html{
+  background-color: $background-main;
 }

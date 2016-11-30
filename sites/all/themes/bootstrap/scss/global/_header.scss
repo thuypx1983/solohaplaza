@@ -1,0 +1,65 @@
+.bg-header{
+  background-color: $color-white;
+  .header-top{
+    background-color: #1A1A1A;
+    #block-menu-menu-top-left-menu{
+      ul.menu {
+        display: inline-block;
+        float: left;
+        li{
+          float: left;
+          list-style: outside none none;
+          margin-right: 5px;
+          background-color: transparent!important;
+          &:hover{
+            a{
+              background-color: transparent!important;
+            }
+          }
+          a{
+            background-color: transparent!important;
+            color: #cccccc;
+            display: inline-block;
+            float: left;
+            font-weight: normal;
+            padding: 4px 5px 8px;
+            &:hover{
+              background-color: transparent !important;
+            }
+          }
+          a.active{
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    #block-menu-menu-social-menu{
+      ul.menu{
+        li{
+          float: left;
+          list-style: outside none none;
+          margin-right: 5px;
+          a{
+            background: transparent url("../images/icon.png") no-repeat scroll 0 0;
+            display: inline-block;
+            height: 19px;
+            margin-right: 10px;
+            width: 19px;
+          }
+          a.facebook{
+            background-position: 0 -20px;
+          }
+
+          a.twitter{
+            background-position: -19px -20px;
+          }
+
+          a.google-plus{
+            background-position: -38px -20px;
+          }
+
+        }
+      }
+    }
+  }
+}

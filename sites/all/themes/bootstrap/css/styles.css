@@ -14,41 +14,133 @@
 /* breakpoint with one condition(min or max) */
 /* breakpoint with two conditions (min and max) */
 /*global*/
+.bg-header {
+  background-color: #FFFFFF; }
+  .bg-header .header-top {
+    background-color: #1A1A1A; }
+    .bg-header .header-top #block-menu-menu-top-left-menu ul.menu {
+      display: inline-block;
+      float: left; }
+      .bg-header .header-top #block-menu-menu-top-left-menu ul.menu li {
+        float: left;
+        list-style: outside none none;
+        margin-right: 5px;
+        background-color: transparent !important; }
+        .bg-header .header-top #block-menu-menu-top-left-menu ul.menu li:hover a {
+          background-color: transparent !important; }
+        .bg-header .header-top #block-menu-menu-top-left-menu ul.menu li a {
+          background-color: transparent !important;
+          color: #cccccc;
+          display: inline-block;
+          float: left;
+          font-weight: normal;
+          padding: 4px 5px 8px; }
+          .bg-header .header-top #block-menu-menu-top-left-menu ul.menu li a:hover {
+            background-color: transparent !important; }
+        .bg-header .header-top #block-menu-menu-top-left-menu ul.menu li a.active {
+          color: #ffffff; }
+    .bg-header .header-top #block-menu-menu-social-menu ul.menu li {
+      float: left;
+      list-style: outside none none;
+      margin-right: 5px; }
+      .bg-header .header-top #block-menu-menu-social-menu ul.menu li a {
+        background: transparent url("../images/icon.png") no-repeat scroll 0 0;
+        display: inline-block;
+        height: 19px;
+        margin-right: 10px;
+        width: 19px; }
+      .bg-header .header-top #block-menu-menu-social-menu ul.menu li a.facebook {
+        background-position: 0 -20px; }
+      .bg-header .header-top #block-menu-menu-social-menu ul.menu li a.twitter {
+        background-position: -19px -20px; }
+      .bg-header .header-top #block-menu-menu-social-menu ul.menu li a.google-plus {
+        background-position: -38px -20px; }
+
+body {
+  font: 12px/1.5em Arial,Helvetica,sans-serif; }
+
+.container {
+  width: 100%;
+  max-width: 1279px; }
+
+.navbar.container {
+  width: 100%;
+  max-width: 1279px !important; }
+
+.html {
+  background-color: #f3f3f3; }
+
 /*component*/
 /*Fix the width to ensure the next item jump to below */
 .html .tb-megamenu {
   background-color: transparent;
-  width: 150px; }
-  .html .tb-megamenu .nav li.tb-megamenu-item {
-    margin-bottom: 2px; }
-    .html .tb-megamenu .nav li.tb-megamenu-item > a.dropdown-toggle {
-      color: #333;
-      /* IE10+ */
-      background-image: -ms-linear-gradient(top, #FFFFFF 0%, f0f0f0 100%);
-      /* Mozilla Firefox */
-      background-image: -moz-linear-gradient(top, #FFFFFF 0%, f0f0f0 100%);
-      /* Opera */
-      background-image: -o-linear-gradient(top, #FFFFFF 0%, f0f0f0 100%);
-      /* Webkit (Safari/Chrome 10) */
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(100, #F0F0F0));
-      /* Webkit (Chrome 11+) */
-      background-image: -webkit-linear-gradient(top, #FFFFFF 0%, f0f0f0 100%);
-      /* W3C Markup */
-      background-image: linear-gradient(to bottom, #FFFFFF 0%, f0f0f0 100%);
-      padding: 5px;
-      border: none; }
-      .html .tb-megamenu .nav li.tb-megamenu-item > a.dropdown-toggle:hover {
-        background-image: none;
-        background-color: #4A6FB2;
-        color: #FFFFFF; }
+  width: 100%; }
+  .html .tb-megamenu ul.tb-megamenu-nav {
+    position: relative; }
+    .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item {
+      position: initial;
+      margin-bottom: 2px;
+      background: #ffffff url("../images/category_li_bg.gif") repeat-x scroll center bottom;
+      padding-bottom: 3px; }
+      .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle {
+        color: #333;
+        background-color: transparent;
+        padding: 5px;
+        border: none;
+        font: 13px/24px Tahoma, Geneva, sans-serif;
+        line-height: 24px;
+        font-weight: normal; }
+        .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle:hover {
+          background-image: none;
+          background-color: #4A6FB2;
+          color: #FFFFFF; }
+        .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon {
+          background: transparent url("../images/icon.png") no-repeat scroll 0 -113px;
+          display: inline-block;
+          float: left;
+          height: 28px;
+          margin: 0 8px 0 6px;
+          width: 28px; }
+        .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-6 {
+          background-position: -56px -113px; }
+        .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-7 {
+          background-position: -392px -32px; }
+        .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-1089 {
+          background-position: -452px -59px; }
+        .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-8 {
+          background-position: -84px -113px; }
+        .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-9 {
+          background-position: -112px -113px; }
+        .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-4 {
+          background-position: -365px -35px; }
+        .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-14 {
+          background-position: -168px -113px; }
+        .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-13 {
+          background-position: -196px -113px; }
+        .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-11 {
+          background-position: -252px -113px; }
+        .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-10 {
+          background-position: -224px -113px; }
+        .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-198 {
+          background-position: -280px -113px; }
+        .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-465 {
+          background-position: -424px -33px; }
+      .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item .mega-dropdown-menu {
+        margin-left: 100%; }
+.html .well {
+  padding: 0px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none; }
 
 /*Fix the width to ensure the next item jump to below */
 .tb-megamenu-item {
-  width: 150px; }
+  width: 100%; }
 
 /*Moving the Sub Menu position*/
 .tb-megamenu .dropdown-menu {
-  width: 150px;
+  width: 100%;
   margin-left: 150px;
   top: 0px; }
 

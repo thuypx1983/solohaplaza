@@ -15,7 +15,9 @@ simplytest_dependencies[] = jquery_update
 ;;;;;;;;;;;;;;;;;;;;;
 
 regions[navigation]     = 'Navigation'
-regions[header]         = 'Top Bar'
+regions[header_top]         = 'header_top'
+regions[header_center]         = 'header-center'
+regions[header_bottom]         = 'header-bottom'
 regions[highlighted]    = 'Highlighted'
 regions[help]           = 'Help'
 regions[content]        = 'Content'

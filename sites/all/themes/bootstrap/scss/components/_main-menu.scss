@@ -2,42 +2,105 @@
 .html{
   .tb-megamenu {
     background-color: transparent;
-    width: 150px;
-    .nav{
-      li.tb-megamenu-item{
-
-        margin-bottom: 2px;
-        &>a.dropdown-toggle{
-          color:$color-text;
-          @include gradient($color-white,$color-silver);
-          padding: 5px;
-          border: none;
-          &:hover{
-            background-image: none;
-            background-color: $color-blue;
-            color: $color-white;
+    width: 100%;
+    ul.tb-megamenu-nav{
+      position: relative;
+      &.nav{
+        &>li.tb-megamenu-item{
+          position: initial;
+          margin-bottom: 2px;
+          background: #ffffff url("../images/category_li_bg.gif") repeat-x scroll center bottom;
+          padding-bottom: 3px;
+          &>a.dropdown-toggle{
+            color:$color-text;
+            background-color: transparent;
+            padding: 5px;
+            border: none;
+            font: $font-menu;
+            line-height: 24px;
+            font-weight: normal;
+            &:hover{
+              background-image: none;
+              background-color: $color-blue;
+              color: $color-white;
+            }
+            .icon {
+              background: transparent url("../images/icon.png") no-repeat scroll 0 -113px;
+              display: inline-block;
+              float: left;
+              height: 28px;
+              margin: 0 8px 0 6px;
+              width: 28px;
+            }
+           .icon-6 {
+              background-position: -56px -113px;
+            }
+            .icon-7 {
+              background-position: -392px -32px;
+            }
+            .icon-1089 {
+              background-position: -452px -59px;
+            }
+            .icon-8 {
+              background-position: -84px -113px;
+            }
+            .icon-9 {
+              background-position: -112px -113px;
+            }
+            .icon-4 {
+              background-position: -365px -35px;
+            }
+            .icon-14 {
+              background-position: -168px -113px;
+            }
+            .icon-13 {
+              background-position: -196px -113px;
+            }
+            .icon-11 {
+              background-position: -252px -113px;
+            }
+            .icon-10 {
+              background-position: -224px -113px;
+            }
+            .icon-198 {
+              background-position: -280px -113px;
+            }
+            .icon-465 {
+              background-position: -424px -33px;
+            }
+          }
+          .mega-dropdown-menu{
+            margin-left: 100%;
           }
         }
       }
     }
 
+
+  }
+  .well{
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
   }
 }
 
 /*Fix the width to ensure the next item jump to below */
 .tb-megamenu-item {
-width: 150px;
+width: 100%;
 }
 
 /*Moving the Sub Menu position*/
 .tb-megamenu .dropdown-menu {
-width: 150px;
+width: 100%;
 margin-left: 150px;
 top: 0px;
 }
 .tb-megamenu-nav li.tb-megamenu-item.dropdown{
-position: initial;
+  position: initial;
 }
 .tb-megamenu-nav{
-position: relative;
+  position: relative;
 }
