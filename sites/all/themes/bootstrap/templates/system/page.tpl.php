@@ -75,22 +75,20 @@
 ?>
 <header >
 <div class="bg-header">
-
-
             <div class="header-top">
                 <div class="<?php print $container_class; ?>">
-                    <?php print render($page['header_top']); ?>
+                    <div class="row"><?php print render($page['header_top']); ?></div>
                 </div>
             </div>
             <div class="header-center">
                 <div class="<?php print $container_class; ?>">
-                    <?php print render($page['header_center']); ?>
-                </div>
+                    <div class="row"><?php print render($page['header_center']); ?></div>
 
+                </div>
             </div>
             <div class="header-bottom">
                 <div class="<?php print $container_class; ?>">
-                    <?php print render($page['header_bottom']); ?>
+                    <div class="row"><?php print render($page['header_bottom']); ?></div>
                 </div>
             </div>
 
