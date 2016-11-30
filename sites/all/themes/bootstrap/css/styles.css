@@ -18,43 +18,51 @@
   background-color: #FFFFFF; }
   .bg-header .header-top {
     background-color: #1A1A1A; }
-    .bg-header .header-top #block-menu-menu-top-left-menu ul.menu {
-      display: inline-block;
+    .bg-header .header-top #block-menu-menu-top-left-menu {
       float: left; }
-      .bg-header .header-top #block-menu-menu-top-left-menu ul.menu li {
+      .bg-header .header-top #block-menu-menu-top-left-menu ul.menu {
+        margin-top: 3px;
+        display: inline-block;
+        float: left; }
+        .bg-header .header-top #block-menu-menu-top-left-menu ul.menu li {
+          float: left;
+          list-style: outside none none;
+          margin-right: 5px;
+          background-color: transparent !important; }
+          .bg-header .header-top #block-menu-menu-top-left-menu ul.menu li:hover a {
+            background-color: transparent !important; }
+          .bg-header .header-top #block-menu-menu-top-left-menu ul.menu li a {
+            background-color: transparent !important;
+            color: #cccccc;
+            display: inline-block;
+            float: left;
+            font-weight: normal;
+            padding: 4px 5px 8px; }
+            .bg-header .header-top #block-menu-menu-top-left-menu ul.menu li a:hover {
+              background-color: transparent !important; }
+          .bg-header .header-top #block-menu-menu-top-left-menu ul.menu li a.active {
+            color: #ffffff; }
+    .bg-header .header-top #block-menu-menu-social-menu {
+      float: right; }
+      .bg-header .header-top #block-menu-menu-social-menu ul.menu li {
         float: left;
         list-style: outside none none;
-        margin-right: 5px;
-        background-color: transparent !important; }
-        .bg-header .header-top #block-menu-menu-top-left-menu ul.menu li:hover a {
-          background-color: transparent !important; }
-        .bg-header .header-top #block-menu-menu-top-left-menu ul.menu li a {
-          background-color: transparent !important;
-          color: #cccccc;
+        margin-right: 5px; }
+        .bg-header .header-top #block-menu-menu-social-menu ul.menu li a {
+          background: transparent url("../images/icon.png") no-repeat scroll 0 0;
           display: inline-block;
-          float: left;
-          font-weight: normal;
-          padding: 4px 5px 8px; }
-          .bg-header .header-top #block-menu-menu-top-left-menu ul.menu li a:hover {
-            background-color: transparent !important; }
-        .bg-header .header-top #block-menu-menu-top-left-menu ul.menu li a.active {
-          color: #ffffff; }
-    .bg-header .header-top #block-menu-menu-social-menu ul.menu li {
-      float: left;
-      list-style: outside none none;
-      margin-right: 5px; }
-      .bg-header .header-top #block-menu-menu-social-menu ul.menu li a {
-        background: transparent url("../images/icon.png") no-repeat scroll 0 0;
-        display: inline-block;
-        height: 19px;
-        margin-right: 10px;
-        width: 19px; }
-      .bg-header .header-top #block-menu-menu-social-menu ul.menu li a.facebook {
-        background-position: 0 -20px; }
-      .bg-header .header-top #block-menu-menu-social-menu ul.menu li a.twitter {
-        background-position: -19px -20px; }
-      .bg-header .header-top #block-menu-menu-social-menu ul.menu li a.google-plus {
-        background-position: -38px -20px; }
+          height: 19px;
+          margin-right: 20px;
+          width: 19px;
+          text-indent: -9999px;
+          padding: 0px;
+          margin: 5px 0px; }
+        .bg-header .header-top #block-menu-menu-social-menu ul.menu li a.facebook {
+          background-position: 0 -20px; }
+        .bg-header .header-top #block-menu-menu-social-menu ul.menu li a.twitter {
+          background-position: -19px -20px; }
+        .bg-header .header-top #block-menu-menu-social-menu ul.menu li a.google-plus {
+          background-position: -38px -20px; }
 
 body {
   font: 12px/1.5em Arial,Helvetica,sans-serif; }

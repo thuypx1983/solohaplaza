@@ -3,7 +3,9 @@
   .header-top{
     background-color: #1A1A1A;
     #block-menu-menu-top-left-menu{
+      float: left;
       ul.menu {
+        margin-top: 3px;
         display: inline-block;
         float: left;
         li{
@@ -34,6 +36,7 @@
       }
     }
     #block-menu-menu-social-menu{
+      float: right;
       ul.menu{
         li{
           float: left;
@@ -43,8 +46,12 @@
             background: transparent url("../images/icon.png") no-repeat scroll 0 0;
             display: inline-block;
             height: 19px;
-            margin-right: 10px;
+            margin-right: 20px;
             width: 19px;
+            text-indent: -9999px;
+            padding: 0px;
+            margin: 5px 0px;
+
           }
           a.facebook{
             background-position: 0 -20px;
