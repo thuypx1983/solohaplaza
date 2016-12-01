@@ -1,0 +1,85 @@
+.complete-product{
+  .views-row{
+    display: block;
+
+    &:nth-child(1){
+      width: 100%;
+      .views-field-title{
+        display: none;
+      }
+    }
+    &:nth-child(2){
+      margin-top: 10px;
+      width: 50%;
+      float: left;
+      padding-right: 10px;
+      .row-content{
+        position: relative;
+         display: inline-block;
+        width: 100%;
+        .views-field-title{
+          .field-content{
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: rgba(0, 0, 0, 0.4);
+            background-image: none;
+            background-origin: padding-box;
+            background-position-x: 0;
+            background-position-y: 0;
+            background-repeat: repeat;
+            background-size: auto auto;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+            text-align: center;
+            a{
+              color: $color-white;
+            }
+          }
+
+        }
+      }
+
+    }
+    &:nth-child(3){
+      margin-top: 10px;
+      width: 50%;
+      float: left;
+      padding-left: 10px;
+      .row-content{
+
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        .views-field-title{
+          .field-content{
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: rgba(0, 0, 0, 0.4);
+            background-image: none;
+            background-origin: padding-box;
+            background-position-x: 0;
+            background-position-y: 0;
+            background-repeat: repeat;
+            background-size: auto auto;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+            text-align: center;
+            a{
+              color: $color-white;
+            }
+          }
+
+        }
+      }
+
+    }
+  }
+}
