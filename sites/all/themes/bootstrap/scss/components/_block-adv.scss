@@ -1,0 +1,17 @@
+.adv-block{
+  padding-left: 0px;
+  ul{
+    padding: 0px;
+    li{
+      list-style: none;
+      margin-bottom: 10px;
+    }
+  }
+}
+.home-banner{
+  .slick-dots{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+}

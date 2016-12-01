@@ -1,4 +1,10 @@
 .bg-header{
+  .region-header-center{
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    width: 100%;
+  }
   background-color: $color-white;
   .header-top{
     background-color: #1A1A1A;
@@ -76,6 +82,7 @@
               background-color: transparent;
               color: $color-text;
               display: inline-block;
+              padding: 0px 15px 0px 0px;
               &:hover{
                 background-color: transparent;
               }
@@ -97,8 +104,6 @@
       }
 
       .hotline {
-         padding-top: 15px;
-         padding-left: 50px;
         .icon-hotline {
           background-attachment: scroll;
           background-clip: border-box;
@@ -168,5 +173,23 @@
 
         }
       }
+  }
+  .header-bottom{
+    .search-block{
+      .block-wapper{
+        background-color: #D4D4D4;
+        border-radius: 3px 3px 0 0;
+        padding-left: 25%;
+        .views-exposed-form {
+          .views-exposed-widget{
+            padding-top: 3px;
+            margin-bottom: 3px;
+            .btn{
+              margin-top:0px;
+            }
+          }
+        }
+      }
+    }
   }
 }

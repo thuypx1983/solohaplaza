@@ -1,7 +1,10 @@
 /*Fix the width to ensure the next item jump to below */
 .html{
   .tb-megamenu {
-    background-color: transparent;
+    background: transparent url("../images/category_content_bullet.png") no-repeat scroll center top;
+    border-top: 2px solid #4a6fb2;
+    margin: 0;
+    padding-top: 3px;
     width: 100%;
     ul.tb-megamenu-nav{
       position: relative;
@@ -103,4 +106,21 @@ top: 0px;
 }
 .tb-megamenu-nav{
   position: relative;
+}
+.main-category{
+  margin-top: -43px;
+  .block-title{
+    background: rgba(0, 0, 0, 0) url("../images/category_h3_bg.gif") repeat-x scroll center bottom;
+    border-radius: 3px 3px 0 0;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal !important;
+    height: 35px;
+    width: 100%;
+    margin: 0 0 1px;
+    padding: 8px 0 0 10px;
+    text-transform: uppercase;
+    line-height: 27px;
+  }
 }

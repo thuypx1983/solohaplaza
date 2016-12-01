@@ -1,0 +1,51 @@
+.category-hot{
+  .menu{
+    background-color: $color-white;
+    &.nav{
+      &>li{
+        padding-left: 10px;
+        padding-right: 10px;
+        display: block;
+        float: left;
+        width: 25%;
+        &>a{
+          background-color: transparent;
+          color: #3b5998;
+          display: block;
+          font-size: 12px;
+          font-weight: bold;
+          margin-bottom: 4px;
+          padding-top: 190px;
+          line-height: 50px;
+          text-align: center;
+          text-transform: uppercase;
+          -moz-background-size: cover;
+          -webkit-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+           &:hover{
+             background-color: transparent;
+           }
+        }
+        .dropdown-menu{
+          position: relative;
+          display: block;
+          border: none;
+          box-shadow: none;
+          margin-top: 30px;
+          width: 100%;
+          li{
+
+            background-color: transparent;
+            border: none;
+            a{
+              background-color: transparent;
+              border: none;
+              color: $color-text;
+            }
+          }
+        }
+      }
+    }
+  }
+}
