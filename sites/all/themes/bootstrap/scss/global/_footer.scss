@@ -45,3 +45,26 @@
   padding: 15px 0;
   width: 100%;
 }
+#block-views-reviews-block{
+  .view-reviews{
+    background: url("../images/comment_rd.gif") repeat top left ;
+    padding: 10px;
+    background-color: $color-white;
+    .view-content{
+      background-color: $color-white;
+      padding: 10px;
+    }
+    .views-row{
+      border-bottom: 1px solid #dddddd;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      .views-field-body{
+        .field-content{
+          font-style: italic;
+        }
+
+      }
+    }
+  }
+
+}
