@@ -1,0 +1,29 @@
+.footer-top{
+  background: #3b5998 none repeat scroll 0 0;
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 100%;
+  ul.menu{
+    li{
+      float: left;
+      background: transparent url("../images/separator02.gif") no-repeat scroll right center;
+      a{
+        background-color: transparent;
+        color: $color-white;
+        &:hover{
+          background-color: transparent;
+
+        }
+
+      }
+    }
+  }
+}
+.footer-bottom{
+  p{
+    color: $color-white;
+  }
+  strong{
+    color: $color-white;
+  }
+}

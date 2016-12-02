@@ -183,9 +183,21 @@
         .views-exposed-form {
           .views-exposed-widget{
             padding-top: 3px;
+            padding-right: 0px;
             margin-bottom: 3px;
+            .form-control{
+              border-radius: 0px;
+            }
             .btn{
               margin-top:0px;
+              color: $color-white;
+              background-color: $color-blue;
+              border-radius: 0px;
+              &:before{
+                font-family: FontAwesome;
+                content: "\f002";
+                margin-right: 5px;
+              }
             }
           }
         }

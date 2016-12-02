@@ -1,0 +1,47 @@
+.footer-middle{
+  .block{
+    .block-title{
+      background: transparent;
+      border-top: none;
+    }
+  }
+  .menu{
+    li{
+      a{
+        background-color: transparent;
+        color: $color-text;
+        padding: 5px;
+        &:hover{
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+.menu-footer{
+  ul.menu{
+    list-style: disc;
+    li{
+
+    }
+  }
+}
+.menu-footer-social{
+  ul.menu{
+    li{
+      padding: 15px 0px ;
+      display: block;
+      float: left;
+      width: 50%;
+      a{
+        padding-left: 30px;
+      }
+    }
+  }
+}
+.footer-bottom{
+  background: #000000 url("../images/fbottom_bg.gif") no-repeat scroll center top;
+  display: inline-block;
+  padding: 15px 0;
+  width: 100%;
+}

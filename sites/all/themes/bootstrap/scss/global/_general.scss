@@ -37,3 +37,93 @@ body {
     }
   }
 }
+.block-area{
+  margin-top: 20px;
+}
+.views-field-field-price{
+  .field-content{
+    font-weight: bold;
+    color: #cd0808;
+  }
+}
+.views-field-field-old-price{
+  .field-content{
+    color: #999999;
+    display: inline-block;
+    float: left;
+    text-decoration: line-through;
+    width: 100%;
+  }
+}
+.views-field-title{
+  a{
+    color: $color-text;
+  }
+}
+.views-row{
+  position: relative;
+  .views-field-view-node{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top:50px;
+    a{
+      display: none;
+      padding: 5px 5px;
+      background-color: $color-blue;
+      color: $color-white;
+    }
+  }
+  &:hover{
+    .views-field-view-node{
+      a{
+        display: block;
+      }
+    }
+  }
+}
+#slick-views-updated-product-2{
+  .slick__slide{
+    .views-field-field-image{
+      border: 1px solid $color-white;
+    }
+    position: relative;
+    .views-field-view-node{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      top:50px;
+      a{
+        display: none;
+        padding: 5px 5px;
+        background-color: $color-blue;
+        color: $color-white;
+      }
+    }
+    &:hover{
+      .views-field-view-node{
+        a{
+          display: block;
+        }
+      }
+      .views-field-field-image{
+        border: 1px solid $color-blue;
+      }
+    }
+  }
+}
+.product-item{
+  .views-row{
+    .views-field-field-image{
+      border: 1px solid $color-white;
+    }
+    &:hover{
+      .views-field-field-image{
+          border:1px solid $color-blue;
+      }
+    }
+  }
+}
+.form-control{
+  font:13px/1.5em Arial,Helvetica,sans-serif;
+}

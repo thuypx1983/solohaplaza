@@ -1,6 +1,10 @@
 .category-hot{
   .menu{
     background-color: $color-white;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     &.nav{
       &>li{
         padding-left: 10px;
@@ -39,9 +43,16 @@
             background-color: transparent;
             border: none;
             a{
-              background-color: transparent;
-              border: none;
+              background-color: #F3F3F3;
+              border-bottom: 1px solid $color-white;
               color: $color-text;
+              font:12px/1.5em Arial,Helvetica,sans-serif;
+              padding: 10px;
+              &:before{
+                font-family: FontAwesome;
+                content: "\f0fe";
+                margin-right: 5px;
+              }
             }
           }
         }

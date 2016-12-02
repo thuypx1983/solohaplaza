@@ -1,5 +1,18 @@
 .best-sell-product{
-  .view-row{
-    padding-bottom: 15px;
+  .view-updated-product{
+    .view-content{
+      background-color: $color-white;
+      padding: 30px 15px 15px 15px;
+      display: inline-block;
+      .views-row{
+        .views-field{
+          text-align: center;
+        }
+        margin-bottom: 15px;
+        .views-field-title{
+          margin-top: 5px;
+        }
+      }
+    }
   }
 }

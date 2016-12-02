@@ -1,3 +1,17 @@
 .updated-product{
   background-color: $color-white;
+  padding-bottom: 15px;
+  .views-field{
+    text-align: center;
+  }
+  .slick--skin--boxed-carousel {
+    .slide__content{
+      border: none;
+      border-radius: 0px;
+      box-shadow: none;
+      .views-field-title{
+        margin-top: 5px;
+      }
+    }
+  }
 }
