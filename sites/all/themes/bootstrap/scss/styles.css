@@ -367,6 +367,10 @@ body {
   border: none;
   border-radius: 0px;
   box-shadow: none; }
+.html.not-front #block-tb-megamenu-main-menu .tb-megamenu {
+  display: none; }
+.html.not-front #block-tb-megamenu-main-menu:hover .tb-megamenu {
+  display: block; }
 
 /*Fix the width to ensure the next item jump to below */
 .tb-megamenu-item {
@@ -399,6 +403,54 @@ body {
     padding: 8px 0 0 10px;
     text-transform: uppercase;
     line-height: 27px; }
+
+#block-block-11 {
+  background-color: #FFFFFF; }
+  #block-block-11 ul {
+    padding: 0px; }
+    #block-block-11 ul.level-1 > li > a {
+      padding-bottom: 10px;
+      padding-left: 6px;
+      padding-right: 6px;
+      padding-top: 10px;
+      color: #4a6fb2;
+      font-size: 13px;
+      font-weight: bold;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+      background: #ffffff;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+      /* IE6-9 */ }
+    #block-block-11 ul.level-1 > li > ul.level-2 > li > a {
+      color: #ff6633;
+      display: block;
+      font-weight: bold;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px; }
+    #block-block-11 ul.level-1 > li > ul.level-2 > li > ul.level-3 > li > a {
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 6px;
+      padding-top: 10px;
+      background-color: #e6e6e6;
+      color: #333;
+      margin-bottom: 1px; }
+      #block-block-11 ul.level-1 > li > ul.level-2 > li > ul.level-3 > li > a:before {
+        font-family: "FontAwesome", "Open Sans", Arial, sans-serif;
+        margin-right: 7px;
+        content: "\f054"; }
+    #block-block-11 ul li {
+      list-style: none; }
+      #block-block-11 ul li a {
+        display: block; }
 
 .adv-block {
   padding-left: 0px; }

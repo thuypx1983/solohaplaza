@@ -66,3 +66,8 @@ drupal_static_reset('element_info');
  * they are properly detected when drupal_alter() is invoked.
  */
 bootstrap_include('bootstrap', 'includes/alter.inc');
+
+function bootstrap_taxomony_get_root_parent($tid){
+   $parents= taxonomy_get_parents_all($tid);
+   return array_pop($parents);
+}

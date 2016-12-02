@@ -88,6 +88,19 @@
     border-radius: 0px;
     box-shadow: none;
   }
+  &.not-front{
+    #block-tb-megamenu-main-menu{
+      .tb-megamenu{
+        display: none;
+      }
+      &:hover{
+        .tb-megamenu{
+          display: block;
+        }
+      }
+    }
+
+  }
 }
 
 /*Fix the width to ensure the next item jump to below */
