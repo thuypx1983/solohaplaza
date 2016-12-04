@@ -71,6 +71,9 @@ function bootstrap_preprocess_page(&$variables) {
   else {
     $variables['navbar_classes_array'][] = 'navbar-default';
   }
+  if (isset($variables['node'])){
+      $variables['theme_hook_suggestions'][]='page__node__'.$variables['node']->type;
+  }
 }
 
 /**

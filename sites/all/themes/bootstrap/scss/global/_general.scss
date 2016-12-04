@@ -60,25 +60,31 @@ body {
     color: $color-text;
   }
 }
-.views-row{
-  position: relative;
-  .views-field-view-node{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    top:50px;
-    a{
-      display: none;
-      padding: 5px 5px;
-      background-color: $color-blue;
-      color: $color-white;
-    }
-  }
-  &:hover{
-    .views-field-view-node{
+.product-item{
+
+  .views-row{
+    position: relative;
+    &>.views-field-view-node{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      top:50px;
       a{
-        display: block;
+        display: none;
+        padding: 5px 5px;
+        background-color: $color-blue;
+        color: $color-white;
       }
+    }
+    &:hover{
+      .views-field-view-node{
+        a{
+          display: block;
+        }
+      }
+    }
+    .views-field{
+      text-align: center;
     }
   }
 }
