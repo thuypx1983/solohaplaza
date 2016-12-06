@@ -137,3 +137,15 @@ top: 0px;
     line-height: 27px;
   }
 }
+.node-type-product{
+  #block-tb-megamenu-main-menu{
+    margin-top: 0px;
+    position: relative;
+    .tb-megamenu{
+      z-index: 9999;
+      position: absolute;
+      top: 36px;
+
+    }
+  }
+}
