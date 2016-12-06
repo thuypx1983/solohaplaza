@@ -1003,4 +1003,139 @@ body {
   font-size: 12px;
 }
 
+/* line 4, ../scss/components/_product_detail.scss */
+.node-type-product .node-product .product-info h1 {
+  border-bottom: 1px solid #e2dedd;
+  color: #4c6fb1;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+}
+/* line 13, ../scss/components/_product_detail.scss */
+.node-type-product .node-product .product-info .field {
+  margin-bottom: 15px;
+}
+/* line 16, ../scss/components/_product_detail.scss */
+.node-type-product .node-product .product-info .field-name-field-price {
+  border-top: 1px solid #e2dedd;
+  border-bottom: 1px solid #e2dedd;
+  padding: 15px 0px;
+}
+/* line 20, ../scss/components/_product_detail.scss */
+.node-type-product .node-product .product-info .field-name-field-price .field-item {
+  font-weight: bold;
+  color: #cd0808;
+}
+/* line 25, ../scss/components/_product_detail.scss */
+.node-type-product .node-product .product-info .form-type-item {
+  display: inline-block;
+  width: 100%;
+}
+/* line 31, ../scss/components/_product_detail.scss */
+.node-type-product .node-product .field-name-field-social-button .social {
+  border-bottom: 1px solid #e2dedd;
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  width: 100%;
+}
+/* line 37, ../scss/components/_product_detail.scss */
+.node-type-product .node-product .field-name-field-social-button .social .fb-like {
+  overflow: hidden;
+}
+/* line 44, ../scss/components/_product_detail.scss */
+.node-type-product .node-product .group-content-left .slick-wrapper {
+  border: 1px solid #e2dedd;
+}
+/* line 48, ../scss/components/_product_detail.scss */
+.node-type-product .node-product .field-name-body {
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+}
+/* line 52, ../scss/components/_product_detail.scss */
+.node-type-product .node-product .field-name-body .field-label {
+  color: #4c6fb1;
+  text-transform: uppercase;
+  font: bold 15px/1.2em Tahoma,Geneva,sans-serif;
+  border-bottom: 1px solid #cbcaca;
+  padding: 0 0 8px;
+  margin-bottom: 12px;
+}
+/* line 63, ../scss/components/_product_detail.scss */
+.node-type-product .block-system {
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+/* line 67, ../scss/components/_product_detail.scss */
+.node-type-product .btn-product-cart {
+  padding: 5px 5px 5px 50px;
+  position: relative;
+  background-color: #ED2D28;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 40px;
+  float: right;
+}
+/* line 77, ../scss/components/_product_detail.scss */
+.node-type-product .btn-product-cart:before {
+  position: absolute;
+  content: "\f07a";
+  font-family: "FontAwesome";
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+  font-size: 30px;
+}
+
+/* line 1, ../scss/components/_block-news.scss */
+.block-news {
+  background-color: #FFFFFF;
+}
+/* line 3, ../scss/components/_block-news.scss */
+.block-news .block-wapper {
+  padding: 0px 10px 10px 10px;
+}
+/* line 5, ../scss/components/_block-news.scss */
+.block-news .block-wapper .views-row {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #cbcaca;
+}
+/* line 11, ../scss/components/_block-news.scss */
+.block-news .block-wapper .views-row .views-field-field-image {
+  float: left;
+  width: 40%;
+  margin-right: 5px;
+}
+
+/* line 1, ../scss/components/_block-related-product.scss */
+.block-related-product {
+  background-color: #FFFFFF;
+}
+/* line 3, ../scss/components/_block-related-product.scss */
+.block-related-product .block-wapper {
+  padding: 0px 10px 10px 10px;
+}
+/* line 5, ../scss/components/_block-related-product.scss */
+.block-related-product .block-wapper .views-row {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #cbcaca;
+}
+/* line 11, ../scss/components/_block-related-product.scss */
+.block-related-product .block-wapper .views-row .views-field-field-image {
+  float: left;
+  width: 40%;
+  margin-right: 5px;
+}
+
 /*# sourceMappingURL=styles.css.map */

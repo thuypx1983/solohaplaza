@@ -85,5 +85,10 @@
       js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- google plus plugin -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!-- tweeter plugin -->
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>

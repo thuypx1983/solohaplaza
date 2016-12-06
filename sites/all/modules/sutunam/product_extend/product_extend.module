@@ -7,17 +7,11 @@
 function product_extend_node_view($node, $view_mode, $langcode) {
     switch ($node->type) {
         case 'product':
-            $node->content['product_mobile_action'] = array(
-                '#type' => 'item',
-                '#title' => '',
-                '#markup' => theme('product_mobile_action', array(
-                    'node' => $node)),
-            );
             $node->content['product_extend_cart_add'] = array(
                 '#type' => 'item',
                 '#title' => '',
                 //'#markup' => '<a href="'.url('ajax/product/cart/push',array('query' => array('nid' => $node->nid))).'">'.t('Demande de devis').'</a>',
-                '#markup' => '<a class="btn-product-cart" data-pid="'.$node->nid.'" href="javascript: void(0);">'.t('Demande de devis').'</a>',
+                '#markup' => '<a class="btn-product-cart" data-pid="'.$node->nid.'" href="javascript: void(0);">'.t('Đặt mua').'</a>',
             );
            $node->content['product_extend_link'] = array(
                 '#type' => 'item',

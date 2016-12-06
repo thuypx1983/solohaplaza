@@ -1,0 +1,18 @@
+.block-news{
+  background-color: $color-white;
+  .block-wapper{
+    padding: 0px 10px 10px 10px;
+    .views-row{
+      display: inline-block;
+      width: 100%;
+      margin-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed #cbcaca;
+      .views-field-field-image{
+        float:left;
+        width: 40%;
+        margin-right: 5px;
+      }
+    }
+  }
+}
