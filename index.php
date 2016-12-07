@@ -19,3 +19,14 @@ define('DRUPAL_ROOT', getcwd());
 require_once DRUPAL_ROOT . '/includes/bootstrap.inc';
 drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
 menu_execute_active_handler();
+
+function custom_create_taxonomy_term($name, $vid) {
+    $term = new stdClass();
+    $term->name = $name;
+    $term->vid = $vid;
+    taxonomy_term_save($term);
+    return $term->tid;
+
+}
+
+custom_create_taxonomy_term('abc',2);
