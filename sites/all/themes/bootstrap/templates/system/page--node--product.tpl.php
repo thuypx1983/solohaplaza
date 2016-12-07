@@ -89,13 +89,17 @@
         <div class="header-bottom">
             <div class="<?php print $container_class; ?>">
                 <div class="row">
-                    <?php
-                    $block = block_load('tb_megamenu', 'main-menu');
-                    $output = @drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))));
-                    print $output;
+                    <div class="col-md-3 col-lg-9">
+                        <?php
+                        $block = block_load('tb_megamenu', 'main-menu');
+                        $output = @drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))));
+                        print $output;
 
-                    ?>
-                    <?php print render($page['header_bottom']); ?></div>
+                        ?>
+                    </div>
+                   <div class="col-md-9 col-lg-9">
+                       <?php print render($page['header_bottom']); ?></div>
+                    </div>
             </div>
         </div>
 
