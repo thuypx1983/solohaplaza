@@ -19,3 +19,19 @@ define('DRUPAL_ROOT', getcwd());
 require_once DRUPAL_ROOT . '/includes/bootstrap.inc';
 drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
 menu_execute_active_handler();
+
+function custom_create_taxonomy_term($name, $vid) {
+    $term = new stdClass();
+    $term->name = $name;
+    $term->vid = $vid;
+    taxonomy_term_save($term);
+    return $term->tid;
+
+}
+
+$data=json_decode(file_get_contents('tbl_menu_news.json'),true);
+foreach ($data as &$item){
+    #$item['tid']=custom_create_taxonomy_term($item['title'],3);
+}
+unset($item);
+#file_put_contents('tbl_menu_news.json',json_encode($data));
