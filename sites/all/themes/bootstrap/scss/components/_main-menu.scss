@@ -98,6 +98,20 @@
           display: block;
         }
       }
+
+
+    }
+    #block-tb-megamenu-main-menu{
+      .block-wapper{
+        border-bottom: 2px solid #4a6fb2;
+      }
+      margin-top: 0px;
+      position: relative;
+      .tb-megamenu{
+        z-index: 9999;
+        position: absolute;
+        top: 36px;
+      }
     }
 
   }
@@ -135,17 +149,5 @@ top: 0px;
     padding: 8px 0 0 10px;
     text-transform: uppercase;
     line-height: 27px;
-  }
-}
-.node-type-product{
-  #block-tb-megamenu-main-menu{
-    margin-top: 0px;
-    position: relative;
-    .tb-megamenu{
-      z-index: 9999;
-      position: absolute;
-      top: 36px;
-
-    }
   }
 }

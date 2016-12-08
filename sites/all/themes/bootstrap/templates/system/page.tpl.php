@@ -88,7 +88,20 @@
         </div>
         <div class="header-bottom">
             <div class="<?php print $container_class; ?>">
-                <div class="row"><?php print render($page['header_bottom']); ?></div>
+                <div class="row">
+                    <div class="col-md-3 col-lg-3">
+                        <?php
+                        $block = block_load('tb_megamenu', 'main-menu');
+                        $output = @drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))));
+                        print $output;
+
+                        ?>
+                    </div>
+                    <div class="col-md-9 col-lg-9">
+                        <div class="row">
+                            <?php print render($page['header_bottom']); ?></div>
+                    </div>
+                </div>
             </div>
         </div>
 
