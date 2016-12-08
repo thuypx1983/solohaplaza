@@ -20,20 +20,22 @@ require_once DRUPAL_ROOT . '/includes/bootstrap.inc';
 drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
 menu_execute_active_handler();
 
-function importNode($data,$types,$menus){
+function importNode($data,$data_done,$types,$menus){
+
     $node = new stdClass(); // We create a new node object
     $node->type = "product"; // Or any other content type you want
     $node->title = $data['p_name'];
+    $node->uid = 1;
     $node->language = LANGUAGE_NONE; // Or any language code if Locale module is enabled. More on this below *
     node_object_prepare($node); // Set some default values.
 
     // Let's add standard body field
     $node->body[$node->language][0]['value'] = $data['p_thongso'];
-    $node->body[$node->language][0]['format'] = 'filtered_html';
+    $node->body[$node->language][0]['format'] = 'full_html';
 
     // Let's add some CCK/Fields API field. This is pretty similar to the body example
-    $node->field_price[$node->language][0]['value'] = $data['p_dongia'];
-    $node->field_code[$node->language][0]['value'] = $data['p_max'];
+    $node->field_price[$node->language][0]['value'] = (int)$data['p_dongia'];
+    $node->field_code[$node->language][0]['value'] = $data['p_ma'];
 
     if($data['tid'])
     {
@@ -46,28 +48,33 @@ function importNode($data,$types,$menus){
     //
     for($i=1;$i<=9;$i++){
         if($data['image0'.$i]){
-            $file =  array(
-                'uid' => 1,
-                'uri' => 'public://'.$data['image0'.$i],
-                'filemime' => 'image/jpeg',
-                'status' => 1,
-            );
-            $node->field_image[LANGUAGE_NONE][0] = $file;
+            $filename=$data['image0'.$i];
+            $url="http://noithattructuyen.net/images/product/".$filename;
+            $file = file_save_data(file_get_contents($url), 'public://' . $filename, FILE_EXISTS_RENAME);
+
+            $node->field_image[$node->language][] = (array)$file;
         }
 
-        var_dump($node);die();
+    }
+    $node = node_submit($node); // Prepare node for a submit
+    node_save($node); // After this call we'll get a nid
+    if($data['metatitle']){
+        $metatags[$node->language]['title']=$data['metatitle'];
+        $metatags[$node->language]['description']=$data['metakey'];
+        $metatags[$node->language]['keywords']=$data['metadesc'];
+        metatag_metatags_save('node',$node->nid,$node->vid,$metatags);
     }
 
-
-
 }
 
-$data=json_decode(file_get_contents('tbl_products.json'),true);
+$datas=json_decode(file_get_contents('tbl_products.json'),true);
+$data_done=json_decode(file_get_contents('tbl_products_imported.json'),true);
 $types=json_decode(file_get_contents('tbl_type.json'),true);
 $menus=json_decode(file_get_contents('tbl_menu.json'),true);
-foreach ($data as &$item){
-    importNode($item,$types,$menus);
-    die('xxx');
+foreach ($datas as $key=>$item){
+    importNode($item,$data_done,$types,$menus);
+    unset($datas[$key]);
+    file_put_contents('tbl_products.json',json_encode($datas));
+    break;
 }
-unset($item);
-#file_put_contents('tbl_menu_news.json',json_encode($data));
+?>
