@@ -1,0 +1,28 @@
+.view-news-list{
+  .views-row{
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0px;
+    border-bottom: 1px solid #dddddd;
+    .views-field-field-image{
+      float: left;
+      max-width: 30%;
+      margin-right: 15px;
+    }
+    .views-field-title{
+      a{
+        color: #2451a3;
+        font-size: 13px;
+        font-weight: bold;
+      }
+    }
+    .views-field-view-node{
+      a{
+        color: #ff6600;
+        &:after{
+          content: " >>";
+        }
+      }
+    }
+  }
+}
