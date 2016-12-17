@@ -975,6 +975,16 @@ body {
   color: #FFFFFF;
 }
 
+/* line 2, ../scss/components/_prouduct-list.scss */
+.view-category-item .views-row {
+  margin-bottom: 15px;
+}
+
+/* line 7, ../scss/components/_prouduct-list.scss */
+.view-product-list .views-row {
+  margin-bottom: 15px;
+}
+
 /* line 3, ../scss/components/_page-category-list.scss */
 .view-category-list .block-title h2 {
   margin: 0px;
