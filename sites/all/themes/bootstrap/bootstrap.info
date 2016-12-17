@@ -9,7 +9,8 @@ stylesheets[all][]=css/styles.css
 
 simplytest_dependencies[] = jquery_update
 
-
+scripts[]=js/jquery.matchHeight.js
+scripts[]=js/scripts.js
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
