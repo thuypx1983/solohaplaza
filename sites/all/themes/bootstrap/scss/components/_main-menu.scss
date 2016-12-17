@@ -7,9 +7,12 @@
     padding-top: 3px;
     width: 100%;
     ul.tb-megamenu-nav{
-      .tb-megamenu-submenu{
-        padding-left: 10px !important;
+      .level-1{
+        &>.tb-megamenu-submenu{
+          padding-left: 10px !important;
+        }
       }
+
       position: relative;
       &.nav{
         &>li.tb-megamenu-item{
