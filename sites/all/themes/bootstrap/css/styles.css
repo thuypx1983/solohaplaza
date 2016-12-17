@@ -977,12 +977,12 @@ body {
 
 /* line 2, ../scss/components/_prouduct-list.scss */
 .view-category-item .views-row {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 /* line 7, ../scss/components/_prouduct-list.scss */
 .view-product-list .views-row {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 /* line 3, ../scss/components/_page-category-list.scss */
