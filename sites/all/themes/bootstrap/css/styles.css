@@ -435,7 +435,7 @@ body {
 /*Fix the width to ensure the next item jump to below */
 /* line 3, ../scss/components/_main-menu.scss */
 .html .tb-megamenu {
-  background: transparent url("../images/category_content_bullet.png") no-repeat scroll center top;
+  background-color: #fff;
   border-top: 2px solid #4a6fb2;
   margin: 0;
   padding-top: 3px;
@@ -449,11 +449,12 @@ body {
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item {
   position: initial;
   margin-bottom: 2px;
-  background: #ffffff url("../images/category_li_bg.gif") repeat-x scroll center bottom;
+  border-bottom: 1px solid #cccccc;
+  background: #fff;
   padding-bottom: 3px;
   padding-left: 5px;
 }
-/* line 18, ../scss/components/_main-menu.scss */
+/* line 19, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle {
   padding: 5px 5px 5px 40px;
   color: #333;
@@ -463,11 +464,11 @@ body {
   line-height: 24px;
   font-weight: normal;
 }
-/* line 26, ../scss/components/_main-menu.scss */
+/* line 27, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle:hover {
   text-decoration: underline;
 }
-/* line 29, ../scss/components/_main-menu.scss */
+/* line 30, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon {
   background: transparent url("../images/icon.png") no-repeat scroll 0 -113px;
   display: inline-block;
@@ -476,93 +477,93 @@ body {
   margin: 0 8px 0 6px;
   width: 28px;
 }
-/* line 37, ../scss/components/_main-menu.scss */
+/* line 38, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-6 {
   background-position: -56px -113px;
 }
-/* line 40, ../scss/components/_main-menu.scss */
+/* line 41, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-7 {
   background-position: -392px -32px;
 }
-/* line 43, ../scss/components/_main-menu.scss */
+/* line 44, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-1089 {
   background-position: -452px -59px;
 }
-/* line 46, ../scss/components/_main-menu.scss */
+/* line 47, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-8 {
   background-position: -84px -113px;
 }
-/* line 49, ../scss/components/_main-menu.scss */
+/* line 50, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-9 {
   background-position: -112px -113px;
 }
-/* line 52, ../scss/components/_main-menu.scss */
+/* line 53, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-4 {
   background-position: -365px -35px;
 }
-/* line 55, ../scss/components/_main-menu.scss */
+/* line 56, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-14 {
   background-position: -168px -113px;
 }
-/* line 58, ../scss/components/_main-menu.scss */
+/* line 59, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-13 {
   background-position: -196px -113px;
 }
-/* line 61, ../scss/components/_main-menu.scss */
+/* line 62, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-11 {
   background-position: -252px -113px;
 }
-/* line 64, ../scss/components/_main-menu.scss */
+/* line 65, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-10 {
   background-position: -224px -113px;
 }
-/* line 67, ../scss/components/_main-menu.scss */
+/* line 68, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-198 {
   background-position: -280px -113px;
 }
-/* line 70, ../scss/components/_main-menu.scss */
+/* line 71, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-465 {
   background-position: -424px -33px;
 }
-/* line 74, ../scss/components/_main-menu.scss */
+/* line 75, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item .mega-dropdown-menu {
   margin-left: 100%;
 }
-/* line 80, ../scss/components/_main-menu.scss */
+/* line 81, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav li a {
   font-size: 12px !important;
 }
-/* line 82, ../scss/components/_main-menu.scss */
+/* line 83, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav li a:hover {
   background-color: transparent !important;
 }
-/* line 86, ../scss/components/_main-menu.scss */
+/* line 87, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav li:hover {
   background-color: transparent !important;
 }
-/* line 88, ../scss/components/_main-menu.scss */
+/* line 89, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav li:hover a {
   background-color: transparent !important;
 }
-/* line 92, ../scss/components/_main-menu.scss */
+/* line 93, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav li a.mega-group-title {
   text-transform: none !important;
   color: red  !important;
 }
-/* line 98, ../scss/components/_main-menu.scss */
+/* line 99, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav li.level-2 a.mega-group-title {
   padding-left: 0px !important;
 }
-/* line 101, ../scss/components/_main-menu.scss */
+/* line 102, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav li.level-2 > a {
   font-weight: bold;
   color: red;
 }
-/* line 106, ../scss/components/_main-menu.scss */
+/* line 107, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav .mega-inner {
   padding-left: 0px !important;
 }
-/* line 114, ../scss/components/_main-menu.scss */
+/* line 115, ../scss/components/_main-menu.scss */
 .html .well {
   padding: 0px;
   background-color: transparent;
@@ -570,24 +571,24 @@ body {
   border-radius: 0px;
   box-shadow: none;
 }
-/* line 123, ../scss/components/_main-menu.scss */
+/* line 124, ../scss/components/_main-menu.scss */
 .html.not-front #block-tb-megamenu-main-menu .tb-megamenu {
   display: none;
 }
-/* line 127, ../scss/components/_main-menu.scss */
+/* line 128, ../scss/components/_main-menu.scss */
 .html.not-front #block-tb-megamenu-main-menu:hover .tb-megamenu {
   display: block;
 }
-/* line 134, ../scss/components/_main-menu.scss */
+/* line 135, ../scss/components/_main-menu.scss */
 .html.not-front #block-tb-megamenu-main-menu {
   margin-top: 0px;
   position: relative;
 }
-/* line 135, ../scss/components/_main-menu.scss */
+/* line 136, ../scss/components/_main-menu.scss */
 .html.not-front #block-tb-megamenu-main-menu .block-wapper {
   border-bottom: 2px solid #4a6fb2;
 }
-/* line 140, ../scss/components/_main-menu.scss */
+/* line 141, ../scss/components/_main-menu.scss */
 .html.not-front #block-tb-megamenu-main-menu .tb-megamenu {
   z-index: 9999;
   position: absolute;
@@ -595,34 +596,34 @@ body {
 }
 
 /*Fix the width to ensure the next item jump to below */
-/* line 151, ../scss/components/_main-menu.scss */
+/* line 152, ../scss/components/_main-menu.scss */
 .tb-megamenu-item {
   width: 100%;
 }
 
 /*Moving the Sub Menu position*/
-/* line 156, ../scss/components/_main-menu.scss */
+/* line 157, ../scss/components/_main-menu.scss */
 .tb-megamenu .dropdown-menu {
   width: 100%;
   margin-left: 150px;
   top: 0px;
 }
 
-/* line 161, ../scss/components/_main-menu.scss */
+/* line 162, ../scss/components/_main-menu.scss */
 .tb-megamenu-nav li.tb-megamenu-item.dropdown {
   position: initial;
 }
 
-/* line 164, ../scss/components/_main-menu.scss */
+/* line 165, ../scss/components/_main-menu.scss */
 .tb-megamenu-nav {
   position: relative;
 }
 
-/* line 167, ../scss/components/_main-menu.scss */
+/* line 168, ../scss/components/_main-menu.scss */
 .main-category {
   margin-top: -43px;
 }
-/* line 169, ../scss/components/_main-menu.scss */
+/* line 170, ../scss/components/_main-menu.scss */
 .main-category .block-title {
   background: transparent url("../images/category_h3_bg.gif") repeat-x scroll center bottom;
   border-radius: 3px 3px 0 0;
