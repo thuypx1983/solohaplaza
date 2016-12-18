@@ -451,14 +451,13 @@ body {
 }
 /* line 18, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item {
-  position: initial;
   margin-bottom: 2px;
   border-bottom: 1px solid #cccccc;
   background: #fff;
   padding-bottom: 3px;
   padding-left: 5px;
 }
-/* line 25, ../scss/components/_main-menu.scss */
+/* line 24, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle {
   padding: 5px 5px 5px 40px;
   color: #333;
@@ -468,11 +467,11 @@ body {
   line-height: 24px;
   font-weight: normal;
 }
-/* line 33, ../scss/components/_main-menu.scss */
+/* line 32, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle:hover {
   text-decoration: underline;
 }
-/* line 36, ../scss/components/_main-menu.scss */
+/* line 35, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon {
   background: transparent url("../images/icon.png") no-repeat scroll 0 -113px;
   display: inline-block;
@@ -481,93 +480,93 @@ body {
   margin: 0 8px 0 6px;
   width: 28px;
 }
-/* line 44, ../scss/components/_main-menu.scss */
+/* line 43, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-6 {
   background-position: -56px -113px;
 }
-/* line 47, ../scss/components/_main-menu.scss */
+/* line 46, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-7 {
   background-position: -392px -32px;
 }
-/* line 50, ../scss/components/_main-menu.scss */
+/* line 49, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-1089 {
   background-position: -452px -59px;
 }
-/* line 53, ../scss/components/_main-menu.scss */
+/* line 52, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-8 {
   background-position: -84px -113px;
 }
-/* line 56, ../scss/components/_main-menu.scss */
+/* line 55, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-9 {
   background-position: -112px -113px;
 }
-/* line 59, ../scss/components/_main-menu.scss */
+/* line 58, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-4 {
   background-position: -365px -35px;
 }
-/* line 62, ../scss/components/_main-menu.scss */
+/* line 61, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-14 {
   background-position: -168px -113px;
 }
-/* line 65, ../scss/components/_main-menu.scss */
+/* line 64, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-13 {
   background-position: -196px -113px;
 }
-/* line 68, ../scss/components/_main-menu.scss */
+/* line 67, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-11 {
   background-position: -252px -113px;
 }
-/* line 71, ../scss/components/_main-menu.scss */
+/* line 70, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-10 {
   background-position: -224px -113px;
 }
-/* line 74, ../scss/components/_main-menu.scss */
+/* line 73, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-198 {
   background-position: -280px -113px;
 }
-/* line 77, ../scss/components/_main-menu.scss */
+/* line 76, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item > a.dropdown-toggle .icon-465 {
   background-position: -424px -33px;
 }
-/* line 81, ../scss/components/_main-menu.scss */
+/* line 80, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav.nav > li.tb-megamenu-item .mega-dropdown-menu {
   margin-left: 100%;
 }
-/* line 87, ../scss/components/_main-menu.scss */
+/* line 86, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav li a {
   font-size: 12px !important;
 }
-/* line 89, ../scss/components/_main-menu.scss */
+/* line 88, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav li a:hover {
   background-color: transparent !important;
 }
-/* line 93, ../scss/components/_main-menu.scss */
+/* line 92, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav li:hover {
   background-color: transparent !important;
 }
-/* line 95, ../scss/components/_main-menu.scss */
+/* line 94, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav li:hover a {
   background-color: transparent !important;
 }
-/* line 99, ../scss/components/_main-menu.scss */
+/* line 98, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav li a.mega-group-title {
   text-transform: none !important;
   color: red  !important;
 }
-/* line 105, ../scss/components/_main-menu.scss */
+/* line 104, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav li.level-2 a.mega-group-title {
   padding-left: 0px !important;
 }
-/* line 108, ../scss/components/_main-menu.scss */
+/* line 107, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav li.level-2 > a {
   font-weight: bold;
   color: red;
 }
-/* line 113, ../scss/components/_main-menu.scss */
+/* line 112, ../scss/components/_main-menu.scss */
 .html .tb-megamenu ul.tb-megamenu-nav .mega-inner {
   padding-left: 0px !important;
 }
-/* line 121, ../scss/components/_main-menu.scss */
+/* line 120, ../scss/components/_main-menu.scss */
 .html .well {
   padding: 0px;
   background-color: transparent;
@@ -575,24 +574,24 @@ body {
   border-radius: 0px;
   box-shadow: none;
 }
-/* line 130, ../scss/components/_main-menu.scss */
+/* line 129, ../scss/components/_main-menu.scss */
 .html.not-front #block-tb-megamenu-main-menu .tb-megamenu {
   display: none;
 }
-/* line 134, ../scss/components/_main-menu.scss */
+/* line 133, ../scss/components/_main-menu.scss */
 .html.not-front #block-tb-megamenu-main-menu:hover .tb-megamenu {
   display: block;
 }
-/* line 141, ../scss/components/_main-menu.scss */
+/* line 140, ../scss/components/_main-menu.scss */
 .html.not-front #block-tb-megamenu-main-menu {
   margin-top: 0px;
   position: relative;
 }
-/* line 142, ../scss/components/_main-menu.scss */
+/* line 141, ../scss/components/_main-menu.scss */
 .html.not-front #block-tb-megamenu-main-menu .block-wapper {
   border-bottom: 2px solid #4a6fb2;
 }
-/* line 147, ../scss/components/_main-menu.scss */
+/* line 146, ../scss/components/_main-menu.scss */
 .html.not-front #block-tb-megamenu-main-menu .tb-megamenu {
   z-index: 9999;
   position: absolute;
@@ -600,34 +599,29 @@ body {
 }
 
 /*Fix the width to ensure the next item jump to below */
-/* line 158, ../scss/components/_main-menu.scss */
+/* line 157, ../scss/components/_main-menu.scss */
 .tb-megamenu-item {
   width: 100%;
 }
 
 /*Moving the Sub Menu position*/
-/* line 163, ../scss/components/_main-menu.scss */
+/* line 162, ../scss/components/_main-menu.scss */
 .tb-megamenu .dropdown-menu {
   width: 100%;
   margin-left: 150px;
   top: 0px;
 }
 
-/* line 168, ../scss/components/_main-menu.scss */
+/* line 167, ../scss/components/_main-menu.scss */
 .tb-megamenu-nav li.tb-megamenu-item.dropdown {
-  position: initial;
-}
-
-/* line 171, ../scss/components/_main-menu.scss */
-.tb-megamenu-nav {
   position: relative;
 }
 
-/* line 174, ../scss/components/_main-menu.scss */
+/* line 171, ../scss/components/_main-menu.scss */
 .main-category {
   margin-top: -43px;
 }
-/* line 176, ../scss/components/_main-menu.scss */
+/* line 173, ../scss/components/_main-menu.scss */
 .main-category .block-title {
   background: transparent;
   background-color: #e43a3d;

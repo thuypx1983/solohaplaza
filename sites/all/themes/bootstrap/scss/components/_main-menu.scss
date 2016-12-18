@@ -16,7 +16,6 @@
       position: relative;
       &.nav{
         &>li.tb-megamenu-item{
-          position: initial;
           margin-bottom: 2px;
           border-bottom: 1px solid #cccccc;
           background: #fff;
@@ -166,11 +165,9 @@ margin-left: 150px;
 top: 0px;
 }
 .tb-megamenu-nav li.tb-megamenu-item.dropdown{
-  position: initial;
-}
-.tb-megamenu-nav{
   position: relative;
 }
+
 .main-category{
   margin-top: -43px;
   .block-title{
