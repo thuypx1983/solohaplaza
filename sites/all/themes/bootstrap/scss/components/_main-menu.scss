@@ -174,7 +174,9 @@ top: 0px;
 .main-category{
   margin-top: -43px;
   .block-title{
-    background: rgba(0, 0, 0, 0) url("../images/category_h3_bg.gif") repeat-x scroll center bottom;
+    //background: rgba(0, 0, 0, 0) url("../images/category_h3_bg.gif") repeat-x scroll center bottom;
+    background-color: $color-blue;
+    background: transparent;
     border-radius: 3px 3px 0 0;
     color: #ffffff;
     display: inline-block;

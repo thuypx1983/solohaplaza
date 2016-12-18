@@ -629,7 +629,8 @@ body {
 }
 /* line 176, ../scss/components/_main-menu.scss */
 .main-category .block-title {
-  background: transparent url("../images/category_h3_bg.gif") repeat-x scroll center bottom;
+  background-color: #e43a3d;
+  background: transparent;
   border-radius: 3px 3px 0 0;
   color: #ffffff;
   display: inline-block;
