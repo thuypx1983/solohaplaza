@@ -120,7 +120,7 @@
 .bg-header .header-center .service ul li a i {
   font-size: 40px;
   float: left;
-  color: #454998;
+  color: #e43a3d;
 }
 /* line 94, ../scss/global/_header.scss */
 .bg-header .header-center .service ul li a span {
@@ -216,7 +216,7 @@
 .bg-header .header-bottom .search-block .block-wapper .views-exposed-form .views-exposed-widget .btn {
   margin-top: 0px;
   color: #FFFFFF;
-  background-color: #4A6FB2;
+  background-color: #e43a3d;
   border-radius: 0px;
 }
 /* line 196, ../scss/global/_header.scss */
@@ -311,7 +311,7 @@ body {
 .product-item .views-row > .views-field-view-node a {
   display: none;
   padding: 5px 5px;
-  background-color: #4A6FB2;
+  background-color: #e43a3d;
   color: #FFFFFF;
 }
 /* line 81, ../scss/global/_general.scss */
@@ -342,7 +342,7 @@ body {
 #slick-views-updated-product-2 .slick__slide .views-field-view-node a {
   display: none;
   padding: 5px 5px;
-  background-color: #4A6FB2;
+  background-color: #e43a3d;
   color: #FFFFFF;
 }
 /* line 111, ../scss/global/_general.scss */
@@ -351,7 +351,7 @@ body {
 }
 /* line 115, ../scss/global/_general.scss */
 #slick-views-updated-product-2 .slick__slide:hover .views-field-field-image {
-  border: 1px solid #4A6FB2;
+  border: 1px solid #e43a3d;
 }
 
 /* line 123, ../scss/global/_general.scss */
@@ -360,7 +360,7 @@ body {
 }
 /* line 127, ../scss/global/_general.scss */
 .product-item .views-row:hover .views-field-field-image {
-  border: 1px solid #4A6FB2;
+  border: 1px solid #e43a3d;
 }
 
 /* line 133, ../scss/global/_general.scss */
