@@ -1,31 +1,36 @@
 /*Fix the width to ensure the next item jump to below */
 .html{
   .tb-megamenu {
-    background: transparent url("../images/category_content_bullet.png") no-repeat scroll center top;
-    border-top: 2px solid #4a6fb2;
+    background-color: #fff;
+    border-top: 2px solid $color-blue;
     margin: 0;
     padding-top: 3px;
     width: 100%;
     ul.tb-megamenu-nav{
+      .level-1{
+        &>.tb-megamenu-submenu{
+          padding-left: 10px !important;
+        }
+      }
+
       position: relative;
       &.nav{
         &>li.tb-megamenu-item{
-          position: initial;
           margin-bottom: 2px;
-          background: #ffffff url("../images/category_li_bg.gif") repeat-x scroll center bottom;
+          border-bottom: 1px solid #cccccc;
+          background: #fff;
           padding-bottom: 3px;
+          padding-left: 5px;
           &>a.dropdown-toggle{
+            padding: 5px 5px 5px 40px;
             color:$color-text;
             background-color: transparent;
-            padding: 5px;
             border: none;
             font: $font-menu;
             line-height: 24px;
             font-weight: normal;
             &:hover{
-              background-image: none;
-              background-color: $color-blue;
-              color: $color-white;
+             text-decoration: underline;
             }
             .icon {
               background: transparent url("../images/icon.png") no-repeat scroll 0 -113px;
@@ -77,10 +82,41 @@
           }
         }
       }
+      li{
+        a{
+          font-size: 12px !important;
+          &:hover{
+            background-color: transparent !important;
+          }
+        }
+        &:hover{
+          background-color: transparent !important;
+          a{
+              background-color: transparent !important;
+          }
+        }
+        a.mega-group-title{
+          text-transform: none !important;
+          color:red  !important;
+        }
+      }
+      li.level-2{
+        a.mega-group-title{
+          padding-left: 0px !important;
+        }
+        &>a{
+          font-weight: bold;
+          color: red;
+        }
+      }
+      .mega-inner{
+        padding-left: 0px !important;
+      }
     }
 
 
   }
+
   .well{
     padding: 0px;
     background-color: transparent;
@@ -129,15 +165,16 @@ margin-left: 150px;
 top: 0px;
 }
 .tb-megamenu-nav li.tb-megamenu-item.dropdown{
-  position: initial;
-}
-.tb-megamenu-nav{
   position: relative;
 }
+
 .main-category{
   margin-top: -43px;
   .block-title{
-    background: rgba(0, 0, 0, 0) url("../images/category_h3_bg.gif") repeat-x scroll center bottom;
+    //background: rgba(0, 0, 0, 0) url("../images/category_h3_bg.gif") repeat-x scroll center bottom;
+    background: transparent;
+    background-color: $color-blue;
+
     border-radius: 3px 3px 0 0;
     color: #ffffff;
     display: inline-block;
