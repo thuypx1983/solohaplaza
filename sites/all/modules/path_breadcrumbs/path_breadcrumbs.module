@@ -320,37 +320,31 @@ function path_breadcrumbs_theme_registry_alter(&$theme_registry) {
  *   Rendered breadcrumbs or FALSE for no breadcrumbs.
  */
 function path_breadcrumbs_breadcrumb($variables) {
+    /* add by thuypx */
 
-    /*
-         <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-      <li itemprop="itemListElement" itemscope
-          itemtype="http://schema.org/ListItem">
-        <a itemprop="item" href="https://example.com/dresses">
-        <span itemprop="name">Dresses</span></a>
-        <meta itemprop="position" content="1" />
-      </li>
-      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a itemprop="item" href="https://example.com/dresses/real">
-        <span itemprop="name">Real Dresses</span></a>
-        <meta itemprop="position" content="2" />
-      </li>
-    </ol>
-     */
-    $output=' <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">';
-    $i=1;
-    foreach($variables['breadcrumb'] as $breadcrumb){
-        preg_match('/<a href=\"([^\"]*)\">(.*)<\/a>/iU', $breadcrumb, $result);
-        $url=$result[1];
-        $title=$result[2];
-        $output.='<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">';
-        $output.='<a itemprop="item" href="'.$url.'">
+
+    if (!path_is_admin(current_path())) {
+        // Do stuff.
+        $output=' <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">';
+        $i=1;
+        foreach($variables['breadcrumb'] as $breadcrumb){
+            preg_match('/<a href=\"([^\"]*)\">(.*)<\/a>/iU', $breadcrumb, $result);
+            $url=$result[1];
+            $title=$result[2];
+            $output.='<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">';
+            $output.='<a itemprop="item" href="'.$url.'">
                     <span itemprop="name">'.$title.'</span></a>
                     <meta itemprop="position" content="'.$i.'" />';
-        $output.='</li>';
-        $i++;
+            $output.='</li>';
+            $i++;
+        }
+        $output.='</ol>';
+        return $output;
     }
-    $output.='</ol>';
-    return $output;
+
+
+
+    /* add by thuypx */
 
   $breadcrumbs = $variables['breadcrumb'];
   if (!empty($breadcrumbs)) {
