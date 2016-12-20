@@ -1,5 +1,5 @@
 <?php
-$url_checkout = url('node/30');
+$url_checkout = url('node/3174');
 $language = $GLOBALS['language']->language;
 $qty=0;
 foreach($_SESSION['product_cart'] as $item){
@@ -62,7 +62,6 @@ foreach($_SESSION['product_cart_option'] as $item){
                 <?php
                 foreach ($item_list as $tid => $items) {
                     $term = taxonomy_term_load($tid);
-                    $term = i18n_taxonomy_localize_terms($term);
                     echo '<li class="cart-category">' . $term->name . '</li>';
 
                     foreach ($items as $node) {
@@ -86,19 +85,6 @@ foreach($_SESSION['product_cart_option'] as $item){
                     </div>
                 </li>';
                     ?>
-                    <?php /*<li>
-                    <div class="product-title"><?php
-                        echo t('Energy:').' '. $option['energy'][$language]->name;
-                        echo t('Height:').' '.$option['height'];
-                        echo t('width:').' '.$option['width'];
-                        echo t('maximum_charge:').' '.$option['maximum_charge'];
-
-                        ?></div>
-                    <div class="product-remove">
-                        <a href="<?php echo $url_checkout?>"><?php echo t('Voir fiche')?></a>
-                        <!--<button class="btn-product-cart-remove" data-pid="<?php echo $node->nid?>"><?php echo t('Remove')?></button>-->
-                    </div>
-                </li> */ ?>
                 <?php
                 }
                 ?>

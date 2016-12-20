@@ -843,4 +843,115 @@ body {
 ol.breadcrumb li {
   padding-right: 0px; }
 
+.add_tocart_popup .product-cart-popup {
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 45px 160px 120px; }
+  .add_tocart_popup .product-cart-popup .product-cart-popup-title {
+    font: 27px/30px "Futuratbold", Verdana, Arial, sans-serif;
+    color: #e43a3d;
+    display: inline-block;
+    width: 100%;
+    margin: 60px 0px 75px 0px;
+    white-space: nowrap; }
+    .add_tocart_popup .product-cart-popup .product-cart-popup-title.comfirm {
+      margin: 30px 0px 50px 0px;
+      font-size: 30px; }
+  .add_tocart_popup .product-cart-popup .text-ct {
+    color: #434343;
+    font-family: "OpenSansLight", Verdana, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: none;
+    text-align: left; }
+    .add_tocart_popup .product-cart-popup .text-ct p {
+      margin-bottom: 15px; }
+  .add_tocart_popup .product-cart-popup .info {
+    font: 18px/25px "Futuratboldoblique", Verdana, Arial, sans-serif;
+    color: #e43a3d;
+    margin-bottom: 65px;
+    text-transform: none; }
+  .add_tocart_popup .product-cart-popup .result_title {
+    font: 20px/20px "Futuratmedium", Verdana, Arial, sans-serif;
+    color: #818181;
+    margin-bottom: 35px;
+    text-transform: none; }
+  .add_tocart_popup .product-cart-popup .product-cart-lists .product-title {
+    padding: 15px 0px;
+    border-bottom: 1px solid #cfcfcf;
+    font: 15px/20px "OpenSansBold", Verdana, Arial, sans-serif;
+    color: #3d3d3d;
+    letter-spacing: 1px; }
+    .add_tocart_popup .product-cart-popup .product-cart-lists .product-title:first-child {
+      border-top: 1px solid #cfcfcf; }
+    .add_tocart_popup .product-cart-popup .product-cart-lists .product-title span {
+      font: 15px/20px "OpenSansRegular", Verdana, Arial, sans-serif; }
+    .add_tocart_popup .product-cart-popup .product-cart-lists .product-title .quantity {
+      position: relative;
+      padding-left: 25px;
+      float: right;
+      margin-right: 25px;
+      text-transform: none; }
+      .add_tocart_popup .product-cart-popup .product-cart-lists .product-title .quantity:before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 30px;
+        background: #e9e9e9;
+        top: -5px;
+        left: 0; }
+  .add_tocart_popup .product-cart-popup .cart-checkout {
+    text-align: right;
+    margin-top: 110px; }
+    .add_tocart_popup .product-cart-popup .cart-checkout .bnt-continue {
+      font: 15px/20px "Futuratbold", Verdana, Arial, sans-serif;
+      color: #707070;
+      letter-spacing: 1px;
+      padding-bottom: 2px;
+      border-bottom: 1px solid #707070;
+      display: inline-block;
+      margin-bottom: 30px; }
+    .add_tocart_popup .product-cart-popup .cart-checkout .btn-view-cart {
+      display: inline-block;
+      margin-left: 30px;
+      font-family: "Futuratbold", Verdana, Arial, sans-serif;
+      padding: 17px 40px;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      background: #e94635; }
+  @media only screen and (max-width: 480px) {
+    .add_tocart_popup .product-cart-popup {
+      padding: 0px; }
+      .add_tocart_popup .product-cart-popup .cart-checkout {
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        max-width: 320px;
+        display: inline-block; }
+        .add_tocart_popup .product-cart-popup .cart-checkout .btn-view-cart {
+          margin-left: 0; }
+      .add_tocart_popup .product-cart-popup .product-cart-popup-title {
+        font-size: 20px !important;
+        line-height: 25px; }
+      .add_tocart_popup .product-cart-popup .info {
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 35px; }
+      .add_tocart_popup .product-cart-popup .result_title {
+        font-size: 16px; }
+      .add_tocart_popup .product-cart-popup .product-cart-lists .product-title {
+        font-size: 12px;
+        text-align: left; }
+        .add_tocart_popup .product-cart-popup .product-cart-lists .product-title span {
+          font-size: 12px; }
+        .add_tocart_popup .product-cart-popup .product-cart-lists .product-title .quantity {
+          margin-right: 0;
+          padding-left: 15px; } }
+
+.fancybox-wrap .text-ct {
+  max-width: 700px; }
+
 /*# sourceMappingURL=styles.css.map */
