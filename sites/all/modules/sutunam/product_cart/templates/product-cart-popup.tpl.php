@@ -1,5 +1,5 @@
 <?php
-$url_checkout=url('node/3174');
+$url_checkout=url('node/3176');
 ?>
 <!--<div class="cart-introduction">
     <div class="cart-service">

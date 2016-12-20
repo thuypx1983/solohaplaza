@@ -1,5 +1,5 @@
 <?php
-$url_checkout = url('node/3174');
+$url_checkout = url('node/3176');
 $language = $GLOBALS['language']->language;
 $qty=0;
 foreach($_SESSION['product_cart'] as $item){
