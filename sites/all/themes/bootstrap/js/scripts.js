@@ -7,6 +7,10 @@
             target: null,
             remove: false
         });
+
+        $('#block-menu-menu-hot-menu ul.menu>li>a').click(function(){
+            window.location.href=$(this).attr('href');
+        })
     })
 
 
