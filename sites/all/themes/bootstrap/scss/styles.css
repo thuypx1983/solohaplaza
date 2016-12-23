@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Background */
 /* Break point */
 /* Mixin style */
@@ -959,9 +958,11 @@ ol.breadcrumb li {
 
 .reference-autocomplete {
   padding-bottom: 10px; }
+  .reference-autocomplete:hover {
+    background-color: transparent; }
   .reference-autocomplete .image img {
     float: left;
     max-width: 100px;
-    padding-right: 10pxế; }
+    padding-right: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
