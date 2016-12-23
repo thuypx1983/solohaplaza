@@ -134,10 +134,10 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
   $matches = array();
   $view->row_index = 0;
   foreach ($view->result as $index => $row) {
-
+      $img[0]=$row->field_field_image[0];
       //added by thuypx
     $html='<a href="'.url('node/'.$row->nid).'">
-        <div class="image">'.render($row->field_field_image).'</div>
+        <div class="image">'.render($img).'</div>
         <div class="title">'.$row->node_title.'</div>
         <div class="code">'.render($row->field_field_code).'</div>
         <div class="price">'.render($row->field_field_price).'</div>
