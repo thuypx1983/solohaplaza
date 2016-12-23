@@ -11,6 +11,10 @@
         $('#block-menu-menu-hot-menu ul.menu>li>a').click(function(){
             window.location.href=$(this).attr('href');
         })
+
+        $('#views-exposed-form-tim-kiem-page').on('click','.reference-autocomplete',function(){
+            window.location.href=$(this).find('a').attr('href');
+        })
     })
 
 

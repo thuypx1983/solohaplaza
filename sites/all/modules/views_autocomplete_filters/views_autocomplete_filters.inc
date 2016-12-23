@@ -136,11 +136,12 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
   foreach ($view->result as $index => $row) {
 
       //added by thuypx
-    $html='
+    $html='<a href="'.url('node/'.$row->nid).'">
         <div class="image">'.render($row->field_field_image).'</div>
         <div class="title">'.$row->node_title.'</div>
         <div class="code">'.render($row->field_field_code).'</div>
         <div class="price">'.render($row->field_field_price).'</div>
+        </a>
 ';
     $view->row_index = $index;
     $rendered_field = $raw_field = '';

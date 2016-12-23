@@ -957,7 +957,9 @@ ol.breadcrumb li {
   max-width: 700px; }
 
 .reference-autocomplete {
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #dddddd; }
   .reference-autocomplete:hover {
     background-color: transparent; }
   .reference-autocomplete .image img {
