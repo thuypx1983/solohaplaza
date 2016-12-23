@@ -271,6 +271,13 @@ body {
   padding-left: 15px;
   padding-right: 15px; }
 
+#block-multiblock-1 .block-content {
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding-left: 15px;
+  padding-right: 15px; }
+
 .footer-middle .block .block-title {
   background: transparent;
   border-top: none; }
