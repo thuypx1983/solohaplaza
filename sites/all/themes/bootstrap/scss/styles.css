@@ -263,7 +263,9 @@ body {
   font: 13px/1.5em Arial,Helvetica,sans-serif; }
 
 #block-block-14 .block-content {
-  border: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
   padding-left: 15px;
   padding-right: 15px; }
 
