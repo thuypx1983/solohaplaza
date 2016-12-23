@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Background */
 /* Break point */
 /* Mixin style */
@@ -842,6 +843,8 @@ body {
 
 ol.breadcrumb li {
   padding-right: 0px; }
+  ol.breadcrumb li:last-child a {
+    font-weight: bold; }
 
 .add_tocart_popup .product-cart-popup {
   text-transform: uppercase;
@@ -953,5 +956,12 @@ ol.breadcrumb li {
 
 .fancybox-wrap .text-ct {
   max-width: 700px; }
+
+.reference-autocomplete {
+  padding-bottom: 10px; }
+  .reference-autocomplete .image img {
+    float: left;
+    max-width: 100px;
+    padding-right: 10pxế; }
 
 /*# sourceMappingURL=styles.css.map */
