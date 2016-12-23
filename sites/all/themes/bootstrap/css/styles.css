@@ -262,6 +262,11 @@ body {
 .form-control {
   font: 13px/1.5em Arial,Helvetica,sans-serif; }
 
+.block-block-14 .block-content {
+  border: 1px solid #cccccc;
+  padding-left: 15px;
+  padding-right: 15px; }
+
 .footer-middle .block .block-title {
   background: transparent;
   border-top: none; }
