@@ -496,11 +496,14 @@ body {
       #block-block-11 ul li a {
         display: block; }
 
-.block-support {
+.block-support .block-content {
   border-bottom: 1px solid #cccccc;
   border-left: 1px solid #cccccc;
   border-right: 1px solid #cccccc;
   padding: 10px 5px; }
+
+#block-views-home-page-banner-block {
+  padding-left: 0px; }
 
 .home-banner .slick-dots {
   position: absolute;
