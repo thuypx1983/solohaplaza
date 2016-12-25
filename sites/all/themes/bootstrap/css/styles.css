@@ -496,13 +496,11 @@ body {
       #block-block-11 ul li a {
         display: block; }
 
-.adv-block {
-  padding-left: 0px; }
-  .adv-block ul {
-    padding: 0px; }
-    .adv-block ul li {
-      list-style: none;
-      margin-bottom: 10px; }
+.block-support {
+  border-bottom: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  padding: 10px 5px; }
 
 .home-banner .slick-dots {
   position: absolute;
