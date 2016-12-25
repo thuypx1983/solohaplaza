@@ -502,13 +502,13 @@ body {
   border-right: 1px solid #cccccc;
   padding: 10px 5px; }
 
-#block-views-home-page-banner-block {
-  padding-left: 0px; }
-
 .home-banner .slick-dots {
   position: absolute;
   bottom: 20px;
   left: 20px; }
+
+.col-sm-9 .row {
+  margin-left: -30px; }
 
 .updated-product {
   background-color: #FFFFFF;
