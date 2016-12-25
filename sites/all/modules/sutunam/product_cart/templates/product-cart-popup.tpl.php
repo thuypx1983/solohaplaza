@@ -1,5 +1,5 @@
 <?php
-$url_checkout=url('content/votre-demande-de-devis');
+$url_checkout=url('node/3176');
 ?>
 <!--<div class="cart-introduction">
     <div class="cart-service">
@@ -9,9 +9,9 @@ $url_checkout=url('content/votre-demande-de-devis');
 </div>-->
 <div class="product-cart-view add_tocart_popup">
      <div class="product-cart-popup">
-        <div class="cart-icon"> <img class="img_scroll" src="<?php print '/sites/all/themes/hueloc/images/icon_poup_cart.png';?>"></div>
+        <div class="cart-icon"> <img class="img_scroll" src="<?php print '/sites/all/themes/bootstrap/images/icon_poup_cart.png';?>"></div>
         <div class="product-cart-popup-title">
-            <span><?php echo t('Votre machine a bien été ajoutée a votre devis')?></span>
+            <span><?php echo t('Sản phẩm của bạn đã được thêm vào giỏ hàng')?></span>
         </div>
         <ul class="product-cart-lists">
             <?php
@@ -29,8 +29,8 @@ $url_checkout=url('content/votre-demande-de-devis');
             ?>
         </ul>
         <div class="cart-checkout">
-            <a class="bnt-continue" href="javascript:void(0)"><?php echo t('CONTINUEZ VOS RECHERCHES')?></a>
-            <a class="btn-view-cart" href="<?php echo $url_checkout?>"><?php echo t('voir votre devis')?></a>
+            <a class="bnt-continue" href="javascript:void(0)"><?php echo t('TIẾP TỤC MUA HÀNG')?></a>
+            <a class="btn-view-cart" href="<?php echo $url_checkout?>"><?php echo t('THANH TOÁN')?></a>
         </div>
     </div>
 </div>

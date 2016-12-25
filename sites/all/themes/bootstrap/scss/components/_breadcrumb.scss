@@ -1,0 +1,10 @@
+ol.breadcrumb{
+  li{
+    padding-right: 0px;
+    &:last-child{
+      a{
+        font-weight: bold;
+      }
+    }
+  }
+}

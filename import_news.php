@@ -67,8 +67,8 @@ function importNode($data){
     node_save($node); // After this call we'll get a nid
     if($data['metatitle']){
         $metatags[$node->language]['title']['value']=$data['metatitle'];
-        $metatags[$node->language]['description']['value']=$data['metakey'];
-        $metatags[$node->language]['keywords']['value']=$data['metadesc'];
+        $metatags[$node->language]['description']['value']=$data['metadesc'];
+        $metatags[$node->language]['keywords']['value']=$data['metakey'];
         metatag_metatags_save('node',$node->nid,$node->vid,$metatags);
     }
 
@@ -79,8 +79,13 @@ $datas=json_decode(file_get_contents('tbl_news.json'),true);
 foreach ($datas as $key=>$item){
     importNode($item);
     unset($datas[$key]);
-    file_put_contents('tbl_products.json',json_encode($datas));
-    die('kkk');
+    file_put_contents('tbl_news.json',json_encode($datas));
+   
     break;
 }
 ?>
+<script>
+setTimeout(function(){
+   window.location.reload(1);
+}, 1000);
+</script>
