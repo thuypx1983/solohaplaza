@@ -507,6 +507,9 @@ body {
   bottom: 20px;
   left: 20px; }
 
+.col-sm-9 .row {
+  margin-left: -30px; }
+
 .updated-product {
   background-color: #FFFFFF;
   padding-bottom: 15px; }
