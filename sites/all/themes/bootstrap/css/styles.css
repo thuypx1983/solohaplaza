@@ -17,6 +17,9 @@
 .front .bg-header .header-bottom .block-wapper {
   padding-left: 25%; }
 
+#block-views-home-page-banner-block {
+  padding-left: 0px; }
+
 .bg-header {
   background-color: #FFFFFF; }
   .bg-header .region-header-center {
