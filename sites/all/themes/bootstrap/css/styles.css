@@ -14,6 +14,9 @@
 /* breakpoint with one condition(min or max) */
 /* breakpoint with two conditions (min and max) */
 /*global*/
+.front .bg-header .header-bottom .block-wapper {
+  padding-left: 25%; }
+
 .bg-header {
   background-color: #FFFFFF; }
   .bg-header .region-header-center {
@@ -150,8 +153,7 @@
       line-height: 1.2em; }
   .bg-header .header-bottom .search-block .block-wapper {
     background-color: #D4D4D4;
-    border-radius: 3px 3px 0 0;
-    padding-left: 25%; }
+    border-radius: 3px 3px 0 0; }
     .bg-header .header-bottom .search-block .block-wapper .views-exposed-form .views-exposed-widget {
       padding-top: 3px;
       padding-right: 0px;
@@ -496,13 +498,11 @@ body {
       #block-block-11 ul li a {
         display: block; }
 
-.adv-block {
-  padding-left: 0px; }
-  .adv-block ul {
-    padding: 0px; }
-    .adv-block ul li {
-      list-style: none;
-      margin-bottom: 10px; }
+.block-support .block-content {
+  border-bottom: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  padding: 10px 5px; }
 
 .home-banner .slick-dots {
   position: absolute;
@@ -766,7 +766,6 @@ body {
   display: inline-block;
   width: 100%; }
 .node-type-product .node-product .field-name-field-social-button .social {
-  border-bottom: 1px solid #e2dedd;
   display: inline-block;
   margin: 0 0 10px;
   padding: 0 0 10px;

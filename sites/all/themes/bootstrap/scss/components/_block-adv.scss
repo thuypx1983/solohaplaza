@@ -1,11 +1,9 @@
-.adv-block{
-  padding-left: 0px;
-  ul{
-    padding: 0px;
-    li{
-      list-style: none;
-      margin-bottom: 10px;
-    }
+.block-support{
+  .block-content{
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    padding: 10px 5px;
   }
 }
 .home-banner{
