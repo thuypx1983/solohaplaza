@@ -136,6 +136,7 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
   foreach ($view->result as $index => $row) {
       $img[0]=$row->field_field_image[0];
       //added by thuypx
+      //demo
     $html='<a href="'.url('node/'.$row->nid).'">
         <div class="image">'.render($img).'</div>
         <div class="title">'.$row->node_title.'</div>
