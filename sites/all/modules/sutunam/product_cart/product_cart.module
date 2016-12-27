@@ -515,7 +515,7 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
     if ($form_id == 'webform_client_form_3176') {
 
         drupal_session_start();
-        $form['submitted']['product_list']['product_list']['products']['#value'] =json_encode($_SESSION['product_cart']);
+        $form['submitted']['product_list']['products']['#value'] =json_encode($_SESSION['product_cart']);
 
         #if(!isset($_SESSION['product_cart'])) return;
         $current_lang= $GLOBALS['language']->language;
