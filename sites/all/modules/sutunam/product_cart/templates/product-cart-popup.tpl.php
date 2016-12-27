@@ -13,6 +13,39 @@ $url_checkout=url('node/3176');
         <div class="product-cart-popup-title">
             <span><?php echo t('Sản phẩm của bạn đã được thêm vào giỏ hàng')?></span>
         </div>
+         <table>
+             <thead>
+             <tr>
+                 <th>Sản phẩm</th>
+                 <th>Số lượng</th>
+                 <th>Thành tiền</th>
+                 <th>Xóa</th>
+             </tr>
+             </thead>
+             <tbody>
+             <?php
+             foreach ($item_list as $node) {
+                 print_r($node);
+                 echo "<tr>";
+                     ?>
+                     <td>
+                         <?php $node->title?>
+                     </td>
+                     <td>
+                         <?php $node->title?>
+                     </td>
+                     <td>
+                         <?php $node->title?>
+                     </td>
+                     <td>
+                         <?php $node->title?>
+                     </td>
+                 <?php
+             }
+
+             ?>
+             </tbody>
+         </table>
         <ul class="product-cart-lists">
             <?php
             foreach ($item_list as $tid=>$items) {

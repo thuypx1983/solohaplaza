@@ -194,7 +194,7 @@ function _product_cart_add()
     $json['popup_cart']= theme('product_cart_popup', array(
             'title' => '',
             'content' => '',
-            'item_list' => $items,
+            'item_list' => $item_list,
 
         )
     );
