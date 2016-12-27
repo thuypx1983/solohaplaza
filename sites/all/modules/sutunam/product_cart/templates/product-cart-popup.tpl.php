@@ -25,7 +25,7 @@ $url_checkout=url('node/3176');
              <tbody>
              <?php
              foreach ($item_list as $item_id=>$item) {
-                 echo '<tr> data-pid="'.$item_id.'"';
+                 echo '<tr data-pid="'.$item_id.'">';
                      ?>
                      <td align="left">
                          <?php echo $item['node']->title?>
