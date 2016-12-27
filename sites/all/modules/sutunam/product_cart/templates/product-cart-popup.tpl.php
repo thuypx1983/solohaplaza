@@ -53,25 +53,28 @@ $url_checkout=url('node/3176');
     </div>
 </div>
 <script type="text/javascript">
-    jQuery(document).ready(function(){
-        jQuery('.bnt-continue').click(function(){
-            jQuery.fancybox.close();
-        })
-    })
+
     (function($){
-        $('fa-trash').onclick(function(){
-            var pdid=$(this).attr("data-pid");
-            var type='product';
-            var row=$(this).parent().parernt();
-            $.ajax({
-                url:'ajax/product/cart/remove',
-                type:'post',
-                dataType:'json',
-                data:{nid:pdid,type:type},
-                success:function(response){
-                    row.remove();
-                }
+        $(document).ready(function(){
+            jQuery('.bnt-continue').click(function(){
+                jQuery.fancybox.close();
+            })
+
+            $('fa-trash').onclick(function(){
+                var pdid=$(this).attr("data-pid");
+                var type='product';
+                var row=$(this).parent().parernt();
+                $.ajax({
+                    url:'ajax/product/cart/remove',
+                    type:'post',
+                    dataType:'json',
+                    data:{nid:pdid,type:type},
+                    success:function(response){
+                        row.remove();
+                    }
+                })
             })
         })
+
     })(jQuery)
 </script>
