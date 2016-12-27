@@ -31,7 +31,7 @@ $url_checkout=url('node/3176');
                          <?php echo $item['node']->title?>
                      </td>
                      <td align="left">
-                         <input data-pid="<?php $item_id?>" class="quantity" type="number" data-pid="<?php $item_id?>" name="quantity" min="1" max="15" data-price="<?php echo (int)$item['node']->field_price['und'][0]['value'];?>" value="<?php echo $item['quantity']?>">
+                         <input data-pid="<?php $item_id?>" class="quantity" type="number" data-pid="<?php echo $item_id?>" name="quantity" min="1" max="15" data-price="<?php echo (int)$item['node']->field_price['und'][0]['value'];?>" value="<?php echo $item['quantity']?>">
 
                      </td>
                      <td align="left">
@@ -83,7 +83,7 @@ $url_checkout=url('node/3176');
                     url:'ajax/product/cart/change_quantity',
                     type:'post',
                     dataType:'json',
-                    data:{nid:pdid,type:type,quantity:quantity},
+                    data:{pdid:pdid,type:type,quantity:quantity},
                     success:function(response){
 
                     }
