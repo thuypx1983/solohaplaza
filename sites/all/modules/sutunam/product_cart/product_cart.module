@@ -536,9 +536,19 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
                     '#prefix'=>'<div class="row_item product-name">'.$product->title,
                     '#suffix'=>'</div>',
                 );
-$form['submitted']['product_list']['each_item']['product_'.$product->nid]['product_quantity']=
+            $form['submitted']['product_list']['each_item']['product_'.$product->nid]['product_quantity']=
                 array(
-                    '#prefix'=>'<div class="row_item product-name"> <input type="number" min="1" value="'.$item_list[$product->nid]['quantity'].'">',
+                    '#prefix'=>'<div class="row_item product-quanity"> <input type="number" min="1" value="'.$item_list[$product->nid]['quantity'].'">',
+                    '#suffix'=>'</div>',
+                );
+            $form['submitted']['product_list']['each_item']['product_'.$product->nid]['product-price']=
+                array(
+                    '#prefix'=>'<div class="row_item product-price">'.$product->field_price['und'][0]['value'],
+                    '#suffix'=>'</div>',
+                );
+            $form['submitted']['product_list']['each_item']['product_'.$product->nid]['product-subtotal']=
+                array(
+                    '#prefix'=>'<div class="row_item product-subtotal">'.$product->field_price['und'][0]['value'],
                     '#suffix'=>'</div>',
                 );
 
