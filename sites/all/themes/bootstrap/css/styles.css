@@ -991,11 +991,4 @@ ol.breadcrumb li {
     max-width: 100px;
     padding-right: 10px; }
 
-#webform-client-form-3176 .webform-component--product-list {
-  display: table; }
-  #webform-client-form-3176 .webform-component--product-list .product-row {
-    display: table-row; }
-    #webform-client-form-3176 .webform-component--product-list .product-row > div {
-      display: table-cell; }
-
 /*# sourceMappingURL=styles.css.map */
