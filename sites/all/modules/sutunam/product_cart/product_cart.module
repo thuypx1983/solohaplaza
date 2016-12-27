@@ -179,23 +179,17 @@ function _product_cart_add()
     $json['block_cart']=@drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))));
 
     #popup
-    $nids=array_keys($_SESSION['product_cart']);
-    print_r($_SESSION['product_cart']);die();
-    if(count($nids)>0){
-        $item_list=node_load_multiple($nids);
-
-        $items=array();
-        foreach($item_list as $item){
-            $items[$item->field_category['und'][0]['tid']][]=$item;
-        }
+    $items=$_SESSION['product_cart'];
+    foreach($items as &$item){
+        $item['node']=node_load($item['nid']);
     }
-
+    unset($item);
 
 
     $json['popup_cart']= theme('product_cart_popup', array(
             'title' => '',
             'content' => '',
-            'item_list' => $item_list,
+            'item_list' => $items,
 
         )
     );

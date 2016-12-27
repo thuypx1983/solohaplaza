@@ -24,21 +24,20 @@ $url_checkout=url('node/3176');
              </thead>
              <tbody>
              <?php
-             foreach ($item_list as $node) {
-                 print_r($node);
+             foreach ($item_list as $item) {
                  echo "<tr>";
                      ?>
                      <td>
-                         <?php echo $node->title?>
+                         <?php echo $item['node']->title?>
                      </td>
                      <td>
-                         <?php $node->title?>
+                         <?php echo $item['quantity']?>
                      </td>
                      <td>
-                         <?php $node->title?>
+                         <?php echo number_format($item['node']->field_price['und'][0]['value']*$item['quantity'])?>đ
                      </td>
                      <td>
-                         <?php $node->title?>
+                         <i class="fa fa-trash">Xóa</i>
                      </td>
                  <?php
              }
