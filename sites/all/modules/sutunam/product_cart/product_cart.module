@@ -526,7 +526,7 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
             $products=node_load_multiple(array_keys($item_list));
         }
         $form['submitted']['product_list']['table']=array(
-            '#prefix'=>'<table class="table">',
+            '#prefix'=>'<table class="table table-bordered">',
             '#suffix'=>'</table>',
         );
         $form['submitted']['product_list']['table']['each_item']['product_1']['product-header']=array(
