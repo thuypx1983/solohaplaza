@@ -525,7 +525,16 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
         if(count($item_list)>0){
             $products=node_load_multiple(array_keys($item_list));
         }
-
+        $form['submitted']['product_list']['each_item']=array(
+            '#prefix'=>'<div class="product-row row-header">
+                <div>Tên sản phẩm</div>
+                <div>Số lượng</div>
+                <div>Đơn giá</div>
+                <div>Thành tiền</div>
+                <div>XÓa</div>
+            ',
+            '#suffix'=>'</div>',
+        );
         foreach($products as $product){
             $form['submitted']['product_list']['each_item']['product_'.$product->nid]=array(
                 '#prefix'=>'<div class="product-row">',
@@ -543,12 +552,17 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
                 );
             $form['submitted']['product_list']['each_item']['product_'.$product->nid]['product-price']=
                 array(
-                    '#prefix'=>'<div class="row_item product-price">'.$product->field_price['und'][0]['value'],
+                    '#prefix'=>'<div class="row_item product-price">'.number_format($product->field_price['und'][0]['value']),
                     '#suffix'=>'</div>',
                 );
             $form['submitted']['product_list']['each_item']['product_'.$product->nid]['product-subtotal']=
                 array(
-                    '#prefix'=>'<div class="row_item product-subtotal">'.$product->field_price['und'][0]['value'],
+                    '#prefix'=>'<div class="row_item product-subtotal">'.number_format($product->field_price['und'][0]['value']*$item_list[$product->nid]['quantity']),
+                    '#suffix'=>'</div>',
+                );
+            $form['submitted']['product_list']['each_item']['product_'.$product->nid]['product-remove']=
+                array(
+                    '#prefix'=>'<div class="row_item product-remove"><i class="fa fa-trash"></i>',
                     '#suffix'=>'</div>',
                 );
 
