@@ -12,7 +12,7 @@ function product_extend_node_view($node, $view_mode, $langcode) {
                 '#title' => '',
                 //'#markup' => '<a href="'.url('ajax/product/cart/push',array('query' => array('nid' => $node->nid))).'">'.t('Demande de devis').'</a>',
                 '#markup' => '
-                     <div class="qty-action"><input class="quantity" type="number"  name="quantity" min="1" max="15" value="1"></div>
+                     <div class="qty-action"><input class="quantity-detail" type="number"  name="quantity" min="1" max="15" value="1"></div>
                     <div class="btn-action"><a class="btn-product-cart" data-pid="'.$node->nid.'" href="javascript: void(0);">'.t('Đặt mua').'</a></div>
                 ',
             );

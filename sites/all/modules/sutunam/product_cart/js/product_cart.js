@@ -10,11 +10,12 @@ var mobilesize=1280;
         $(document).on('click','.btn-product-cart',function(){
             var pdid=$(this).attr("data-pid");
             var type=$(this).attr("type");
+            var quantity=$('.quantity-detail').val();
             $.ajax({
                 url:'/ajax/product/cart/add',
                 type:'post',
                 dataType:'json',
-                data:{nid:pdid,type:type},
+                data:{nid:pdid,type:type,quantity:quantity},
                 success:function(response){
                     $('#block-product-cart-product-cart-block').replaceWith(response.block_cart);
 
