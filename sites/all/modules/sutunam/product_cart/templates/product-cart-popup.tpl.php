@@ -60,7 +60,7 @@ $url_checkout=url('node/3176');
                 jQuery.fancybox.close();
             })
 
-            $('fa-trash').onclick(function(){
+            $('fa-trash').click(function(){
                 var pdid=$(this).attr("data-pid");
                 var type='product';
                 var row=$(this).parent().parernt();
