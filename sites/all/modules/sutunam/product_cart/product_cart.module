@@ -97,10 +97,10 @@ function product_cart_menu()
 }
 function _product_change_quantity(){
     if($_POST['type']=='product'){
-        $nid = $_POST['nid'];
+        $nid = $_POST['pdid'];
         $_SESSION['product_cart'][$nid]['quantity']=$_POST['quantity'];
     }elseif($_POST['type']=='option'){
-        $_SESSION['product_cart_option'][$_POST['nid']]['quantity']=$_POST['quantity'];
+        $_SESSION['product_cart_option'][$_POST['pdid']]['quantity']=$_POST['quantity'];
     }
 }
 function _product_change_duration(){
