@@ -4,7 +4,49 @@ var windowsize=1;
 var mobilesize=1280;
 (function($){
     windowsize=$( window ).width();
+
     $(document).ready(function(){
+        //add to cart
+        $(document).on('click','.btn-product-cart',function(){
+            var pdid=$(this).attr("data-pid");
+            var type=$(this).attr("type");
+            $.ajax({
+                url:'/ajax/product/cart/add',
+                type:'post',
+                dataType:'json',
+                data:{nid:pdid,type:type},
+                success:function(response){
+                    $('#block-product-cart-product-cart-block').replaceWith(response.block_cart);
+
+                    $.fancybox(
+                        response.popup_cart,
+                        {   'autoDimensions'    : false,
+                            tpl : {
+                                closeBtn : '<a title="Close" class="fancybox-item fancybox-close" href="javascript:;">Fermer</a>'
+                            }
+                        }
+
+                    );
+                }
+            })
+        })
+
+        $(document).on('click','.fa-trash',function(){
+            var pdid=$(this).attr("data-pid");
+            var type='product';
+            var row=$(this).parent().parernt();
+            $.ajax({
+                url:'ajax/product/cart/remove',
+                type:'post',
+                dataType:'json',
+                data:{nid:pdid,type:type},
+                success:function(response){
+                    row.remove();
+                }
+            })
+        })
+
+
 
         //add button next step mobile
         $('#webform-client-form-30 .step1').append('<div class="form-actions-mobile"><button class="mobile-next-step" data-mobile-step="1" type="button">'+Drupal.t('Etape suivante')+'</button></div>');
@@ -86,30 +128,6 @@ var mobilesize=1280;
 
         $('#webform-client-form-30 .captcha').hide();
         $('.webform-client-form-30').addClass('container');
-        //add to cart
-        $(document).on('click','.btn-product-cart',function(){
-            var pdid=$(this).attr("data-pid");
-            var type=$(this).attr("type");
-            $.ajax({
-                url:'/ajax/product/cart/add',
-                type:'post',
-                dataType:'json',
-                data:{nid:pdid,type:type},
-                success:function(response){
-                    $('#block-product-cart-product-cart-block').replaceWith(response.block_cart);
-
-                    $.fancybox(
-                        response.popup_cart,
-                        {   'autoDimensions'    : false,
-                            tpl : {
-                                closeBtn : '<a title="Close" class="fancybox-item fancybox-close" href="javascript:;">Fermer</a>'
-                            }
-                        }
-                        
-                    );
-                }
-            })
-        })
 
         //cart process
         $('.cart-header-step').find("[step=1]").addClass("active");

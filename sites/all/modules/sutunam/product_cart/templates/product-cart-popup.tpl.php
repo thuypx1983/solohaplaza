@@ -25,19 +25,20 @@ $url_checkout=url('node/3176');
              <tbody>
              <?php
              foreach ($item_list as $item_id=>$item) {
-                 echo "<tr>";
+                 echo '<tr> data-pid="'.$item_id.'"';
                      ?>
                      <td align="left">
                          <?php echo $item['node']->title?>
                      </td>
                      <td align="left">
-                         <?php echo $item['quantity']?>
+                         <input type="number" data-pid="<?php $item_id?>" name="quantity" min="1" max="15" value="<?php echo $item['quantity']?>">
+
                      </td>
                      <td align="left">
                          <?php echo number_format($item['node']->field_price['und'][0]['value']*$item['quantity'])?>đ
                      </td>
                      <td align="middle">
-                         <i class="fa fa-trash" data-item-id="<?php echo $item_id?>"></i>
+                         <i style="cursor: pointer" data-pid="<?php $item_id?>" class="fa fa-trash"></i>
                      </td>
                  <?php
              }
