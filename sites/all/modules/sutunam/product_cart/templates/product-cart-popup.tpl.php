@@ -25,7 +25,7 @@ $url_checkout=url('node/3176');
              <tbody>
              <?php
              print_r($item_list);
-             foreach ($item_list as $item) {
+             foreach ($item_list as $item_id=>$item) {
                  echo "<tr>";
                      ?>
                      <td>
@@ -38,7 +38,7 @@ $url_checkout=url('node/3176');
                          <?php echo number_format($item['node']->field_price['und'][0]['value']*$item['quantity'])?>đ
                      </td>
                      <td>
-                         <i class="fa fa-trash">Xóa</i>
+                         <i class="fa fa-trash" data-item-id="<?php echo $item_id?>"></i>
                      </td>
                  <?php
              }
@@ -46,21 +46,6 @@ $url_checkout=url('node/3176');
              ?>
              </tbody>
          </table>
-        <ul class="product-cart-lists">
-            <?php
-            foreach ($item_list as $tid=>$items) {
-                $term=taxonomy_term_load($tid);
-                foreach($items as $node){
-                ?>
-                <li class="product-title">
-                   <?php echo $term->name?> &nbsp; - &nbsp;<span><?php echo $node->title?></span>
-                </li>
-            <?php
-                }
-            }
-
-            ?>
-        </ul>
         <div class="cart-checkout">
             <a class="bnt-continue" href="javascript:void(0)"><?php echo t('TIẾP TỤC MUA HÀNG')?></a>
             <a class="btn-view-cart" href="<?php echo $url_checkout?>"><?php echo t('THANH TOÁN')?></a>
