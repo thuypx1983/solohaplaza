@@ -63,7 +63,7 @@ $url_checkout=url('node/3176');
             $('.fa-trash').click(function(){
                 var pdid=$(this).attr("data-pid");
                 var type='product';
-                var row=$(this).parent().parernt();
+                var row=$(this).parent().parent();
                 $.ajax({
                     url:'ajax/product/cart/remove',
                     type:'post',
