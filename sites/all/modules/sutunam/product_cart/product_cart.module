@@ -525,14 +525,8 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
         if(count($item_list)>0){
             $products=node_load_multiple(array_keys($item_list));
         }
-        $form['submitted']['product_list']['each_item']['product_1']=array(
-            '#prefix'=>'<div class="product-row row-header">
-             
-            ',
-            '#suffix'=>'</div>',
-        );
         $form['submitted']['product_list']['table']=array(
-            '#prefix'=>'<table>',
+            '#prefix'=>'<table class="table">',
             '#suffix'=>'</table>',
         );
         $form['submitted']['product_list']['table']['each_item']['product_1']['product-header']=array(
