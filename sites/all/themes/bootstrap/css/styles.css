@@ -18,10 +18,12 @@
   padding-left: 25%; }
 
 #block-views-home-page-banner-block {
-  padding-left: 0px; }
+  padding-left: 0px;
+  width: 65%; }
 
 #block-block-3 {
-  padding-left: 0px; }
+  padding-left: 0px;
+  width: 35%; }
 
 .bg-header {
   background-color: #FFFFFF; }
