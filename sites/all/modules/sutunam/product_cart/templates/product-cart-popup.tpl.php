@@ -19,7 +19,7 @@ $url_checkout=url('node/3176');
                  <th>Sản phẩm</th>
                  <th>Số lượng</th>
                  <th>Thành tiền</th>
-                 <th>Xóa</th>
+                 <th align="middle">Xóa</th>
              </tr>
              </thead>
              <tbody>
