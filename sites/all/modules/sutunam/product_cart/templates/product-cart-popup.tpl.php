@@ -19,12 +19,11 @@ $url_checkout=url('node/3176');
                  <th>Sản phẩm</th>
                  <th>Số lượng</th>
                  <th>Thành tiền</th>
-                 <th align="middle">Xóa</th>
+                 <th style="text-align: center">Xóa</th>
              </tr>
              </thead>
              <tbody>
              <?php
-             print_r($item_list);
              foreach ($item_list as $item_id=>$item) {
                  echo "<tr>";
                      ?>
