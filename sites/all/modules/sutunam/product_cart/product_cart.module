@@ -531,43 +531,47 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
             ',
             '#suffix'=>'</div>',
         );
-        $form['submitted']['product_list']['each_item']['product_1']['product-header']=array(
-            '#prefix'=>'<div>Tên sản phẩm</div>
-                <div>Số lượng</div>
-                <div>Đơn giá</div>
-                <div>Thành tiền</div>
-                <div>XÓa',
-            '#suffix'=>'</div>',
+        $form['submitted']['product_list']['table']=array(
+            '#prefix'=>'<table>',
+            '#suffix'=>'</table>',
+        );
+        $form['submitted']['product_list']['table']['each_item']['product_1']['product-header']=array(
+            '#prefix'=>'<thead><tr><div>Tên sản phẩm</div>
+                <td>Số lượng</td>
+                <td>Đơn giá</td>
+                <td>Thành tiền</td>
+                <td>XÓa',
+            '#suffix'=>'</tr></thead>',
         );
         foreach($products as $product){
-            $form['submitted']['product_list']['each_item']['product_'.$product->nid]=array(
-                '#prefix'=>'<div class="product-row">',
-                '#suffix'=>'</div>',
+            $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]=array(
+                '#prefix'=>'<tr>',
+                '#suffix'=>'</tr>',
             );
-             $form['submitted']['product_list']['each_item']['product_'.$product->nid]['product-name']=
+             $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-name']=
                 array(
-                    '#prefix'=>'<div class="row_item product-name">'.$product->title,
-                    '#suffix'=>'</div>',
+                    '#prefix'=>'<td>'.$product->title,
+                    '#suffix'=>'</td>',
                 );
-            $form['submitted']['product_list']['each_item']['product_'.$product->nid]['product_quantity']=
+            $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product_quantity']=
                 array(
-                    '#prefix'=>'<div class="row_item product-quanity"> <input type="number" min="1" value="'.$item_list[$product->nid]['quantity'].'">',
-                    '#suffix'=>'</div>',
+                    '#prefix'=>'<td class="row_item product-quanity"> <input type="number" min="1" value="'.$item_list[$product->nid]['quantity'].'">',
+                    '#suffix'=>'</td>',
                 );
-            $form['submitted']['product_list']['each_item']['product_'.$product->nid]['product-price']=
+            $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-price']=
                 array(
-                    '#prefix'=>'<div class="row_item product-price">'.number_format($product->field_price['und'][0]['value']),
-                    '#suffix'=>'</div>',
+                    '#prefix'=>'<td class="row_item product-price">'.number_format($product->field_price['und'][0]['value']),
+                    '#suffix'=>'</td>',
                 );
-            $form['submitted']['product_list']['each_item']['product_'.$product->nid]['product-subtotal']=
+            $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-subtotal']=
                 array(
-                    '#prefix'=>'<div class="row_item product-subtotal">'.number_format($product->field_price['und'][0]['value']*$item_list[$product->nid]['quantity']),
-                    '#suffix'=>'</div>',
+                    '#prefix'=>'<td class="row_item product-subtotal">'.number_format($product->field_price['und'][0]['value']*$item_list[$product->nid]['quantity']),
+                    '#suffix'=>'</td>',
                 );
-            $form['submitted']['product_list']['each_item']['product_'.$product->nid]['product-remove']=
+            $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-remove']=
                 array(
-                    '#prefix'=>'<div class="row_item product-remove"><i class="fa fa-trash"></i>',
-                    '#suffix'=>'</div>',
+                    '#prefix'=>'<td class="row_item product-remove"><i class="fa fa-trash"></i>',
+                    '#suffix'=>'</td>',
                 );
 
         }
