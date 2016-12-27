@@ -24,6 +24,7 @@ $url_checkout=url('node/3176');
              </thead>
              <tbody>
              <?php
+             print_r($item_list);
              foreach ($item_list as $item) {
                  echo "<tr>";
                      ?>
