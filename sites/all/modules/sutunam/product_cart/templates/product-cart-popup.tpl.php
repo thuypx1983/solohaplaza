@@ -13,7 +13,7 @@ $url_checkout=url('node/3176');
         <div class="product-cart-popup-title">
             <span><?php echo t('Sản phẩm của bạn đã được thêm vào giỏ hàng')?></span>
         </div>
-         <table>
+         <table class="table">
              <thead>
              <tr>
                  <th>Sản phẩm</th>
