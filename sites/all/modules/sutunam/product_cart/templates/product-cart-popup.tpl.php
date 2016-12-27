@@ -37,7 +37,7 @@ $url_checkout=url('node/3176');
                      <td align="left">
                          <?php echo number_format($item['node']->field_price['und'][0]['value']*$item['quantity'])?>đ
                      </td>
-                     <td align="center">
+                     <td align="middle">
                          <i class="fa fa-trash" data-item-id="<?php echo $item_id?>"></i>
                      </td>
                  <?php
