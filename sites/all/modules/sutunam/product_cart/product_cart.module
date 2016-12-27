@@ -180,6 +180,7 @@ function _product_cart_add()
 
     #popup
     $nids=array_keys($_SESSION['product_cart']);
+    print_r($_SESSION['product_cart']);die();
     if(count($nids)>0){
         $item_list=node_load_multiple($nids);
 

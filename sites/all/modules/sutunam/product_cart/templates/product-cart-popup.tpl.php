@@ -29,7 +29,7 @@ $url_checkout=url('node/3176');
                  echo "<tr>";
                      ?>
                      <td>
-                         <?php $node->title?>
+                         <?php echo $node->title?>
                      </td>
                      <td>
                          <?php $node->title?>
