@@ -32,6 +32,7 @@ var mobilesize=1280;
         })
 
         $(document).on('click','.fa-trash',function(){
+            alert('xxxx');
             var pdid=$(this).attr("data-pid");
             var type='product';
             var row=$(this).parent().parernt();
