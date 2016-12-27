@@ -31,5 +31,12 @@ $nids = db_select('node', 'n')
 // Now return the node objects.
 $nodes = node_load_multiple($nids);
 foreach ($nodes as $node){
-  print_r($node);die();
+    if(isset($node->body[LANGUAGE_NONE][0]['value'])){
+        $node->body[LANGUAGE_NONE][0]['value']=str_replace('/kcfinder/upload/images/','/sites/default/files/',$node->body[LANGUAGE_NONE][0]['value']);
+
+        //field_attach_update('node', $article_node);
+        echo 'kkk';
+        die();
+    }
+
 }
