@@ -512,7 +512,7 @@ function _product_cart_page(){
 function product_cart_form_alter( &$form, &$form_state,$form_id ){
 
     // you'll want to limit your altering to specific forms
-    if ($form_id == 'webform_client_form_30') {
+    if ($form_id == 'webform_client_form_3176') {
 
         drupal_session_start();
         $form['submitted']['step_content']['step_1']['step1_content']['products']['#value'] =json_encode(array('product_cart'=>$_SESSION['product_cart'],'product_cart_option'=>$_SESSION['product_cart_option']));
@@ -643,76 +643,6 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
                 */
 
         }
-        foreach ($_SESSION['product_cart_option'] as $option){
-            $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_'.$option['id']]=array(
-                '#prefix'=>'<div class="product-row">',
-                '#suffix'=>'</div>',
-            );
-            $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_'.$option['id']]['product-category']=
-                array(
-                    '#prefix'=>'<div class="row_item product-taxonony">'.$option['category_product'][$current_lang]->name,
-                    '#suffix'=>'</div>',
-                );
-
-
-            $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_'.$option['id']]['product-name']=
-                array(
-                    '#prefix'=>'<div class="row_item product-name product-more-option">'.$option['energy'][$current_lang]->name,
-                    '#suffix'=>'</div>',
-                );
-            $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_'.$option['id']]['product-date']=array(
-                '#type' => 'date',
-                '#title' => '',
-                '#description' =>'',
-                '#theme'=>'webform_date',
-                '#timezone'=>'user',
-                '#process'=>array('webform_expand_date'),
-                '#element_validate'=>array('webform_validate_date'),
-                '#datepicker'=>true,
-                '#default_value'=>'00:00:0000',
-                '#start_date'=>'-0 years',
-                '#end_date'=>'+2 years',
-            );
-            $form['submitted']['step_content']['step_2']['step2_content']['step_2_bottom']['step_2_bottom_content']['dates']['each_item']['product_'.$option['id']]['product-days']=
-                array(
-                    '#type' => 'select',
-
-                    '#title' => '',
-
-                    '#value' => $option['duration'],
-
-                    '#options'=>$ops,
-
-                    '#attributes'=>array('data-pid'=>$option['id'],'type'=>'option','key'=>'duration'),
-                );
-        }
-
-        /*$form['submitted']['step_content']['step_2']['step_2_bottom']['step_2_bottom_content']['items'] = array(
-            '#type' => 'item',
-            '#markup' => theme('product_form_items_quantity', array(
-                    'products' => $products,
-                    'options' => $_SESSION['product_cart_option'],
-                    'language' => $GLOBALS['language']->language,
-                )
-            ),
-            '#weight' => -400,
-        );*/
-
-
-        $form['submitted']['step_content']['step_1']['step1_content']['step_1_filter']['product_filter'] = array(
-            '#type' => 'item',
-            '#markup' => theme('product_filter', array(
-                    'products' => $products)
-            ),
-            '#weight' => -100,
-        );
-        $form['submitted']['step_header']['step_1']['step1_content'] = array(
-            '#type' => 'item',
-            '#markup' => theme('product_form_header_step', array()
-            ),
-            '#weight' => -100,
-        );
-
 
        }
 }
