@@ -536,19 +536,11 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
                     '#prefix'=>'<div class="row_item product-name">'.$product->title,
                     '#suffix'=>'</div>',
                 );
-                /*array(
-                '#type' => 'textfield',
-
-                '#title' => '',
-
-                '#value' => $_SESSION['product_cart'][$product->nid]['duration'],
-
-                '#size' => 10,
-
-                '#attributes'=>array('data-pid'=>$product->nid,'type'=>'product','key'=>'duration'),
-
-            );
-                */
+$form['submitted']['product_list']['each_item']['product_'.$product->nid]['product_quantity']=
+                array(
+                    '#prefix'=>'<div class="row_item product-name"> <input type="number" min="1" value="'.$item_list[$product->nid]['quantity'].'">',
+                    '#suffix'=>'</div>',
+                );
 
         }
 
