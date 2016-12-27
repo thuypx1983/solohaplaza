@@ -530,7 +530,7 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
             '#suffix'=>'</table>',
         );
         $form['submitted']['product_list']['table']['each_item']['product_1']['product-header']=array(
-            '#prefix'=>'<thead><th>
+            '#prefix'=>'<thead><tr>
                 <th>Tên sản phẩm</th>
                 <th>Số lượng</th>
                 <th>Đơn giá</th>
