@@ -530,11 +530,12 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
             '#suffix'=>'</table>',
         );
         $form['submitted']['product_list']['table']['each_item']['product_1']['product-header']=array(
-            '#prefix'=>'<thead><tr><div>Tên sản phẩm</div>
-                <td>Số lượng</td>
-                <td>Đơn giá</td>
-                <td>Thành tiền</td>
-                <td>XÓa',
+            '#prefix'=>'<thead><th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Đơn giá</th>
+                <th>Thành tiền</th>
+                <th>XÓa</th>',
             '#suffix'=>'</tr></thead>',
         );
         foreach($products as $product){
