@@ -35,7 +35,7 @@ foreach ($nodes as $node){
         $node->body[LANGUAGE_NONE][0]['value']=str_replace('/kcfinder/upload/images/','/sites/default/files/',$node->body[LANGUAGE_NONE][0]['value']);
 
         //field_attach_update('node', $article_node);
-        echo 'kkk';
+        print_r($node->body);
         die();
     }
 
