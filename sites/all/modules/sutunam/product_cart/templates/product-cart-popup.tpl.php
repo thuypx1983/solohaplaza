@@ -66,7 +66,7 @@ $url_checkout=url('node/3176');
                 var row=$(this).parent().parent();
                 row.remove();
                 $.ajax({
-                    url:'ajax/product/cart/remove',
+                    url:'<?php echo url('ajax/product/cart/remove')?>',
                     type:'post',
                     dataType:'json',
                     data:{nid:pdid,type:type},
@@ -80,7 +80,7 @@ $url_checkout=url('node/3176');
                 var type='product';
                 var quantity=$(this).val();
                 $.ajax({
-                    url:'ajax/product/cart/change_quantity',
+                    url:'<?php echo url('ajax/product/cart/change_quantity')?>',
                     type:'post',
                     dataType:'json',
                     data:{pdid:pdid,type:type,quantity:quantity},
