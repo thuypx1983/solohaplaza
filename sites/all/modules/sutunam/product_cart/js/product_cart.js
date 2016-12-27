@@ -11,7 +11,6 @@ var mobilesize=1280;
             var pdid=$(this).attr("data-pid");
             var type=$(this).attr("type");
             var quantity=$('.quantity-detail').val();
-            alert(quantity);
             $.ajax({
                 url:'/ajax/product/cart/add',
                 type:'post',
