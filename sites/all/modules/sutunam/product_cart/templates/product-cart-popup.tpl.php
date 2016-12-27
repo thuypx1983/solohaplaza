@@ -31,7 +31,7 @@ $url_checkout=url('node/3176');
                          <?php echo $item['node']->title?>
                      </td>
                      <td align="left">
-                         <input data-pid="<?php $item_id?>" class="quantity" type="number" data-pid="<?php echo $item_id?>" name="quantity" min="1" max="15" data-price="<?php echo (int)$item['node']->field_price['und'][0]['value'];?>" value="<?php echo $item['quantity']?>">
+                         <input data-pid="<?php echo $item_id?>" class="quantity" type="number" data-pid="<?php echo $item_id?>" name="quantity" min="1" max="15" data-price="<?php echo (int)$item['node']->field_price['und'][0]['value'];?>" value="<?php echo $item['quantity']?>">
 
                      </td>
                      <td align="left">
