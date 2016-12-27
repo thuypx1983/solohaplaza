@@ -992,8 +992,6 @@ ol.breadcrumb li {
     padding-right: 10px; }
 
 #webform-client-form-3176 thead {
-  display: table; }
-#webform-client-form-3176 tbody {
-  display: table; }
+  display: table-header-group; }
 
 /*# sourceMappingURL=styles.css.map */
