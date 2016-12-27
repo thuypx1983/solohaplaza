@@ -20,18 +20,16 @@ require_once DRUPAL_ROOT . '/includes/bootstrap.inc';
 drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
 menu_execute_active_handler();
 
-function custom_create_taxonomy_term($name, $vid) {
-    $term = new stdClass();
-    $term->name = $name;
-    $term->vid = $vid;
-    taxonomy_term_save($term);
-    return $term->tid;
+// Return all nids of nodes of type "page".
+$nids = db_select('node', 'n')
+    ->fields('n', array('nid'))
+    ->fields('n', array('type'))
+    ->condition('n.type', 'product')
+    ->execute()
+    ->fetchCol(); // returns an indexed array
 
+// Now return the node objects.
+$nodes = node_load_multiple($nids);
+foreach ($nodes as $node){
+  print_r($node);die();
 }
-
-$data=json_decode(file_get_contents('tbl_menu_news.json'),true);
-foreach ($data as &$item){
-    #$item['tid']=custom_create_taxonomy_term($item['title'],3);
-}
-unset($item);
-#file_put_contents('tbl_menu_news.json',json_encode($data));
