@@ -525,7 +525,7 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
         if(count($item_list)>0){
             $products=node_load_multiple(array_keys($item_list));
         }
-        $form['submitted']['product_list']['each_item']=array(
+        $form['submitted']['product_list']['each_item']['product_1']=array(
             '#prefix'=>'<div class="product-row row-header">
                 <div>Tên sản phẩm</div>
                 <div>Số lượng</div>
