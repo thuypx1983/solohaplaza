@@ -31,22 +31,6 @@ var mobilesize=1280;
             })
         })
 
-        $(document).on('click','.fancybox-overlay .fa-trash',function(){
-            alert('xxxx');
-            var pdid=$(this).attr("data-pid");
-            var type='product';
-            var row=$(this).parent().parernt();
-            $.ajax({
-                url:'ajax/product/cart/remove',
-                type:'post',
-                dataType:'json',
-                data:{nid:pdid,type:type},
-                success:function(response){
-                    row.remove();
-                }
-            })
-        })
-
 
 
         //add button next step mobile
