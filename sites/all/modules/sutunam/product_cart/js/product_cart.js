@@ -46,6 +46,23 @@ var mobilesize=1280;
                 })
             updateShoppingCart();
         })
+        $('.webform-client-form .fa-trash').click(function(){
+
+            var type='product';
+            var row=$(this).parent().parent();
+            var pdid=row.attr("data-pid");
+            row.remove();
+            $.ajax({
+                url:'/ajax/product/cart/remove',
+                type:'post',
+                dataType:'json',
+                data:{nid:pdid,type:type},
+                success:function(response){
+
+                }
+            })
+            updateShoppingCart();
+        })
 
         function updateShoppingCart(){
             var total=0;
