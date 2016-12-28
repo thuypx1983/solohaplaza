@@ -577,7 +577,7 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
         $form['submitted']['product_list']['table']['each_item']['product_2']['product-footer']=array(
             '#prefix'=>'<tfoot><tr>
                 <th colspan="4" style="text-align: right">Thành tiền</th>
-                <th style="color: #e43a3d">'.number_format($total).'đ</th>',
+                <th class="cart-total" style="color: #e43a3d">'.number_format($total).'đ</th>',
             '#suffix'=>'</tr></tfoot>',
         );
 
