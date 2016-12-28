@@ -32,9 +32,9 @@ var mobilesize=1280;
             })
         })
         $('.webform-client-form .product-quanity input').change(function(){
-            var pdid=$(this).attr("data-pid");
+            var pdid=$(this).parent().parent().attr("data-pid");
             var type='product';
-            var quantity=$(this).find('.product-quanity input').val();
+            var quantity=$(this).val();
             $.ajax({
                 url:'/ajax/product/cart/change_quantity',
                 type:'post',
