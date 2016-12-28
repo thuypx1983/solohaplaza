@@ -32,7 +32,7 @@ var mobilesize=1280;
             })
         })
         $('.webform-client-form .product-quanity input').change(function(){
-
+            updateShoppingCart();
         })
 
         function updateShoppingCart(){
