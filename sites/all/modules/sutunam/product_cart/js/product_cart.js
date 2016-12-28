@@ -39,7 +39,7 @@ var mobilesize=1280;
         function updateShoppingCart(){
             $('#webform-client-form-3176 .product-item').each(function(){
                 var quantity=$(this).find('.product-quanity input ').val();
-                var price=$(this).find('.product-quanity .product-price').attr('data-price');
+                var price=$(this).find('.product-price').attr('data-price');
                 var quantity=parseInt(quantity)*parseInt(price);
                 alert(quantity);
                 $(this).find('.product-subtotal').html(number_format(quantity,'.',','))
