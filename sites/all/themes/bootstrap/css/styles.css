@@ -993,9 +993,9 @@ ol.breadcrumb li {
 
 #webform-client-form-3176 .form-item-submitted-product-list-products {
   display: none; }
-  #webform-client-form-3176 .form-item-submitted-product-list-products .form-actions button.btn-default {
-    background: transparent;
-    background-color: #e43a3d !important;
-    margin-bottom: 20px; }
+#webform-client-form-3176 .form-actions button.btn-default {
+  background: transparent;
+  background-color: #e43a3d !important;
+  margin-bottom: 20px; }
 
 /*# sourceMappingURL=styles.css.map */

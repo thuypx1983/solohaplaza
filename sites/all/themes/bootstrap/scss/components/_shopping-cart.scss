@@ -1,12 +1,13 @@
 #webform-client-form-3176{
   .form-item-submitted-product-list-products{
     display: none;
-    .form-actions{
-      button.btn-default{
-        background: transparent;
-        background-color: $color-blue !important;
-        margin-bottom: 20px;
-      }
+
+  }
+  .form-actions{
+    button.btn-default{
+      background: transparent;
+      background-color: $color-blue !important;
+      margin-bottom: 20px;
     }
   }
 }
