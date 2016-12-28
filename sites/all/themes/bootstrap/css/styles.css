@@ -754,6 +754,8 @@ body {
       height: auto;
       font-size: 12px; }
 
+.node-type-product .node-product .imagezoom-image {
+  max-width: 100%; }
 .node-type-product .node-product .product-info h1 {
   border-bottom: 1px solid #e2dedd;
   color: #4c6fb1;
