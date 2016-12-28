@@ -117,7 +117,7 @@
         <?php print render($page['header']); ?>
     </header> <!-- /#page-header -->
 
-    <div class="row">
+    <div class="">
 
 
 
