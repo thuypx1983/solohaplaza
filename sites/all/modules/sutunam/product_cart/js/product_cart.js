@@ -37,14 +37,15 @@ var mobilesize=1280;
         })
 
         function updateShoppingCart(){
+            var total=0;
             $('#webform-client-form-3176 .product-item').each(function(){
                 var quantity=$(this).find('.product-quanity input').val();
-                alert(quantity);
                 var price=$(this).find('.product-price').attr('data-price');
-                alert(price);
-                var quantity=parseInt(quantity)*parseInt(price);
+                var subtotal=parseInt(quantity)*parseInt(price);
                 alert(quantity);
-                $(this).find('.product-subtotal').html(number_format(quantity,'.',','))
+                $(this).find('.product-subtotal').html(number_format(subtotal,'.',','));
+                total+=subtotal;
+                $(this).find('.cart-totall').html(number_format(total,'.',',')+' đ');
             })
         }
 
