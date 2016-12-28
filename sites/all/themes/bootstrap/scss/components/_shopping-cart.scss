@@ -1,5 +1,10 @@
 #webform-client-form-3176{
   .form-item-submitted-product-list-products{
     display: none;
+    .form-actions{
+      button{
+        background-color: $color-blue;
+      }
+    }
   }
 }

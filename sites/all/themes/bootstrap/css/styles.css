@@ -993,5 +993,7 @@ ol.breadcrumb li {
 
 #webform-client-form-3176 .form-item-submitted-product-list-products {
   display: none; }
+  #webform-client-form-3176 .form-item-submitted-product-list-products .form-actions button {
+    background-color: #e43a3d; }
 
 /*# sourceMappingURL=styles.css.map */
