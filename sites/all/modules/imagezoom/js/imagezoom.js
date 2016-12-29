@@ -10,4 +10,7 @@
     }
   }
    */
+  //initiate the plugin and pass the id of the div containing gallery images
+  $(".imagezoom-image").elevateZoom({gallery:'imagezoom-thumbs', cursor: 'pointer', galleryActiveClass: "active", imageCrossfade: true, loadingIcon: "http://www.elevateweb.co.uk/spinner.gif"});
+
 })(jQuery);
