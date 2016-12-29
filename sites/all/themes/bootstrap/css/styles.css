@@ -998,22 +998,23 @@ ol.breadcrumb li {
 .fancybox-wrap .text-ct {
   max-width: 700px; }
 
-.reference-autocomplete {
+ul.dropdown-menu li {
   padding-bottom: 10px;
   padding-top: 10px;
   border-bottom: 1px solid #dddddd;
   width: 49%;
   display: block;
   float: left; }
-  .reference-autocomplete:hover {
-    background-color: transparent; }
-  .reference-autocomplete .image img {
-    float: left;
-    max-width: 100px;
-    padding-right: 10px; }
-  .reference-autocomplete a {
+  ul.dropdown-menu li a {
     display: inline-block;
     width: 100%; }
+
+.reference-autocomplete:hover {
+  background-color: transparent; }
+.reference-autocomplete .image img {
+  float: left;
+  max-width: 100px;
+  padding-right: 10px; }
 
 #webform-client-form-3176 .form-item-submitted-product-list-products {
   display: none; }
