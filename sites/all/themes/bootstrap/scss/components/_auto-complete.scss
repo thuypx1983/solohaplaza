@@ -8,11 +8,13 @@ ul.dropdown-menu{
     float: left;
     a{
       display: inline-block;
-      width: 100%;
     }
     .image{
       float: left;
       width: 30%;
+      a{
+        display: none;
+      }
     }
   }
 }

@@ -1006,11 +1006,12 @@ ul.dropdown-menu li {
   display: block;
   float: left; }
   ul.dropdown-menu li a {
-    display: inline-block;
-    width: 100%; }
+    display: inline-block; }
   ul.dropdown-menu li .image {
     float: left;
     width: 30%; }
+    ul.dropdown-menu li .image a {
+      display: none; }
 
 .reference-autocomplete:hover {
   background-color: transparent; }
