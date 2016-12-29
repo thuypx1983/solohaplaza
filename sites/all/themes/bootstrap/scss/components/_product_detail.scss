@@ -3,6 +3,14 @@
     .imagezoom-image{
       max-width: 100%;
     }
+    .imagezoom-thumbs{
+      padding-left: 10px;
+      .imagezoom-thumb{
+        list-style: none;
+        float: left;
+        display: inline-block;
+      }
+    }
     .product-info{
       h1{
         border-bottom: 1px solid #e2dedd;
