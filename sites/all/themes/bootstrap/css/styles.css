@@ -1005,20 +1005,19 @@ ul.dropdown-menu li {
   width: 49%;
   display: block;
   float: left; }
-  ul.dropdown-menu li a {
-    display: inline-block; }
-  ul.dropdown-menu li .image {
-    float: left;
-    width: 30%; }
-    ul.dropdown-menu li .image a {
-      display: inline-block; }
 
 .reference-autocomplete:hover {
   background-color: transparent; }
-.reference-autocomplete .image img {
-  float: left;
-  max-width: 100px;
-  padding-right: 10px; }
+.reference-autocomplete .reference-autocomplete {
+  display: table;
+  width: 100%; }
+  .reference-autocomplete .reference-autocomplete .image {
+    display: table-cell;
+    width: 30%; }
+    .reference-autocomplete .reference-autocomplete .image img {
+      max-width: 100%; }
+  .reference-autocomplete .reference-autocomplete .pd-info {
+    display: table-cell; }
 
 #webform-client-form-3176 .form-item-submitted-product-list-products {
   display: none; }

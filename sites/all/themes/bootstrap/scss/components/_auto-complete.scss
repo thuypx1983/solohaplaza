@@ -6,27 +6,26 @@ ul.dropdown-menu{
     width: 49%;
     display: block;
     float: left;
-    a{
-      display: inline-block;
-    }
-    .image{
-      float: left;
-      width: 30%;
-      a{
-        display: inline-block;
-      }
-    }
   }
 }
+
 .reference-autocomplete{
   &:hover{
     background-color: transparent;
   }
-  .image{
-    img{
-      float: left;
-      max-width: 100px;
-      padding-right: 10px;
+
+  .reference-autocomplete{
+    display: table;
+    width: 100%;
+    .image{
+      display: table-cell;
+      width: 30%;
+      img{
+        max-width: 100%;
+      }
+    }
+    .pd-info{
+      display: table-cell;
     }
   }
 }
