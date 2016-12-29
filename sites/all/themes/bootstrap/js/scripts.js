@@ -13,6 +13,7 @@
         })
 
         $('#views-exposed-form-tim-kiem-page').on('click','.reference-autocomplete',function(){
+            alert('kkk');
             window.location.href=$(this).find('a').attr('href');
 
         })
