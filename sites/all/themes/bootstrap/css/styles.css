@@ -1011,6 +1011,9 @@ ol.breadcrumb li {
     float: left;
     max-width: 100px;
     padding-right: 10px; }
+  .reference-autocomplete a {
+    display: inline-block;
+    width: 100%; }
 
 #webform-client-form-3176 .form-item-submitted-product-list-products {
   display: none; }
