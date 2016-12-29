@@ -1027,6 +1027,10 @@ ul.dropdown-menu li {
     display: table-cell;
     vertical-align: top;
     text-align: left; }
+    .reference-autocomplete .pd-info > div {
+      font-size: 12px; }
+    .reference-autocomplete .pd-info .price {
+      color: red; }
 
 #webform-client-form-3176 .form-item-submitted-product-list-products {
   display: none; }
