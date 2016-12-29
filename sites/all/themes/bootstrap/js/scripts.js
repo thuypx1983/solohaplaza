@@ -1,7 +1,7 @@
 
 (function ($) {
     $(document).ready(function () {
-        $('.view-category-item .views-row,.view-product-lis .views-row').matchHeight({
+        $('.view-category-item .views-row,.view-product-lis .views-row, .view-tim-kiem .view-row').matchHeight({
             byRow: true,
             property: 'height',
             target: null,
