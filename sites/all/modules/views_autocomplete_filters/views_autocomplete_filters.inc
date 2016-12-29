@@ -137,12 +137,12 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
       $img[0]=$row->field_field_image[0];
       //added by thuypx
       //demo
-    $html='<a href="'.url('node/'.$row->nid).'">
+    $html='
             <div class="image">'.render($img).'</div>
             <div class="title">'.$row->node_title.'</div>
             <div class="code">'.render($row->field_field_code).'</div>
             <div class="price">'.render($row->field_field_price).'</div>
-        </a>
+        
 ';
     $view->row_index = $index;
     $rendered_field = $raw_field = '';
