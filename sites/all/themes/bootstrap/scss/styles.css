@@ -878,6 +878,9 @@ body {
   background-color: #e6e6e6; }
   #block-menu-menu-news-menu .menu li {
     border-bottom: 1px solid #FFFFFF; }
+    #block-menu-menu-news-menu .menu li a {
+      font-weight: bold;
+      font-size: 13px; }
 
 ol.breadcrumb li {
   padding-right: 0px; }
