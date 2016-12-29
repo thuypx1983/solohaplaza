@@ -1011,7 +1011,7 @@ ul.dropdown-menu li {
     float: left;
     width: 30%; }
     ul.dropdown-menu li .image a {
-      display: none; }
+      display: inline-block; }
 
 .reference-autocomplete:hover {
   background-color: transparent; }
