@@ -1011,15 +1011,16 @@ ul.dropdown-menu li {
 
 .reference-autocomplete:hover {
   background-color: transparent; }
-.reference-autocomplete .reference-autocomplete {
+
+.reference-autocomplete {
   display: table;
   width: 100%; }
-  .reference-autocomplete .reference-autocomplete .image {
+  .reference-autocomplete .image {
     display: table-cell;
     width: 30%; }
-    .reference-autocomplete .reference-autocomplete .image img {
+    .reference-autocomplete .image img {
       max-width: 100%; }
-  .reference-autocomplete .reference-autocomplete .pd-info {
+  .reference-autocomplete .pd-info {
     display: table-cell; }
 
 #webform-client-form-3176 .form-item-submitted-product-list-products {

@@ -18,18 +18,19 @@ ul.dropdown-menu{
     background-color: transparent;
   }
 
-  .reference-autocomplete{
-    display: table;
-    width: 100%;
-    .image{
-      display: table-cell;
-      width: 30%;
-      img{
-        max-width: 100%;
-      }
+
+}
+.reference-autocomplete{
+  display: table;
+  width: 100%;
+  .image{
+    display: table-cell;
+    width: 30%;
+    img{
+      max-width: 100%;
     }
-    .pd-info{
-      display: table-cell;
-    }
+  }
+  .pd-info{
+    display: table-cell;
   }
 }
