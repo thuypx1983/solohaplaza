@@ -6,6 +6,10 @@ ul.dropdown-menu{
     width: 49%;
     display: block;
     float: left;
+    &>a{
+      width: 100%;
+      padding: 0px;
+    }
   }
 }
 

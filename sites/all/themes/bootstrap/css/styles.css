@@ -1005,6 +1005,9 @@ ul.dropdown-menu li {
   width: 49%;
   display: block;
   float: left; }
+  ul.dropdown-menu li > a {
+    width: 100%;
+    padding: 0px; }
 
 .reference-autocomplete:hover {
   background-color: transparent; }
