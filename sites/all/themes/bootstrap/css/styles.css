@@ -1001,7 +1001,10 @@ ol.breadcrumb li {
 .reference-autocomplete {
   padding-bottom: 10px;
   padding-top: 10px;
-  border-bottom: 1px solid #dddddd; }
+  border-bottom: 1px solid #dddddd;
+  width: 50%;
+  display: inline-block;
+  float: left; }
   .reference-autocomplete:hover {
     background-color: transparent; }
   .reference-autocomplete .image img {
