@@ -44,10 +44,8 @@
 
     <a href="tester" class="elevatezoom-gallery"
        data-image="http://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/small/image4.png"
-       data-zoom-image="http://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/large/image4.jpg"
-
-       class="slide-content"
-    ><img src="http://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/small/image4.png" width="100"  /></a>
+       data-zoom-image="http://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/large/image4.jpg">
+        <img src="http://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/small/image4.png" width="100"  /></a>
 
 </div>
 
