@@ -761,7 +761,9 @@ body {
   .node-type-product .node-product .imagezoom-thumbs .imagezoom-thumb {
     list-style: none;
     float: left;
-    display: inline-block; }
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #cccccc; }
 .node-type-product .node-product .product-info h1 {
   border-bottom: 1px solid #e2dedd;
   color: #4c6fb1;
