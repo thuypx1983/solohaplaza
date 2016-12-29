@@ -754,6 +754,16 @@ body {
       height: auto;
       font-size: 12px; }
 
+.node-type-product .node-product .imagezoom-image {
+  max-width: 100%; }
+.node-type-product .node-product .imagezoom-thumbs {
+  padding-left: 10px; }
+  .node-type-product .node-product .imagezoom-thumbs .imagezoom-thumb {
+    list-style: none;
+    float: left;
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #cccccc; }
 .node-type-product .node-product .product-info h1 {
   border-bottom: 1px solid #e2dedd;
   color: #4c6fb1;
@@ -863,6 +873,11 @@ body {
     color: #ff6600; }
     .view-news-list .views-row .views-field-view-node a:after {
       content: " >>"; }
+
+#block-menu-menu-news-menu .menu {
+  background-color: #e6e6e6; }
+  #block-menu-menu-news-menu .menu li {
+    border-bottom: 1px solid #FFFFFF; }
 
 ol.breadcrumb li {
   padding-right: 0px; }

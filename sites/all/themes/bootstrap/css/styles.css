@@ -874,6 +874,11 @@ body {
     .view-news-list .views-row .views-field-view-node a:after {
       content: " >>"; }
 
+#block-menu-menu-news-menu .menu {
+  background-color: #e6e6e6; }
+  #block-menu-menu-news-menu .menu li {
+    border-bottom: 1px solid #FFFFFF; }
+
 ol.breadcrumb li {
   padding-right: 0px; }
   ol.breadcrumb li:last-child a {
