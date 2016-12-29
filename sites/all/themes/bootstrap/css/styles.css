@@ -1017,4 +1017,11 @@ ol.breadcrumb li {
   margin-bottom: 20px;
   color: #FFFFFF; }
 
+.view-tim-kiem .view-content {
+  display: table; }
+  .view-tim-kiem .view-content .views-row {
+    margin-bottom: 15px; }
+    .view-tim-kiem .view-content .views-row .views-field {
+      text-align: center; }
+
 /*# sourceMappingURL=styles.css.map */
