@@ -26,11 +26,16 @@ ul.dropdown-menu{
   .image{
     display: table-cell;
     width: 30%;
+    vertical-align: top;
+    text-align: left;
     img{
       max-width: 100%;
     }
   }
   .pd-info{
+    padding-left: 5px;
     display: table-cell;
+    vertical-align: top;
+    text-align: left;
   }
 }

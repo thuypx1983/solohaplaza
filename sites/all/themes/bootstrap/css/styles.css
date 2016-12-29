@@ -1017,11 +1017,16 @@ ul.dropdown-menu li {
   width: 100%; }
   .reference-autocomplete .image {
     display: table-cell;
-    width: 30%; }
+    width: 30%;
+    vertical-align: top;
+    text-align: left; }
     .reference-autocomplete .image img {
       max-width: 100%; }
   .reference-autocomplete .pd-info {
-    display: table-cell; }
+    padding-left: 5px;
+    display: table-cell;
+    vertical-align: top;
+    text-align: left; }
 
 #webform-client-form-3176 .form-item-submitted-product-list-products {
   display: none; }
