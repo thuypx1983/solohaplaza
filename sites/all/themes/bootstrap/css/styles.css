@@ -163,7 +163,7 @@
     background-color: #D4D4D4;
     border-radius: 3px 3px 0 0; }
     .bg-header .header-bottom .search-block .block-wapper .views-exposed-form .views-exposed-widget {
-      min-width: 50%;
+      width: 50%;
       padding-top: 3px;
       padding-right: 0px;
       margin-bottom: 3px; }
