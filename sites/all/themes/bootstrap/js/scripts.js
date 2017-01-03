@@ -15,6 +15,7 @@
         $('#views-exposed-form-tim-kiem-page #edit-title').bind('autocompleteSelect', function(event, node) {
                 console.log('---------');
                 console.log(node);
+            alert($('#views-exposed-form-tim-kiem-page').find('li.active').html());
         });
     })
 
