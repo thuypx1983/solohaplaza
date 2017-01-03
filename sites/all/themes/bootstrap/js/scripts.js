@@ -12,7 +12,7 @@
             window.location.href=$(this).attr('href');
         })
 
-        $('#views-exposed-form-tim-kiem-page').on('click','.dropdown-menu',function(){
+        $(document).on('click','.reference-autocomplete',function(){
             alert('kkk');
             window.location.href=$(this).find('a').attr('href');
 
