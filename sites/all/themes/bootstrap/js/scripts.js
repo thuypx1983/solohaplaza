@@ -12,11 +12,9 @@
             window.location.href=$(this).attr('href');
         })
 
-        $(document).on('click','.reference-autocomplete',function(){
-            alert('kkk');
-            window.location.href=$(this).find('a').attr('href');
-
-        })
+        $('#views-exposed-form-tim-kiem-page #edit-title').bind('autocompleteSelect', function(event, node) {
+                alert("kkk");
+        });
     })
 
 
