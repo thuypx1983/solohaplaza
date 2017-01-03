@@ -1,18 +1,13 @@
 
 (function ($) {
     $(document).ready(function () {
-        $('.view-category-item .views-row,.view-product-list .views-row').matchHeight({
+        $('.view-category-item .views-row,.view-product-list .views-row,.view-tim-kiem .views-row').matchHeight({
             byRow: true,
             property: 'height',
             target: null,
             remove: false
         });
-        $('.view-tim-kiem .view-row').matchHeight({
-            byRow: true,
-            property: 'height',
-            target: null,
-            remove: false
-        });
+
         $('#block-menu-menu-hot-menu ul.menu>li>a').click(function(){
             window.location.href=$(this).attr('href');
         })
