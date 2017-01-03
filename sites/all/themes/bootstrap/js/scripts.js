@@ -13,7 +13,7 @@
         })
 
         $('#views-exposed-form-tim-kiem-page #edit-title').bind('autocompleteSelect', function(event, node) {
-            window.location.href=$('#views-exposed-form-tim-kiem-page').find('li.active .reference-autocomplete .a').attr('href');
+            window.location.href=$('#views-exposed-form-tim-kiem-page').find('li.active .reference-autocomplete a').attr('href');
         });
     })
 
