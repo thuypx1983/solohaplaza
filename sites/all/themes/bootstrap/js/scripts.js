@@ -13,7 +13,8 @@
         })
 
         $('#views-exposed-form-tim-kiem-page #edit-title').bind('autocompleteSelect', function(event, node) {
-                alert("kkk");
+                console.log('---------');
+                console.log(node);
         });
     })
 
