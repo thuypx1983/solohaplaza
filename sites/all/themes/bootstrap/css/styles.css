@@ -568,7 +568,8 @@ body {
       width: 100%; }
       .category-hot .menu.nav > li .dropdown-menu li {
         background-color: transparent;
-        border: none; }
+        border: none;
+        width: 100%; }
         .category-hot .menu.nav > li .dropdown-menu li a {
           background-color: #F3F3F3;
           border-bottom: 1px solid #FFFFFF;
