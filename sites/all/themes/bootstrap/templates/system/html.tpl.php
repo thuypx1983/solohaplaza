@@ -54,7 +54,7 @@
  * @ingroup templates
  */
 ?><!DOCTYPE html>
-<html<?php print $html_attributes;?><?php print $rdf_namespaces;?>>
+<html<?php print $html_attributes;?><?php print $rdf_namespaces;?> <?php print $classes?>>
 <head>
   <link rel="profile" href="<?php print $grddl_profile; ?>" />
   <meta charset="utf-8">
