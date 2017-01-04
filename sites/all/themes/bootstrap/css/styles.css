@@ -1546,7 +1546,7 @@ ul.dropdown-menu li > a {
   text-align: center;
 }
 /* line 6, ../scss/components/_recently-read-block.scss */
-#block-views-recently-read-block .view-content {
+#block-views-recently-read-block .block-content {
   background-color: white;
   display: inline-block;
   width: 100%;
