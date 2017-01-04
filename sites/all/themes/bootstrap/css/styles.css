@@ -1537,4 +1537,9 @@ ul.dropdown-menu li > a {
   text-align: center;
 }
 
+/* line 2, ../scss/components/_recently-read-block.scss */
+#block-views-recently-read-block .views-row {
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
