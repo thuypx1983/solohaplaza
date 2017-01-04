@@ -827,8 +827,10 @@ body {
   background-color: transparent;
   border: none;
   width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
-/* line 46, ../scss/components/_block-category-hot.scss */
+/* line 48, ../scss/components/_block-category-hot.scss */
 .category-hot .menu.nav > li .dropdown-menu li a {
   background-color: #F3F3F3;
   border-bottom: 1px solid #FFFFFF;
@@ -836,7 +838,7 @@ body {
   font: 12px/1.5em Arial,Helvetica,sans-serif;
   padding: 10px;
 }
-/* line 52, ../scss/components/_block-category-hot.scss */
+/* line 54, ../scss/components/_block-category-hot.scss */
 .category-hot .menu.nav > li .dropdown-menu li a:before {
   font-family: FontAwesome;
   content: "\f0fe";
