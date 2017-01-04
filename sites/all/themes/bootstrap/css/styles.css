@@ -1015,6 +1015,14 @@ body {
 .view-product-list .views-row {
   margin-bottom: 25px;
 }
+/* line 12, ../scss/components/_prouduct-list.scss */
+.view-product-list .category-recent h2 a {
+  background: transparent linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%) repeat scroll 0 0;
+  color: #4a6fb2;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 6px;
+}
 
 /* line 3, ../scss/components/_page-category-list.scss */
 .view-category-list .block-title h3 {
