@@ -1233,29 +1233,6 @@ body {
   margin-right: 5px;
 }
 
-/* line 1, ../scss/components/_block-related-product.scss */
-.block-related-product {
-  background-color: #FFFFFF;
-}
-/* line 3, ../scss/components/_block-related-product.scss */
-.block-related-product .block-wapper {
-  padding: 0px 10px 10px 10px;
-}
-/* line 5, ../scss/components/_block-related-product.scss */
-.block-related-product .block-wapper .views-row {
-  display: inline-block;
-  width: 100%;
-  margin-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px dashed #cbcaca;
-}
-/* line 11, ../scss/components/_block-related-product.scss */
-.block-related-product .block-wapper .views-row .views-field-field-image {
-  float: left;
-  width: 40%;
-  margin-right: 5px;
-}
-
 /* line 2, ../scss/components/_page-news-list.scss */
 .view-news-list .views-row {
   display: inline-block;
