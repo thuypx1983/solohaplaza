@@ -163,7 +163,7 @@
     background-color: #D4D4D4;
     border-radius: 3px 3px 0 0; }
     .bg-header .header-bottom .search-block .block-wapper .views-exposed-form .views-exposed-widget {
-      min-width: 50%;
+      width: 50%;
       padding-top: 3px;
       padding-right: 0px;
       margin-bottom: 3px; }
@@ -568,7 +568,8 @@ body {
       width: 100%; }
       .category-hot .menu.nav > li .dropdown-menu li {
         background-color: transparent;
-        border: none; }
+        border: none;
+        width: 100%; }
         .category-hot .menu.nav > li .dropdown-menu li a {
           background-color: #F3F3F3;
           border-bottom: 1px solid #FFFFFF;
@@ -998,16 +999,39 @@ ol.breadcrumb li {
 .fancybox-wrap .text-ct {
   max-width: 700px; }
 
-.reference-autocomplete {
+ul.dropdown-menu li {
   padding-bottom: 10px;
   padding-top: 10px;
-  border-bottom: 1px solid #dddddd; }
-  .reference-autocomplete:hover {
-    background-color: transparent; }
-  .reference-autocomplete .image img {
-    float: left;
-    max-width: 100px;
-    padding-right: 10px; }
+  border-bottom: 1px solid #dddddd;
+  width: 49%;
+  display: block;
+  float: left; }
+  ul.dropdown-menu li > a {
+    width: 100%;
+    padding: 0px; }
+
+.reference-autocomplete:hover {
+  background-color: transparent; }
+
+.reference-autocomplete {
+  display: table;
+  width: 100%; }
+  .reference-autocomplete .image {
+    display: table-cell;
+    width: 30%;
+    vertical-align: top;
+    text-align: left; }
+    .reference-autocomplete .image img {
+      max-width: 100%; }
+  .reference-autocomplete .pd-info {
+    padding-left: 5px;
+    display: table-cell;
+    vertical-align: top;
+    text-align: left; }
+    .reference-autocomplete .pd-info > div {
+      font-size: 12px; }
+    .reference-autocomplete .pd-info .price {
+      color: red; }
 
 #webform-client-form-3176 .form-item-submitted-product-list-products {
   display: none; }
@@ -1016,5 +1040,12 @@ ol.breadcrumb li {
   background-color: #e43a3d !important;
   margin-bottom: 20px;
   color: #FFFFFF; }
+
+.view-tim-kiem .view-content {
+  display: table; }
+  .view-tim-kiem .view-content .views-row {
+    margin-bottom: 15px; }
+    .view-tim-kiem .view-content .views-row .views-field {
+      text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */

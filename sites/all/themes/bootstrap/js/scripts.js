@@ -1,7 +1,7 @@
 
 (function ($) {
     $(document).ready(function () {
-        $('.view-category-item .views-row,.view-product-lis .views-row').matchHeight({
+        $('.view-category-item .views-row,.view-product-list .views-row,.view-tim-kiem .views-row').matchHeight({
             byRow: true,
             property: 'height',
             target: null,
@@ -12,10 +12,9 @@
             window.location.href=$(this).attr('href');
         })
 
-        $('#views-exposed-form-tim-kiem-page').on('click','.reference-autocomplete',function(){
-            window.location.href=$(this).find('a').attr('href');
-
-        })
+        $('#views-exposed-form-tim-kiem-page #edit-combine').bind('autocompleteSelect', function(event, node) {
+            window.location.href=$('#views-exposed-form-tim-kiem-page').find('li.active .reference-autocomplete a').attr('href');
+        });
     })
 
 
