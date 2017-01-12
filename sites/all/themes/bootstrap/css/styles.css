@@ -817,7 +817,14 @@ body {
   background-color: #FFFFFF;
   padding: 10px; }
 .node-type-product .qty-action {
+  margin-top: 8px;
   display: inline-block; }
+  .node-type-product .qty-action span {
+    font-weight: bold;
+    margin-right: 5px; }
+  .node-type-product .qty-action .quantity-detail {
+    width: 50px;
+    padding: 5px; }
 .node-type-product .btn-action {
   float: right; }
   .node-type-product .btn-action .btn-product-cart {

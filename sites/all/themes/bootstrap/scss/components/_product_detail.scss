@@ -76,7 +76,16 @@
     padding: 10px;
   }
   .qty-action{
+    margin-top:8px;
     display: inline-block;
+    span{
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    .quantity-detail{
+      width: 50px;
+      padding:5px;
+    }
   }
   .btn-action{
     float: right;
