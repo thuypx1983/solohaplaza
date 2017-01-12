@@ -786,7 +786,6 @@ body {
   margin-bottom: 10px; }
 .node-type-product .node-product .product-info .field-name-field-price {
   border-top: 1px solid #e2dedd;
-  border-bottom: 1px solid #e2dedd;
   padding: 15px 0px; }
   .node-type-product .node-product .product-info .field-name-field-price .field-item {
     font-weight: bold;
@@ -817,24 +816,25 @@ body {
 .node-type-product .block-system {
   background-color: #FFFFFF;
   padding: 10px; }
-.node-type-product .btn-product-cart {
-  padding: 5px 5px 5px 50px;
-  position: relative;
-  background-color: #ED2D28;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 40px;
+.node-type-product .btn-action {
   float: right; }
-  .node-type-product .btn-product-cart:before {
-    position: absolute;
-    content: "\f07a";
-    font-family: "FontAwesome";
-    top: 50%;
-    left: 10px;
-    transform: translate(0, -50%);
-    font-size: 30px; }
+  .node-type-product .btn-action .btn-product-cart {
+    padding: 5px 5px 5px 50px;
+    position: relative;
+    background-color: #ED2D28;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 40px; }
+    .node-type-product .btn-action .btn-product-cart:before {
+      position: absolute;
+      content: "\f07a";
+      font-family: "FontAwesome";
+      top: 50%;
+      left: 10px;
+      transform: translate(0, -50%);
+      font-size: 30px; }
 
 .block-news {
   background-color: #FFFFFF; }

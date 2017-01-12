@@ -28,7 +28,6 @@
       }
       .field-name-field-price{
         border-top: 1px solid #e2dedd;
-        border-bottom: 1px solid #e2dedd;
         padding: 15px 0px;
         .field-item {
           font-weight: bold;
@@ -76,24 +75,27 @@
     background-color: $color-white;
     padding: 10px;
   }
-  .btn-product-cart{
-    padding: 5px 5px 5px 50px;
-    position: relative;
-    background-color: #ED2D28;
-    color: $color-white;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 40px;
+  .btn-action{
     float: right;
-    &:before{
-      position: absolute;
-      content: "\f07a";
-      font-family: "FontAwesome";
-      top: 50%;
-      left: 10px;
-      transform: translate(0,-50%);
-      font-size: 30px;
+    .btn-product-cart{
+      padding: 5px 5px 5px 50px;
+      position: relative;
+      background-color: #ED2D28;
+      color: $color-white;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 40px;
+      &:before{
+        position: absolute;
+        content: "\f07a";
+        font-family: "FontAwesome";
+        top: 50%;
+        left: 10px;
+        transform: translate(0,-50%);
+        font-size: 30px;
+      }
     }
   }
+
 }
