@@ -569,7 +569,9 @@ body {
       .category-hot .menu.nav > li .dropdown-menu li {
         background-color: transparent;
         border: none;
-        width: 100%; }
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px; }
         .category-hot .menu.nav > li .dropdown-menu li a {
           background-color: #F3F3F3;
           border-bottom: 1px solid #FFFFFF;
@@ -695,6 +697,13 @@ body {
 
 .view-product-list .views-row {
   margin-bottom: 25px; }
+.view-product-list .category-recent h2 a {
+  background: transparent linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%) repeat scroll 0 0;
+  color: #4a6fb2;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 6px;
+  display: block; }
 
 .view-category-list .block-title h3 {
   margin: 0px;
@@ -838,21 +847,6 @@ body {
       padding-bottom: 10px;
       border-bottom: 1px dashed #cbcaca; }
       .block-news .block-wapper .views-row .views-field-field-image {
-        float: left;
-        width: 40%;
-        margin-right: 5px; }
-
-.block-related-product {
-  background-color: #FFFFFF; }
-  .block-related-product .block-wapper {
-    padding: 0px 10px 10px 10px; }
-    .block-related-product .block-wapper .views-row {
-      display: inline-block;
-      width: 100%;
-      margin-top: 10px;
-      padding-bottom: 10px;
-      border-bottom: 1px dashed #cbcaca; }
-      .block-related-product .block-wapper .views-row .views-field-field-image {
         float: left;
         width: 40%;
         margin-right: 5px; }
@@ -1047,5 +1041,15 @@ ul.dropdown-menu li {
     margin-bottom: 15px; }
     .view-tim-kiem .view-content .views-row .views-field {
       text-align: center; }
+
+#block-views-recently-read-block {
+  margin-top: 25px; }
+  #block-views-recently-read-block .views-row {
+    text-align: center; }
+  #block-views-recently-read-block .block-content {
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    padding-top: 15px; }
 
 /*# sourceMappingURL=styles.css.map */
