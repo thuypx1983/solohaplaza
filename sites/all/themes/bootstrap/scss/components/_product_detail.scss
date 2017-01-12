@@ -76,19 +76,20 @@
     padding: 10px;
   }
   .qty-action{
-    margin-top:8px;
-    display: inline-block;
+    margin-top:1px;
+    display: block;
+    float: left;
     span{
       font-weight: bold;
       margin-right: 5px;
     }
     .quantity-detail{
-      width: 50px;
+      width: 67px;
       padding:5px;
     }
   }
   .btn-action{
-    float: right;
+    float: left;
     .btn-product-cart{
       padding: 10px 10px 10px 50px;
       position: relative;
