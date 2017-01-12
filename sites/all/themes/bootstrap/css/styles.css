@@ -817,9 +817,10 @@ body {
   background-color: #FFFFFF;
   padding: 10px; }
 .node-type-product .qty-action {
-  margin-top: 1px;
+  margin-top: 6px;
   display: block;
-  float: left; }
+  float: left;
+  margin-right: 15px; }
   .node-type-product .qty-action span {
     font-weight: bold;
     margin-right: 5px; }
