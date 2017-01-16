@@ -485,7 +485,9 @@ body {
       .bg-header .header-bottom .container .row .search-block .block-wapper .views-exposed-form .views-exposed-widgets .views-submit-button {
         width: 100px; }
   .bg-header .logo {
-    text-align: center; } }
+    text-align: center; }
+  .bg-header .hotline .number a {
+    line-height: 40px; } }
 #block-block-11 {
   background-color: #FFFFFF; }
   #block-block-11 ul {
