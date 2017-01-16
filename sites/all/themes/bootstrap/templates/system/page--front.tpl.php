@@ -73,27 +73,48 @@
  * @ingroup templates
  */
 ?>
-<header>
-    <div class="bg-header">
-        <div class="header-top">
-            <div class="<?php print $container_class; ?>">
-                <div class="row"><?php print render($page['header_top']); ?></div>
-            </div>
+<div class="bg-header">
+    <div class="header-top">
+        <div class="<?php print $container_class; ?>">
+            <div class="row"><?php print render($page['header_top']); ?></div>
         </div>
-        <div class="header-center">
-            <div class="<?php print $container_class; ?>">
-                <div class="row"><?php print render($page['header_center']); ?></div>
-
-            </div>
-        </div>
-        <div class="header-bottom">
-            <div class="<?php print $container_class; ?>">
-                <div class="row"><?php print render($page['header_bottom']); ?></div>
-            </div>
-        </div>
-
     </div>
-</header>
+    <div class="header-center">
+        <div class="<?php print $container_class; ?>">
+            <div class="row"><?php print render($page['header_center']); ?></div>
+
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="<?php print $container_class; ?>">
+            <div class="row"><?php print render($page['header_bottom']); ?></div>
+        </div>
+    </div>
+    <?php
+    echo '<nav id="mobile-menu">';
+    function render_menu_tree($menu_tree) {
+        print '<ul>';
+        foreach ($menu_tree as $link) {
+            print '<li>';
+            $link_path = '#';
+            $link_title = $link['link']['link_title'];
+            if($link['link']['link_path']) {
+                $link_path = drupal_get_path_alias($link['link']['link_path']);
+            }
+            print '<a href="/' . $link_path . '">' . $link_title . '</a>';
+            if(count($link['below']) > 0) {
+                render_menu_tree($link['below']);
+            }
+            print '</li>';
+        }
+        print '</ul>';
+    }
+    $main_menu_tree = menu_tree_all_data('main-menu', null, 3);
+
+    render_menu_tree($main_menu_tree);
+    echo '</div>';
+    ?>
+</div>
 <div class="main-container <?php print $container_class; ?>">
 
     <header role="banner" id="page-header">
