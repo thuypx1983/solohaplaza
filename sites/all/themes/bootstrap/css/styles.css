@@ -487,7 +487,10 @@ body {
   .bg-header .logo {
     text-align: center; }
   .bg-header .hotline .number a {
-    line-height: 40px; } }
+    line-height: 40px; }
+
+  .main-container #block-views-home-page-banner-block {
+    width: 100%; } }
 #block-block-11 {
   background-color: #FFFFFF; }
   #block-block-11 ul {
