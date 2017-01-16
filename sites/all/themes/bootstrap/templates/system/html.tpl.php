@@ -134,7 +134,7 @@ var script = document.createElement("script");script.async=true;script.type="tex
 <script type="text/javascript">
     (function($){
         $(function(){
-            $('#mobile-menu > ul').mmenu();
+            //$('#mobile-menu > ul').mmenu();
         })
     })(jQuery)
 </script>
