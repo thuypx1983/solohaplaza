@@ -87,7 +87,10 @@
     </div>
     <div class="header-bottom">
         <div class="<?php print $container_class; ?>">
-            <div class="row"><?php print render($page['header_bottom']); ?></div>
+            <div class="row">
+                <a href="#mobile-menu"><i class="fa fa-bars"></i></a>
+                <?php print render($page['header_bottom']); ?>
+            </div>
         </div>
     </div>
     <?php
