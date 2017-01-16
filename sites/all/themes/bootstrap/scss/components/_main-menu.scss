@@ -212,14 +212,17 @@ top: 0px;
           .search-block {
             .block-wapper{
               padding-left: 5px;
-              .views-exposed-widgets{
-                #edit-combine-wrapper{
-                  width: 70%;
-                }
-                .views-submit-button{
-                  width: 30%;
+              .views-exposed-form{
+                .views-exposed-widgets{
+                  #edit-combine-wrapper{
+                    width: 70%;
+                  }
+                  .views-submit-button{
+                    width: 30%;
+                  }
                 }
               }
+
             }
           }
         }

@@ -476,9 +476,9 @@ body {
       display: table-cell; }
     .bg-header .header-bottom .container .row .search-block .block-wapper {
       padding-left: 5px; }
-      .bg-header .header-bottom .container .row .search-block .block-wapper .views-exposed-widgets #edit-combine-wrapper {
+      .bg-header .header-bottom .container .row .search-block .block-wapper .views-exposed-form .views-exposed-widgets #edit-combine-wrapper {
         width: 70%; }
-      .bg-header .header-bottom .container .row .search-block .block-wapper .views-exposed-widgets .views-submit-button {
+      .bg-header .header-bottom .container .row .search-block .block-wapper .views-exposed-form .views-exposed-widgets .views-submit-button {
         width: 30%; } }
 #block-block-11 {
   background-color: #FFFFFF; }
