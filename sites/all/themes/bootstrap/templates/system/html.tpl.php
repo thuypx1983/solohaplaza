@@ -109,7 +109,7 @@ var script = document.createElement("script");script.async=true;script.type="tex
 
   <?php
   function render_menu_tree($menu_tree) {
-      print '<ul id="mobile-menu">';
+      print '<ul>';
       foreach ($menu_tree as $link) {
           print '<li>';
           $link_path = '#';
@@ -126,13 +126,14 @@ var script = document.createElement("script");script.async=true;script.type="tex
       print '</ul>';
   }
   $main_menu_tree = menu_tree_all_data('main-menu', null, 3);
+  echo '<div class="mobile-menu">';
   render_menu_tree($main_menu_tree);
-
+  echo '<div>';
   ?>
 <script type="text/javascript">
     (function($){
         $(function(){
-            $('#mobile-menu').mmenu();
+            $('#mobile-menu > ul').mmenu();
         })
     })(jQuery)
 </script>
