@@ -73,7 +73,7 @@
  * @ingroup templates
  */
 ?>
-<header>
+
     <div class="bg-header">
         <div class="header-top">
             <div class="<?php print $container_class; ?>">
@@ -131,7 +131,6 @@
         ?>
 
     </div>
-</header>
 <div class="main-container <?php print $container_class; ?>">
 
     <header role="banner" id="page-header">
