@@ -2,6 +2,7 @@ name = Bootstrap
 description = Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.
 core = 7.x
 
+stylesheets[all][]=css/jquery.mmenu.all.css
 stylesheets[all][]=css/styles.css
 ;;;;;;;;;;;;;;;;;;;;;
 ;; SimplyTest.me
@@ -11,6 +12,7 @@ simplytest_dependencies[] = jquery_update
 
 scripts[]=js/jquery.matchHeight.js
 scripts[]=js/scripts.js
+scripts[]=js/jquery.mmenu.min.all.js
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;

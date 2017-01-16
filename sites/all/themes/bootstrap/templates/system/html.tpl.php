@@ -106,5 +106,35 @@ var script = document.createElement("script");script.async=true;script.type="tex
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <!-- tweeter plugin -->
   <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <?php
+  function render_menu_tree($menu_tree) {
+      print '<ul id="mobile-menu">';
+      foreach ($menu_tree as $link) {
+          print '<li>';
+          $link_path = '#';
+          $link_title = $link['link']['link_title'];
+          if($link['link']['link_path']) {
+              $link_path = drupal_get_path_alias($link['link']['link_path']);
+          }
+          print '<a href="/' . $link_path . '">' . $link_title . '</a>';
+          if(count($link['below']) > 0) {
+              render_menu_tree($link['below']);
+          }
+          print '</li>';
+      }
+      print '</ul>';
+  }
+  $main_menu_tree = menu_tree_all_data('main-menu', null, 3);
+  render_menu_tree($main_menu_tree);
+
+  ?>
+<script type="text/javascript">
+    (function($){
+        $(function(){
+            $('#mobile-menu').mmenu();
+        })
+    })(jQuery)
+</script>
 </body>
 </html>
