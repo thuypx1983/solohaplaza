@@ -216,6 +216,9 @@ top: 0px;
                 .views-exposed-widgets{
                   #edit-combine-wrapper{
                     width: 60%;
+                    .input-group{
+                      width: 100%;
+                    }
                     .input-group-addon{
                       display: none;
                     }
