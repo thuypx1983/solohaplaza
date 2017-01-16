@@ -198,6 +198,8 @@ top: 0px;
         .mobile-menu{
           display: block;
           display: table-cell;
+          vertical-align: middle;
+          text-align: center;
           width: 100px;
           i{
             font-size: 25px;

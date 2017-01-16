@@ -466,6 +466,8 @@ body {
     .header-bottom .container .row .mobile-menu {
       display: block;
       display: table-cell;
+      vertical-align: middle;
+      text-align: center;
       width: 100px;
       padding-left: 15px; }
       .header-bottom .container .row .mobile-menu i {
