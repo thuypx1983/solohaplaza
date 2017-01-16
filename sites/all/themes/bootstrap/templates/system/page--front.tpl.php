@@ -88,7 +88,7 @@
     <div class="header-bottom">
         <div class="<?php print $container_class; ?>">
             <div class="row">
-                <a href="#mobile-menu" class="hidden-lg hidden-md"><i class="fa fa-bars"></i></a>
+                <a href="#mobile-menu" class="hidden-lg hidden-md mobile-menu"><i class="fa fa-bars"></i></a>
                 <?php print render($page['header_bottom']); ?>
             </div>
         </div>

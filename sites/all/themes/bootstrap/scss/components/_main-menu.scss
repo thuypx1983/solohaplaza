@@ -188,3 +188,28 @@ top: 0px;
     line-height: 27px;
   }
 }
+
+@include bp(max-width,$bp-tablet){
+  .header-bottom{
+    .container{
+      .row{
+        display: table;
+        width: 100%;
+        .mobile-menu{
+          display: block;
+          display: table-cell;
+          width: 100px;
+          i{
+            font-size: 25px;
+          }
+          padding-left: 15px;
+        }
+        .region-header-bottom{
+          display: table-cell;
+        }
+      }
+    }
+
+  }
+
+}
