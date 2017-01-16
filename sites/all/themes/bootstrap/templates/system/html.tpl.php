@@ -108,7 +108,7 @@ var script = document.createElement("script");script.async=true;script.type="tex
   <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
   <?php
-  echo '<div id="mobile-menu">';
+  echo '<nav id="mobile-menu">';
   function render_menu_tree($menu_tree) {
       print '<ul>';
       foreach ($menu_tree as $link) {
@@ -129,12 +129,12 @@ var script = document.createElement("script");script.async=true;script.type="tex
   $main_menu_tree = menu_tree_all_data('main-menu', null, 3);
 
   render_menu_tree($main_menu_tree);
-  echo '<div>';
+  echo '</div>';
   ?>
 <script type="text/javascript">
     (function($){
         $(function(){
-            //$('#mobile-menu > ul').mmenu();
+            $('nav#mobile-menu').mmenu();
         })
     })(jQuery)
 </script>
