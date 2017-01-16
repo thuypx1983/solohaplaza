@@ -215,10 +215,13 @@ top: 0px;
               .views-exposed-form{
                 .views-exposed-widgets{
                   #edit-combine-wrapper{
-                    width: 70%;
+                    width: 60%;
+                    .input-group-addon{
+                      display: none;
+                    }
                   }
                   .views-submit-button{
-                    width: 30%;
+                    width: 40%;
                   }
                 }
               }

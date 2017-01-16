@@ -477,9 +477,11 @@ body {
     .bg-header .header-bottom .container .row .search-block .block-wapper {
       padding-left: 5px; }
       .bg-header .header-bottom .container .row .search-block .block-wapper .views-exposed-form .views-exposed-widgets #edit-combine-wrapper {
-        width: 70%; }
+        width: 60%; }
+        .bg-header .header-bottom .container .row .search-block .block-wapper .views-exposed-form .views-exposed-widgets #edit-combine-wrapper .input-group-addon {
+          display: none; }
       .bg-header .header-bottom .container .row .search-block .block-wapper .views-exposed-form .views-exposed-widgets .views-submit-button {
-        width: 30%; } }
+        width: 40%; } }
 #block-block-11 {
   background-color: #FFFFFF; }
   #block-block-11 ul {
