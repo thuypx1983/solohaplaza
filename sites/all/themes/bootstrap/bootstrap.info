@@ -12,7 +12,7 @@ simplytest_dependencies[] = jquery_update
 
 scripts[]=js/jquery.matchHeight.js
 scripts[]=js/scripts.js
-scripts[]=jquery.mmenu.min.all.js
+scripts[]=js/jquery.mmenu.min.all.js
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
