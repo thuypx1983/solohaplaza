@@ -126,7 +126,7 @@ var script = document.createElement("script");script.async=true;script.type="tex
       print '</ul>';
   }
   $main_menu_tree = menu_tree_all_data('main-menu', null, 3);
-  echo '<div class="mobile-menu">';
+  echo '<div id="mobile-menu">';
   render_menu_tree($main_menu_tree);
   echo '<div>';
   ?>
