@@ -483,7 +483,9 @@ body {
         .bg-header .header-bottom .container .row .search-block .block-wapper .views-exposed-form .views-exposed-widgets #edit-combine-wrapper .input-group-addon {
           display: none; }
       .bg-header .header-bottom .container .row .search-block .block-wapper .views-exposed-form .views-exposed-widgets .views-submit-button {
-        width: 100px; } }
+        width: 100px; }
+  .bg-header .logo {
+    text-align: center; } }
 #block-block-11 {
   background-color: #FFFFFF; }
   #block-block-11 ul {
