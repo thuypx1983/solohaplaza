@@ -490,6 +490,7 @@ body {
     line-height: 40px; }
 
   .main-container #block-views-home-page-banner-block {
+    padding-left: 15px;
     width: 100%; } }
 #block-block-11 {
   background-color: #FFFFFF; }
