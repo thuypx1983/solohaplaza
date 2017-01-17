@@ -19,7 +19,7 @@
         var newSlide = $('.view-updated-product .view-content');
         if (newSlide.length > 0) {
             newSlide.slick({
-                dots: true,
+                dots: false,
                 infinite: true,
                 speed: 500,
                 slidesToShow: 6,
@@ -50,7 +50,8 @@
                         breakpoint: 481,
                         settings: {
                             slidesToShow: 2,
-                            slidesToScroll: 1
+                            slidesToScroll: 1,
+                            slidesPerRow:2
                         }
                     }
                 ]
