@@ -241,14 +241,18 @@ top: 0px;
       text-align: center;
     }
     .hotline{
-      .number{
-        a{
-          line-height: 40px;
+      .content{
+        text-align: center;
+        .icon-hotline{
+          float: none;
+        }
+        .number{
+          a{
+            line-height: 40px;
+          }
         }
       }
-      .hotline-phone{
-        display: block;
-      }
+
     }
   }
   .main-container{

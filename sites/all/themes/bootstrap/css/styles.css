@@ -486,10 +486,12 @@ body {
         width: 100px; }
   .bg-header .logo {
     text-align: center; }
-  .bg-header .hotline .number a {
-    line-height: 40px; }
-  .bg-header .hotline .hotline-phone {
-    display: block; }
+  .bg-header .hotline .content {
+    text-align: center; }
+    .bg-header .hotline .content .icon-hotline {
+      float: none; }
+    .bg-header .hotline .content .number a {
+      line-height: 40px; }
 
   .main-container #block-views-home-page-banner-block {
     padding-left: 15px;
