@@ -492,6 +492,8 @@ body {
       float: none; }
     .bg-header .hotline .content .number {
       display: block; }
+    .bg-header .hotline .content .hotline-phone {
+      display: inline-block; }
 
   .main-container #block-views-home-page-banner-block {
     padding-left: 15px;
