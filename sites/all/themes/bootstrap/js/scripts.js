@@ -44,7 +44,7 @@
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 1,
-                            rows: 2
+                            slidesPerRow: 2
                         }
                     },
                     {
@@ -52,7 +52,7 @@
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 1,
-                            rows: 2
+                            slidesPerRow: 2
                         }
                     }
                 ]
