@@ -16,50 +16,6 @@
             window.location.href=$('#views-exposed-form-tim-kiem-page').find('li.active .reference-autocomplete a').attr('href');
         });
 
-        var newSlide = $('.view-updated-product .view-content');
-        if (newSlide.length > 0) {
-            newSlide.slick({
-                dots: false,
-                infinite: true,
-                speed: 500,
-                slidesToShow: 6,
-                slidesToScroll: 1,
-                responsive: [
-                    {
-                        breakpoint: 1281,
-                        settings: {
-                            slidesToShow: 5,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 1025,
-                        settings: {
-                            slidesToShow: 4,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 769,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            slidesPerRow: 2,
-                            rows:2
-                        }
-                    },
-                    {
-                        breakpoint: 481,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            slidesPerRow: 2,
-                            rows:2
-                        }
-                    }
-                ]
-            });
-        }
     })
 
 
