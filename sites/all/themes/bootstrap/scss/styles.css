@@ -490,8 +490,8 @@ body {
     text-align: center; }
     .bg-header .hotline .content .icon-hotline {
       float: none; }
-    .bg-header .hotline .content .number a {
-      line-height: 40px; }
+    .bg-header .hotline .content .number {
+      display: block; }
 
   .main-container #block-views-home-page-banner-block {
     padding-left: 15px;
