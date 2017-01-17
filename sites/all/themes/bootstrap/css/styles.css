@@ -289,6 +289,9 @@ body {
   padding-left: 15px;
   padding-right: 15px; }
 
+.block-home-mobile {
+  margin-bottom: 15px; }
+
 .footer-middle .block .block-title {
   background: transparent;
   border-top: none; }
