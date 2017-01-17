@@ -488,6 +488,8 @@ body {
     text-align: center; }
   .bg-header .hotline .number a {
     line-height: 40px; }
+  .bg-header .hotline .hotline-phone {
+    display: block; }
 
   .main-container #block-views-home-page-banner-block {
     padding-left: 15px;
