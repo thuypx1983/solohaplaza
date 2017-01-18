@@ -263,6 +263,10 @@ top: 0px;
         }
         .number{
          display: inline-block;
+          &.number-first{
+            border-right: 1px solid #000000;
+            padding-right: 5px;
+          }
         }
         .hotline-phone{
           display: inline-block;
