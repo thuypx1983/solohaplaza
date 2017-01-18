@@ -480,7 +480,9 @@ body {
     .bg-header .header-bottom .container .row .search-block .block-wapper {
       padding-left: 5px; }
       .bg-header .header-bottom .container .row .search-block .block-wapper .views-exposed-form .views-exposed-widgets #edit-combine-wrapper {
-        display: table-cell; }
+        float: none;
+        display: table-cell;
+        width: auto; }
         .bg-header .header-bottom .container .row .search-block .block-wapper .views-exposed-form .views-exposed-widgets #edit-combine-wrapper .input-group {
           width: 100%; }
         .bg-header .header-bottom .container .row .search-block .block-wapper .views-exposed-form .views-exposed-widgets #edit-combine-wrapper .input-group-addon {
