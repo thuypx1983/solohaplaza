@@ -292,6 +292,9 @@ body {
 .block-home-mobile {
   margin-bottom: 25px; }
 
+img {
+  max-width: 100%; }
+
 .footer-middle .block .block-title {
   background: transparent;
   border-top: none; }
