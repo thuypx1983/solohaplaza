@@ -526,7 +526,8 @@ body {
     display: none !important; }
 
   h1.page-header {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     font-size: 25px; }
 
   .category-description h2 {
