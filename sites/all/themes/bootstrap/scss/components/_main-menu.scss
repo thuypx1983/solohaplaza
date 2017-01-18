@@ -214,9 +214,14 @@ top: 0px;
               padding-left: 5px;
               .views-exposed-form{
                 .views-exposed-widgets{
+                  display: table;
+                  width: 100%;
                   #edit-combine-wrapper{
                     float: none;
                     display: table-cell;
+
+                    text-align: left;
+                    vertical-align: middle;
                     .input-group{
                       width: 100%;
                     }
@@ -229,6 +234,8 @@ top: 0px;
                     width: 80px;
                     float: none;
                     display: table-cell;
+                    text-align: left;
+                    vertical-align: middle;
                   }
                 }
               }
