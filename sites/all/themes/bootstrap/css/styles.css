@@ -523,7 +523,7 @@ body {
     margin-bottom: 25px; }
 
   .view-product-list .view-filters {
-    display: none; } }
+    display: none !important; } }
 #block-block-11 {
   background-color: #FFFFFF; }
   #block-block-11 ul {
