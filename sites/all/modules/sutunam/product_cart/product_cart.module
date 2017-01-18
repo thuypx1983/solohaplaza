@@ -609,7 +609,7 @@ function product_cart_mail_alter(&$message){
 
 function sutunam_webform_submission_render_alter(&$renderable) {
     if($renderable['#node']->nid==3176){
-        $product=$renderable['product_list']['step_1']['step1_content']['products']['#value'];
+        $product=$renderable['product_list']['products']['#value'];
         $product=json_decode($product,true);
         if($product){
             #product list
@@ -674,8 +674,8 @@ function sutunam_webform_submission_render_alter(&$renderable) {
                 }
             }
 
-            $renderable['product_list']['step_1']['step1_content']['products']['#format']='text';
-            $renderable['product_list']['step_1']['step1_content']['products']['#value']=$product_lists;
+            $renderable['product_list']['products']['#format']='text';
+            $renderable['product_list']['products']['#value']=$product_lists;
         }
     }
 }
