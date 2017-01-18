@@ -554,17 +554,17 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
                 );
             $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product_quantity']=
                 array(
-                    '#prefix'=>'<td class="row_item product-quanity"> <input type="number" min="1" value="'.$item_list[$product->nid]['quantity'].'">',
+                    '#prefix'=>'<td style="text-align: right" class="row_item product-quanity"> <input type="number" min="1" value="'.$item_list[$product->nid]['quantity'].'">',
                     '#suffix'=>'</td>',
                 );
             $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-price']=
                 array(
-                    '#prefix'=>'<td class="row_item product-price " data-price="'.$product->field_price['und'][0]['value'].'">'.number_format($product->field_price['und'][0]['value']),
+                    '#prefix'=>'<td style="text-align: right" class="row_item product-price " data-price="'.$product->field_price['und'][0]['value'].'">'.number_format($product->field_price['und'][0]['value']),
                     '#suffix'=>'</td>',
                 );
             $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-subtotal']=
                 array(
-                    '#prefix'=>'<td class="row_item product-subtotal">'.number_format($subtotal),
+                    '#prefix'=>'<td style="text-align: right" class="row_item product-subtotal">'.number_format($subtotal),
                     '#suffix'=>'</td>',
                 );
             $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-remove']=
