@@ -607,7 +607,7 @@ function product_cart_mail_alter(&$message){
     }
 }
 
-function sutunam_webform_submission_render_alter(&$renderable) {
+function product_cart_webform_submission_render_alter(&$renderable) {
     if($renderable['#node']->nid==3176){
         $product=$renderable['product_list']['products']['#value'];
         $product=json_decode($product,true);
