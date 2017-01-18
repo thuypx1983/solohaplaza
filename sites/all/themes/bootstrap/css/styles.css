@@ -505,9 +505,10 @@ body {
   .bg-header .hotline .content {
     text-align: center; }
     .bg-header .hotline .content .icon-hotline {
-      float: none; }
+      float: none;
+      display: none; }
     .bg-header .hotline .content .number {
-      display: block; }
+      display: inline-block; }
     .bg-header .hotline .content .hotline-phone {
       display: inline-block; }
 

@@ -1,5 +1,12 @@
-<b>We have 3 great gift ideas for you;<br></b>
-<b>#1 - Smokin' 208 Rub Sampler ($20)</b>&nbsp; - 4 great rubs!<br>
-<b>#2 - Smokin' 208 BBQ Sampler ($25) </b>&nbsp; - Our 4 great rubs<br>&nbsp; &nbsp;  &nbsp; &nbsp; plus a bottle of Extra Virgin Olive Oil Sampler.<br>
-<b>#3 - Smokin' 208 Gift Pack ($50)</b>&nbsp; - Get your BBQ'er <br>&nbsp; &nbsp; &nbsp; &nbsp; going - 2 Large Bottles of Noni’s Olive Oil (Garlic <br>&nbsp; &nbsp; &nbsp; &nbsp; Rosemary and Italian Bread Dipper) plus our 4 <br>&nbsp; &nbsp; &nbsp; &nbsp; excellent BBQ Rubs.<br><br>
-All gift boxes come with recipe cards to help your Backyard BBQ’er get started on a great meal!
+<div class="content" style="margin-top:4px;">
+    <span class="icon-hotline"></span>
+    <div class="hotline-phone">
+        <span class="hidden-lg hidden-md">Hotline:</span>
+        <span class="number">
+            <a  style="color: red; font-weight: bold; font-size:13px; "  href="tel:0981503868" rel="nofollow" title="0981.503.868">0981.503.868</a>
+        </span>
+        <span class="number" >
+            <a style="color: red; font-weight: bold; font-size:13px;"  href="tel:0989667860" rel="nofollow" title="0989.667.860">0989.667.860</a>
+        </span>
+    </div>
+</div>

@@ -259,9 +259,10 @@ top: 0px;
         text-align: center;
         .icon-hotline{
           float: none;
+          display: none;
         }
         .number{
-         display: block;
+         display: inline-block;
         }
         .hotline-phone{
           display: inline-block;
