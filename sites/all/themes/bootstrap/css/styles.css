@@ -520,7 +520,10 @@ body {
     width: 100%; }
 
   .footer-bottom .block {
-    margin-bottom: 25px; } }
+    margin-bottom: 25px; }
+
+  .view-product-list .view-filters {
+    display: none; } }
 #block-block-11 {
   background-color: #FFFFFF; }
   #block-block-11 ul {
