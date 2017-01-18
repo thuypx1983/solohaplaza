@@ -509,7 +509,7 @@ body {
       display: none; }
     .bg-header .hotline .content .number {
       display: inline-block; }
-      .bg-header .hotline .content .number.number-first {
+      .bg-header .hotline .content .number.number-first a {
         border-right: 1px solid #000000;
         padding-right: 5px; }
     .bg-header .hotline .content .hotline-phone {
