@@ -523,7 +523,11 @@ body {
     margin-bottom: 25px; }
 
   .view-product-list .view-filters {
-    display: none !important; } }
+    display: none !important; }
+
+  h1.page-header {
+    margin-bottom: 5px;
+    font-size: 20px; } }
 #block-block-11 {
   background-color: #FFFFFF; }
   #block-block-11 ul {
