@@ -517,7 +517,10 @@ body {
 
   .main-container #block-views-home-page-banner-block {
     padding-left: 15px;
-    width: 100%; } }
+    width: 100%; }
+
+  .footer-bottom .block {
+    margin-bottom: 25px; } }
 #block-block-11 {
   background-color: #FFFFFF; }
   #block-block-11 ul {
