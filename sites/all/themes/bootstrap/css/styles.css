@@ -465,7 +465,8 @@ body {
 @media only screen and (max-width: 991px) {
   .bg-header .header-bottom .container .row {
     display: table;
-    width: 100%; }
+    width: 100%;
+    margin: 0px; }
     .bg-header .header-bottom .container .row .mobile-menu {
       display: block;
       display: table-cell;
