@@ -205,7 +205,6 @@ top: 0px;
             i{
               font-size: 30px;
             }
-            padding-left: 15px;
           }
           .region-header-bottom{
             display: table-cell;
@@ -231,6 +230,9 @@ top: 0px;
               }
 
             }
+          }
+          .col-md-9{
+            padding: 0px;
           }
         }
       }
