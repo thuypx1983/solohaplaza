@@ -134,7 +134,9 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
   $matches = array();
   $view->row_index = 0;
   foreach ($view->result as $index => $row) {
+      $img=array();
       $img[0]=$row->field_field_image[0];
+      $fff=render($img);
       //added by thuypx
       //demo
     $html='
