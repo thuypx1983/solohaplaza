@@ -794,13 +794,6 @@ body {
   padding: 15px;
   margin-top: 15px;
   position: relative; }
-  .view-category-list .category-description:after {
-    font-family: "FontAwesome";
-    content: "\f00d";
-    right: -10px;
-    top: -13px;
-    position: absolute;
-    color: red; }
 .view-category-list .block-wapper {
   padding: 30px 30px;
   background-color: #FFFFFF; }
