@@ -532,7 +532,10 @@ body {
 
   .category-description h2 {
     font-size: 20px;
-    margin-top: 5px; } }
+    margin-top: 5px; }
+
+  img {
+    max-width: 100%; } }
 #block-block-11 {
   background-color: #FFFFFF; }
   #block-block-11 ul {
