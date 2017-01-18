@@ -530,7 +530,8 @@ body {
     font-size: 25px; }
 
   .category-description h2 {
-    font-size: 20px; } }
+    font-size: 20px;
+    margin-top: 5px; } }
 #block-block-11 {
   background-color: #FFFFFF; }
   #block-block-11 ul {
