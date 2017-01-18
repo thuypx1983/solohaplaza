@@ -166,11 +166,15 @@ function _product_cart_add()
     */
 
     $nid = $_POST['nid'];
-    $quantity = $_POST['quantity'];
+    $quantity = (int)$_POST['quantity'];
     drupal_session_start();
     if (!isset($_SESSION['product_cart'])) $_SESSION['product_cart'] = array();
     if($nid){
-        $_SESSION['product_cart'][$nid]=array('nid'=>$nid,'quantity'=>$quantity,'duration'=>1,'date'=>date('Y-m-d'));
+        if(isset($_SESSION['product_cart'][$nid])){
+            $_SESSION['product_cart'][$nid]=array('nid'=>$nid,'quantity'=>$quantity,'duration'=>1,'date'=>date('Y-m-d'));
+        }else{
+            $_SESSION['product_cart'][$nid]['quantity']=$_SESSION['product_cart'][$nid]['quantity']+$quantity;
+        }
     }
 
     $block = block_load('product_cart', 'product_cart_block');
