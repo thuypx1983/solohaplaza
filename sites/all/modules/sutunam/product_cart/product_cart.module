@@ -614,64 +614,17 @@ function sutunam_webform_submission_render_alter(&$renderable) {
         if($product){
             #product list
            $product_lists='';
-            if(isset($product['product_cart'])){
-                foreach($product['product_cart'] as $item){
-                    $product_lists.="<table width='100%'>";
-                    $node=node_load($item['nid']);
-                    $term=taxonomy_term_load($node->field_category['und'][0]['tid']);
-                    if($term){
-                        $product_lists.="<tr><td><h4 style='color: #3d3d3d; font-size: 12px;font-weight: bold;text-transform: uppercase; margin-bottom:0;'>● {$term->name} - {$node->title} <span style='color:#e94635;text-transform: none;'>x{$item['quantity']}</span></h4></td></tr>
+            foreach($product as $item){
+                $product_lists.="<table width='100%'>";
+                $node=node_load($item['nid']);
+                $product_lists.="<tr><td><h4 style='color: #3d3d3d; font-size: 12px;font-weight: bold;text-transform: uppercase; margin-bottom:0;'>●{$node->title} <span style='color:#e94635;text-transform: none;'>x{$item['quantity']}</span></h4></td></tr>
                         <tr>
                             <td class='identy-product' style='padding: 0 0 0px 10px;'>
-                                <p style='margin: 0 0 0 0px; font-weight: normal;color: #818181; font-size: 12px;line-height: 20px;'>Début de chantier : <strong style='color: #303030; font-weight: bold;'>{$item['date']}</strong></p>
-                                <p style='margin: 0 0 0 0px;font-weight: normal;color: #818181; font-size: 12px;line-height: 20px;'>Durée d’utilisation : <strong style='color: #303030; font-weight: bold;'>{$item['duration']}</strong></p>
+                                <p style='margin: 0 0 0 0px; font-weight: normal;color: #818181; font-size: 12px;line-height: 20px;'>Đơn giá : <strong style='color: #303030; font-weight: bold;'>".number_format($node->field_price['und'][0]['value'])."đ</strong></p>
+                                <p style='margin: 0 0 0 0px;font-weight: normal;color: #818181; font-size: 12px;line-height: 20px;'>vat : <strong style='color: #303030; font-weight: bold;'>10%</strong></p>
                             </td>
                         </tr>";
-                        $product_lists.="</table>";
-                    }
-                }
-            }
-
-            if(isset($product['product_cart_option'])){
-
-                foreach($product['product_cart_option'] as $item){
-                    $productname="";
-                    if($item['energy']['fr']['name'] AND !$item['height']){
-                        $productname= t("product option energy @energy");
-                    }else{
-                        if($item['height'] AND !$item['width']){
-                            $productname= t("product option energy @energy height: @height");
-                        }else{
-                            if($item['width'] and !$item['maximum_charge']){
-                                $productname= t("product option energy @energy, height: @height, width: @width");
-                            }else{
-                                if($item['maximum_charge'] AND !$item['maximum_range']){
-                                    $productname= t("product option energy @energy, height: @height, width: @width, maximum_charge: @maximum_charge");
-                                }else{
-                                    if($item['maximum_charge'] AND $item['maximum_range']){
-                                        $productname= t("product option energy @energy, height: @height, width: @width, maximum_charge: @maximum_charge, maximum_range: @maximum_range");
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    $productname=str_replace(
-                        array('@energy','@height','@width','@maximum_charge','@maximum_range'),
-                        array("{$item['energy']['fr']['name']}","{$item['height']}","{$item['width']}","{$item['maximum_charge']}","{$item['maximum_range']}"),
-                        $productname
-                    );
-
-                    $product_lists.="<table width='100%'>";
-                    $product_lists.="
-                        <tr><td><h4 style='color: #3d3d3d; font-size: 12px;font-weight: bold;text-transform: uppercase; margin-bottom: 0;'>● {$productname} - {$item['category_product']['fr']['name']} <span style='color:#e94635; text-transform: none;'>x{$item['quantity']}</span></h4></td></tr>
-                        <tr>
-                            <td class='identy-product' style='padding: 0 0 0px 10px;'>
-                                 <p style='margin: 0 0 0 0px;color: #818181; font-size: 12px;line-height: 20px; font-weight: normal;'>Début de chantier : <strong style='color: #303030; font-weight: bold;'>{$item['date']}</strong></p>
-                                <p style='margin: 0 0 0 0px;color: #818181; font-size: 12px;line-height: 20px; font-weight: normal;'>Durée d’utilisation : <strong style='color: #303030; font-weight: bold;'>{$item['duration']}</strong></p>
-                            </td>
-                        </tr>";
-                    $product_lists.="</table>";
-                }
+                $product_lists.="</table>";
             }
 
             $renderable['product_list']['products']['#format']='text';
