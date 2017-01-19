@@ -913,6 +913,12 @@ img {
       transform: translate(0, -50%);
       font-size: 30px; }
 
+.image-mobile {
+  display: none; }
+
+@media only screen and (max-width: 991px) {
+  .image-mobile {
+    display: block; } }
 .block-news {
   background-color: #FFFFFF; }
   .block-news .block-wapper {
