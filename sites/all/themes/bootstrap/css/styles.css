@@ -924,6 +924,10 @@ img {
       font-size: 30px; }
       .group-product-content .image-mobile .slick-arrow:before {
         color: red; }
+    .group-product-content .image-mobile .slick-prev {
+      left: 0px; }
+    .group-product-content .image-mobile .slick-next {
+      right: 14px; }
     .group-product-content .image-mobile .slick-prev::before, .group-product-content .image-mobile .slick-next::before {
       color: red;
       font-size: 35px; }
