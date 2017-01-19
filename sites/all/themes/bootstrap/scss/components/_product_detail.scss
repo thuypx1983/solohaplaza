@@ -113,11 +113,21 @@
   }
 
 }
-.image-mobile{
-  display: none;
+.group-product-content {
+  .image-mobile{
+    display: none;
+  }
 }
 @include bp(max-width,$bp-tablet){
-  .image-mobile{
-    display: block;
+  .group-product-content {
+    .image-mobile{
+      display: block;
+    }
+    .imagezoom-image{
+      display: none;
+    }
+    .imagezoom-thumb-wrapper{
+      display: none;
+    }
   }
 }
