@@ -17,11 +17,9 @@
         });
 
         $('.image-mobile').slick({
-            centerMode: true,
-            centerPadding: '60px',
-            dots: true,
+            dots: false,
             /* Just changed this to get the bottom dots navigation */
-            infinite: true,
+            infinite: false,
             speed: 300,
             slidesToShow: 1,
             slidesToScroll: 1,
