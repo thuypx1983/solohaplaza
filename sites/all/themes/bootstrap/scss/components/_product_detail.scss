@@ -129,6 +129,12 @@
           color:red;
         }
       }
+      .slick-prev{
+        left: 0px;
+      }
+      .slick-next{
+        right: 14px;
+      }
       .slick-prev::before, .slick-next::before{
         color: red;
         font-size: 35px;
