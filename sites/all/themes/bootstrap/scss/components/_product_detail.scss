@@ -126,8 +126,12 @@
     .imagezoom-image{
       display: none;
     }
-    .imagezoom-thumb-wrapper{
-      display: none !important;
+    #imagezoom-thumb-wrapper{
+      display: none;
     }
+
+  }
+  .zoomContainer{
+    display: none !important;
   }
 }
