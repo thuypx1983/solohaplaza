@@ -122,7 +122,15 @@
   .group-product-content {
     .image-mobile{
       display: block;
+      .slick-arrow{
+        z-index: 9;
+        &:before{
+          color:red;
+        }
+        font-size: 30px;
+      }
     }
+
     .imagezoom-image{
       display: none;
     }
@@ -134,4 +142,5 @@
   .zoomContainer{
     display: none !important;
   }
+
 }
