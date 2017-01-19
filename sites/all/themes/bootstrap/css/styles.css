@@ -921,8 +921,11 @@ img {
     display: block; }
   .group-product-content .imagezoom-image {
     display: none; }
-  .group-product-content .imagezoom-thumb-wrapper {
-    display: none; } }
+  .group-product-content #imagezoom-thumb-wrapper {
+    display: none; }
+
+  .zoomContainer {
+    display: none !important; } }
 .block-news {
   background-color: #FFFFFF; }
   .block-news .block-wapper {
