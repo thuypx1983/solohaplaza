@@ -34,11 +34,14 @@ function product_extend_node_view($node, $view_mode, $langcode) {
                 '#markup' =>  '<div class="view-more"><span>'.t('Voir toutes les caractéristiques techniques').'</span></div>',
             );
             ;
-            $src=image_style_url('medium', $node->field_image['und'][0]['uri']);
+            $markup="";
+            foreach($node->field_image['und'] as $item){
+                $markup.='<div class="image-mobile"><img src="'.file_create_url($item['uri']).'"></div>';
+            }
             $node->content['product_image_mobile'] = array(
                 '#type' => 'item',
                 '#title' => '',
-                '#markup' =>  '<img class="mobile-image" src="'.$src.'">',
+                '#markup' =>  $markup,
             );
 
             $node->content['view_more_photo_mobile'] = array(
