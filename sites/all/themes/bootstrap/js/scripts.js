@@ -16,7 +16,9 @@
             window.location.href=$('#views-exposed-form-tim-kiem-page').find('li.active .reference-autocomplete a').attr('href');
         });
 
-        $('.image-mobile').slick();
+        $('.image-mobile').slick({
+            arrows:true,
+        });
 
     })
 
