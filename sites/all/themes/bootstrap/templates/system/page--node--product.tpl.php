@@ -73,7 +73,9 @@
  * @ingroup templates
  */
 ?>
-
+<link type="text/css" rel="stylesheet" href="sites/all/libraries/slick/slick/slick.css" media="all" />
+<link type="text/css" rel="stylesheet" href="sites/all/libraries/slick/slick/slick-theme.css" media="all" />
+<script type="text/javascript" src="sites/all/libraries/slick/slick/slick.js"></script>
     <div class="bg-header">
         <div class="header-top">
             <div class="<?php print $container_class; ?>">
