@@ -34,10 +34,11 @@ function product_extend_node_view($node, $view_mode, $langcode) {
                 '#markup' =>  '<div class="view-more"><span>'.t('Voir toutes les caractéristiques techniques').'</span></div>',
             );
             ;
-            $markup="<div class='image-mobile'></div>";
+            $markup="<div class='image-mobile'>";
             foreach($node->field_image['und'] as $item){
                 $markup.='<div class="image-mobile-item"><img src="'.file_create_url($item['uri']).'"></div>';
             }
+            $markup.='</div>';
             $node->content['product_image_mobile'] = array(
                 '#type' => 'item',
                 '#title' => '',
