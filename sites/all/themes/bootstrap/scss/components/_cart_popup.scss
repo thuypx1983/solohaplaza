@@ -182,7 +182,7 @@
   #webform-client-form-3176{
     div.table{
       div.table-header{
-        display: none;
+        display: none !important;
       }
       .product-item{
         &>div{
