@@ -140,3 +140,19 @@
         max-width: 700px;
     }
 }
+
+@include bp(max-width,$bp-mobile){
+  #webform-client-form-3176{
+    div.table{
+      display: table;
+      div.table-header{
+        .table-row{
+          display: table-row;
+          &>div{
+            display: table-cell;
+          }
+        }
+      }
+    }
+  }
+}
