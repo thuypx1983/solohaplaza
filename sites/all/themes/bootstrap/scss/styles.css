@@ -1135,7 +1135,8 @@ ol.breadcrumb li {
       margin-bottom: 1px;
       text-align: right; }
       #webform-client-form-3176 div.table .table-footer .table-row > div {
-        display: inline-block; } }
+        display: inline-block;
+        font-weight: bold; } }
 ul.dropdown-menu li {
   padding-bottom: 10px;
   padding-top: 10px;
