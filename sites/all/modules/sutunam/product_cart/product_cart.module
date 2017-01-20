@@ -548,7 +548,7 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
             $subtotal=$product->field_price['und'][0]['value']*$item_list[$product->nid]['quantity'];
             $total+=$subtotal;
             $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]=array(
-                '#prefix'=>'<div class="product-item table-row" data-pid="'.$product->nid.'">',
+                '#prefix'=>'<div class="product-item table-body" data-pid="'.$product->nid.'">',
                 '#suffix'=>'</div>',
             );
              $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-name']=
