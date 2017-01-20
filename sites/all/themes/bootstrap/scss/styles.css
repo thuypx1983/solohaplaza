@@ -1103,7 +1103,11 @@ ol.breadcrumb li {
       #webform-client-form-3176 div.table div.table-group .table-row {
         display: table-row; }
         #webform-client-form-3176 div.table div.table-group .table-row > div {
-          display: table-cell; } }
+          display: table-cell; }
+    #webform-client-form-3176 div.table .product-item {
+      display: table-row; }
+      #webform-client-form-3176 div.table .product-item > div {
+        display: table-cell; } }
 ul.dropdown-menu li {
   padding-bottom: 10px;
   padding-top: 10px;

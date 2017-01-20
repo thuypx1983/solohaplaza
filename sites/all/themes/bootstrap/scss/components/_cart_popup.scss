@@ -154,6 +154,13 @@
           }
         }
       }
+      .product-item{
+        display: table-row;
+        &>div{
+          display: table-cell;
+        }
+      }
+
     }
   }
 }
