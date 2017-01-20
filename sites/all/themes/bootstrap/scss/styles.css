@@ -1128,6 +1128,8 @@ ol.breadcrumb li {
     padding: 5px; }
     #webform-client-form-3176 div.table .product-item .row_item {
       text-align: right; }
+      #webform-client-form-3176 div.table .product-item .row_item.product-quanity input {
+        width: 50px; }
   #webform-client-form-3176 div.table .table-footer {
     background-color: #ffffff;
     margin-bottom: 1px; }
