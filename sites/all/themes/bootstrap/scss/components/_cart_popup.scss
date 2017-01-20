@@ -141,7 +141,7 @@
     }
 }
 
-@include bp(max-width,$bp-mobile){
+@include bp(min-width,$bp-mobile+1){
   #webform-client-form-3176{
     div.table{
       display: table;
