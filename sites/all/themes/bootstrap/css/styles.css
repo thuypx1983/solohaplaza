@@ -1096,7 +1096,7 @@ ol.breadcrumb li {
   max-width: 700px; }
 
 @media only screen and (min-width: 768px) {
-  #webform-client-form-3176 div.table div.table-header {
+  #webform-client-form-3176 div.table {
     display: table; }
     #webform-client-form-3176 div.table div.table-header .table-row {
       display: table-row; }
