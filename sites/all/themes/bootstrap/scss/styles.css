@@ -1127,7 +1127,9 @@ ol.breadcrumb li {
     margin-bottom: 1px;
     padding: 5px; }
     #webform-client-form-3176 div.table .product-item .row_item {
-      text-align: right; } }
+      text-align: right; }
+    #webform-client-form-3176 div.table .product-item .table-footer .table-row > div {
+      display: inline-block; } }
 ul.dropdown-menu li {
   padding-bottom: 10px;
   padding-top: 10px;
