@@ -1121,7 +1121,10 @@ ol.breadcrumb li {
       display: none; } }
 @media only screen and (max-width: 767px) {
   #webform-client-form-3176 div.table div.table-header {
-    display: none !important; } }
+    display: none !important; }
+  #webform-client-form-3176 div.table .product-item {
+    background-color: #ffffff;
+    margin: 1px 10px; } }
 ul.dropdown-menu li {
   padding-bottom: 10px;
   padding-top: 10px;
