@@ -530,17 +530,17 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
             $products=node_load_multiple(array_keys($item_list));
         }
         $form['submitted']['product_list']['table']=array(
-            '#prefix'=>'<table class="table table-bordered">',
-            '#suffix'=>'</table>',
+            '#prefix'=>'<div class="table table-bordered">',
+            '#suffix'=>'</div>',
         );
         $form['submitted']['product_list']['table']['each_item']['product_1']['product-header']=array(
-            '#prefix'=>'<thead><tr>
-                <th>Tên sản phẩm</th>
-                <th style="text-align: right">Số lượng</th>
-                <th style="text-align: right">Đơn giá</th>
-                <th style="text-align: right">Thành tiền</th>
-                <th>XÓa</th>',
-            '#suffix'=>'</tr></thead>',
+            '#prefix'=>'<div class="table-header"><div class="table-row">
+                <div>Tên sản phẩm</div>
+                <div style="text-align: right">Số lượng</div>
+                <div style="text-align: right">Đơn giá</div>
+                <div style="text-align: right">Thành tiền</div>
+                <div>XÓa</div>',
+            '#suffix'=>'</div></div>',
         );
         $total=0;
 
@@ -548,52 +548,52 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
             $subtotal=$product->field_price['und'][0]['value']*$item_list[$product->nid]['quantity'];
             $total+=$subtotal;
             $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]=array(
-                '#prefix'=>'<tr class="product-item" data-pid="'.$product->nid.'">',
-                '#suffix'=>'</tr>',
+                '#prefix'=>'<div class="product-item table-row" data-pid="'.$product->nid.'">',
+                '#suffix'=>'</div>',
             );
              $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-name']=
                 array(
-                    '#prefix'=>'<td>'.$product->title,
-                    '#suffix'=>'</td>',
+                    '#prefix'=>'<div>'.$product->title,
+                    '#suffix'=>'</div>',
                 );
             $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product_quantity']=
                 array(
-                    '#prefix'=>'<td style="text-align: right" class="row_item product-quanity"> <input type="number" min="1" value="'.$item_list[$product->nid]['quantity'].'">',
-                    '#suffix'=>'</td>',
+                    '#prefix'=>'<div style="text-align: right" class="row_item product-quanity"> <input type="number" min="1" value="'.$item_list[$product->nid]['quantity'].'">',
+                    '#suffix'=>'</div>',
                 );
             $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-price']=
                 array(
-                    '#prefix'=>'<td style="text-align: right" class="row_item product-price " data-price="'.$product->field_price['und'][0]['value'].'">'.number_format($product->field_price['und'][0]['value']),
-                    '#suffix'=>'</td>',
+                    '#prefix'=>'<div style="text-align: right" class="row_item product-price " data-price="'.$product->field_price['und'][0]['value'].'">'.number_format($product->field_price['und'][0]['value']),
+                    '#suffix'=>'</div>',
                 );
             $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-subtotal']=
                 array(
-                    '#prefix'=>'<td style="text-align: right" class="row_item product-subtotal">'.number_format($subtotal),
-                    '#suffix'=>'</td>',
+                    '#prefix'=>'<div style="text-align: right" class="row_item product-subtotal">'.number_format($subtotal),
+                    '#suffix'=>'</div>',
                 );
             $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-remove']=
                 array(
-                    '#prefix'=>'<td class="row_item product-remove"><i class="fa fa-trash"></i>',
-                    '#suffix'=>'</td>',
+                    '#prefix'=>'<div class="row_item product-remove"><i class="fa fa-trash"></i>',
+                    '#suffix'=>'</div>',
                 );
 
         }
         $form['submitted']['product_list']['table']['each_item']['product_2']['product-footer']=array(
-            '#prefix'=>'<tfoot>
-                <tr>
-                    <th colspan="4" style="text-align: right">Thành tiền</th>
-                    <th class="cart-total" style="color: #e43a3d">'.number_format($total).'đ</th>
-                </tr>
-                <tr>
-                    <th colspan="4" style="text-align: right">VAT</th>
-                    <th class="cart-total" style="color: #e43a3d">10%</th>
-                </tr>
-                <tr>
-                    <th colspan="4" style="text-align: right">Thành tiền</th>
-                    <th class="cart-total" style="color: #e43a3d">'.number_format($total+$total/10).'đ</th>
-                </tr>
+            '#prefix'=>'<div class="table-footer">
+                <div class="table-row">
+                    <div colspan="4" style="text-align: right">Thành tiền</div>
+                    <div class="cart-total" style="color: #e43a3d">'.number_format($total).'đ</div>
+                </div>
+                <div class="table-row">
+                    <div colspan="4" style="text-align: right">VAT</div>
+                    <div class="cart-total" style="color: #e43a3d">10%</div>
+                </div>
+                <div class="table-row">
+                    <div colspan="4" style="text-align: right">Thành tiền</div>
+                    <div class="cart-total" style="color: #e43a3d">'.number_format($total+$total/10).'đ</div>
+                </div>
                 ',
-            '#suffix'=>'</tfoot>',
+            '#suffix'=>'</div>',
         );
 
        }
