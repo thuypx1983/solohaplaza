@@ -1125,7 +1125,9 @@ ol.breadcrumb li {
   #webform-client-form-3176 div.table .product-item {
     background-color: #ffffff;
     margin-bottom: 1px;
-    padding: 5px; } }
+    padding: 5px; }
+    #webform-client-form-3176 div.table .product-item .row_item {
+      text-align: right; } }
 ul.dropdown-menu li {
   padding-bottom: 10px;
   padding-top: 10px;
