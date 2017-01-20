@@ -190,11 +190,14 @@
         padding: 5px;
         .row_item{
           text-align: right;
-        &.product-quanity{
-          input{
-            width: 50px;
+          &.product-quanity{
+            input{
+              width: 50px;
+            }
           }
-        }
+          .fa-trash{
+            font-size: 15px;
+          }
         }
 
       }
