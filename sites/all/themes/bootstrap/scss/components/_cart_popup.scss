@@ -153,6 +153,8 @@
             display: table-cell;
             padding: 10px;
             font-weight: bold;
+            border-right: 1px solid #cccccc;
+            border-top: 1px solid #CCCCCC;
           }
         }
       }
@@ -161,6 +163,8 @@
         &>div{
           display: table-cell;
           padding: 10px;
+          border-right: 1px solid #cccccc;
+          border-top: 1px solid #CCCCCC;
         }
       }
       .table-footer{
