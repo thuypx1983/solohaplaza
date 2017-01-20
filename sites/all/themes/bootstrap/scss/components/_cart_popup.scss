@@ -160,7 +160,11 @@
           display: table-cell;
         }
       }
-
+      .table-footer{
+        .colspan{
+          column-span: 4;
+        }
+      }
     }
   }
 }

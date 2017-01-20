@@ -581,15 +581,15 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
         $form['submitted']['product_list']['table']['each_item']['product_2']['product-footer']=array(
             '#prefix'=>'<div class="table-footer table-group">
                 <div class="table-row">
-                    <div colspan="4" style="text-align: right">Thành tiền</div>
+                    <div  class="colspan"  colspan="4" style="text-align: right">Thành tiền</div>
                     <div class="cart-total" style="color: #e43a3d">'.number_format($total).'đ</div>
                 </div>
                 <div class="table-row">
-                    <div colspan="4" style="text-align: right">VAT</div>
+                    <div  class="colspan"  colspan="4" style="text-align: right">VAT</div>
                     <div class="cart-total" style="color: #e43a3d">10%</div>
                 </div>
                 <div class="table-row">
-                    <div colspan="4" style="text-align: right">Thành tiền</div>
+                    <div class="colspan" colspan="4" style="text-align: right">Thành tiền</div>
                     <div class="cart-total" style="color: #e43a3d">'.number_format($total+$total/10).'đ</div>
                 </div>
                 ',
