@@ -1116,7 +1116,12 @@ ol.breadcrumb li {
         border-right: 1px solid #cccccc;
         border-top: 1px solid #CCCCCC; }
     #webform-client-form-3176 div.table .table-footer .colspan {
-      column-span: 4; } }
+      column-span: 4; }
+    #webform-client-form-3176 div.table .label {
+      display: none; } }
+@media only screen and (max-width: 767px) {
+  #webform-client-form-3176 div.table div.table-header {
+    display: none; } }
 ul.dropdown-menu li {
   padding-bottom: 10px;
   padding-top: 10px;

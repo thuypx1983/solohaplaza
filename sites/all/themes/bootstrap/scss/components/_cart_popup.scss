@@ -172,6 +172,23 @@
           column-span: 4;
         }
       }
+      .label{
+        display: none;
+      }
+    }
+  }
+}
+@include bp(max-width,$bp-mobile){
+  #webform-client-form-3176{
+    div.table{
+      div.table-header{
+        display: none;
+      }
+      .product-item{
+        &>div{
+
+        }
+      }
     }
   }
 }
