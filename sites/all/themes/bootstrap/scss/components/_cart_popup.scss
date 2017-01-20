@@ -191,13 +191,14 @@
         .row_item{
           text-align: right;
         }
-       .table-footer{
-         .table-row{
-           &>div{
-             display: inline-block;
-           }
-         }
-       }
+
+      }
+      .table-footer{
+        .table-row{
+          &>div{
+            display: inline-block;
+          }
+        }
       }
     }
   }
