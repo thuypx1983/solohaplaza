@@ -1098,21 +1098,11 @@ ol.breadcrumb li {
 @media only screen and (min-width: 768px) {
   #webform-client-form-3176 div.table {
     display: table; }
-    #webform-client-form-3176 div.table div.table-header {
+    #webform-client-form-3176 div.table div.table-group {
       display: table-header-group; }
-      #webform-client-form-3176 div.table div.table-header .table-row {
+      #webform-client-form-3176 div.table div.table-group .table-row {
         display: table-row; }
-        #webform-client-form-3176 div.table div.table-header .table-row > div {
-          display: table-cell; }
-    #webform-client-form-3176 div.table .product-item {
-      display: table-row; }
-      #webform-client-form-3176 div.table .product-item > div {
-        display: table-cell; }
-    #webform-client-form-3176 div.table div.table-footer {
-      display: table-header-group; }
-      #webform-client-form-3176 div.table div.table-footer .table-row {
-        display: table-row; }
-        #webform-client-form-3176 div.table div.table-footer .table-row > div {
+        #webform-client-form-3176 div.table div.table-group .table-row > div {
           display: table-cell; } }
 ul.dropdown-menu li {
   padding-bottom: 10px;

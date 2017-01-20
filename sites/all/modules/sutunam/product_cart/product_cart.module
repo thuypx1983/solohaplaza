@@ -534,7 +534,7 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
             '#suffix'=>'</div>',
         );
         $form['submitted']['product_list']['table']['each_item']['product_1']['product-header']=array(
-            '#prefix'=>'<div class="table-header"><div class="table-row">
+            '#prefix'=>'<div class="table-header table-group"><div class="table-row">
                 <div>Tên sản phẩm</div>
                 <div style="text-align: right">Số lượng</div>
                 <div style="text-align: right">Đơn giá</div>
@@ -548,7 +548,7 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
             $subtotal=$product->field_price['und'][0]['value']*$item_list[$product->nid]['quantity'];
             $total+=$subtotal;
             $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]=array(
-                '#prefix'=>'<div class="product-item table-body" data-pid="'.$product->nid.'">',
+                '#prefix'=>'<div class="product-item table-group table-body" data-pid="'.$product->nid.'">',
                 '#suffix'=>'</div>',
             );
              $form['submitted']['product_list']['table']['each_item']['product_'.$product->nid]['product-name']=
@@ -579,7 +579,7 @@ function product_cart_form_alter( &$form, &$form_state,$form_id ){
 
         }
         $form['submitted']['product_list']['table']['each_item']['product_2']['product-footer']=array(
-            '#prefix'=>'<div class="table-footer">
+            '#prefix'=>'<div class="table-footer table-group">
                 <div class="table-row">
                     <div colspan="4" style="text-align: right">Thành tiền</div>
                     <div class="cart-total" style="color: #e43a3d">'.number_format($total).'đ</div>
