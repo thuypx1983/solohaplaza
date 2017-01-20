@@ -1104,7 +1104,8 @@ ol.breadcrumb li {
         display: table-row; }
         #webform-client-form-3176 div.table div.table-group .table-row > div {
           display: table-cell;
-          padding: 10px; }
+          padding: 10px;
+          font-weight: bold; }
     #webform-client-form-3176 div.table .product-item {
       display: table-row; }
       #webform-client-form-3176 div.table .product-item > div {
