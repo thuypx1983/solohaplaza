@@ -1096,12 +1096,14 @@ ol.breadcrumb li {
   max-width: 700px; }
 
 @media only screen and (min-width: 768px) {
-  #webform-client-form-3176 div.table {
-    display: table; }
-    #webform-client-form-3176 div.table div.table-header .table-row {
-      display: table-row; }
-      #webform-client-form-3176 div.table div.table-header .table-row > div {
-        display: table-cell; } }
+  #webform-client-form-3176 {
+    display: none !important; }
+    #webform-client-form-3176 div.table {
+      display: table; }
+      #webform-client-form-3176 div.table div.table-header .table-row {
+        display: table-row; }
+        #webform-client-form-3176 div.table div.table-header .table-row > div {
+          display: table-cell; } }
 ul.dropdown-menu li {
   padding-bottom: 10px;
   padding-top: 10px;

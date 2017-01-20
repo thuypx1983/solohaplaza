@@ -143,6 +143,7 @@
 
 @include bp(min-width,$bp-mobile+1){
   #webform-client-form-3176{
+    display: none !important;
     div.table{
       display: table;
       div.table-header{
