@@ -146,6 +146,7 @@
     div.table{
       display: table;
       div.table-header{
+        display: table-header-group;
         .table-row{
           display: table-row;
           &>div{
@@ -160,6 +161,7 @@
         }
       }
       div.table-footer{
+        display: table-header-group;
         .table-row{
           display: table-row;
           &>div{
