@@ -1103,11 +1103,13 @@ ol.breadcrumb li {
       #webform-client-form-3176 div.table div.table-group .table-row {
         display: table-row; }
         #webform-client-form-3176 div.table div.table-group .table-row > div {
-          display: table-cell; }
+          display: table-cell;
+          padding: 10px; }
     #webform-client-form-3176 div.table .product-item {
       display: table-row; }
       #webform-client-form-3176 div.table .product-item > div {
-        display: table-cell; }
+        display: table-cell;
+        padding: 10px; }
     #webform-client-form-3176 div.table .table-footer .colspan {
       column-span: 4; } }
 ul.dropdown-menu li {
