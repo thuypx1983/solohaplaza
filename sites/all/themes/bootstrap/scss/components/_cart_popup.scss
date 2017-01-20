@@ -151,6 +151,7 @@
           display: table-row;
           &>div{
             display: table-cell;
+            padding: 10px;
           }
         }
       }
@@ -158,6 +159,7 @@
         display: table-row;
         &>div{
           display: table-cell;
+          padding: 10px;
         }
       }
       .table-footer{
