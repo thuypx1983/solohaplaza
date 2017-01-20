@@ -1102,9 +1102,9 @@ ol.breadcrumb li {
       display: table-row; }
       #webform-client-form-3176 div.table div.table-header .table-row > div {
         display: table-cell; }
-    #webform-client-form-3176 div.table div.table-body .table-row {
+    #webform-client-form-3176 div.table .product-item {
       display: table-row; }
-      #webform-client-form-3176 div.table div.table-body .table-row > div {
+      #webform-client-form-3176 div.table .product-item > div {
         display: table-cell; }
     #webform-client-form-3176 div.table div.table-footer .table-row {
       display: table-row; }

@@ -153,12 +153,10 @@
           }
         }
       }
-      div.table-body{
-        .table-row{
-          display: table-row;
-          &>div{
-            display: table-cell;
-          }
+      .product-item{
+        display: table-row;
+        &>div{
+          display: table-cell;
         }
       }
       div.table-footer{
