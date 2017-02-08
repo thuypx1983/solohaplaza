@@ -142,15 +142,7 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
           $fff=render($img);
           //added by thuypx
           //demo
-          $html='
-            <div class="image">'.render($img).'</div>
-            <Div class="pd-info">
-            <div class="title">'.$row->nid.'-'.$row->node_title.'</div>
-            <div class="code">'.render($row->field_field_code).'</div>
-            <div class="price">'.render($row->field_field_price).'</div>
-            </Div>
-
-';
+          $html=' <div class="image">'.render($img).'</div><Div class="pd-info"><div class="title">'.$row->nid.'-'.$row->node_title.'</div><div class="code">'.render($row->field_field_code).'</div><div class="price">'.render($row->field_field_price).'</div></Div>';
           $view->row_index = $index;
           $rendered_field = $raw_field = '';
 
@@ -177,7 +169,6 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
                       if ($dropdown != '') {
                           $suggestion = $use_raw_suggestion ? check_plain($item['value']) : $rendered_field;
                           $suggestion = decode_entities($suggestion);
-
                           // Add a class wrapper for a few required CSS overrides.
                           //$matches[$suggestion] = '<div class="reference-autocomplete">' . $dropdown . '</div>';
                           $matches[$suggestion] = '<div class="reference-autocomplete">' . $html . '</div>';
