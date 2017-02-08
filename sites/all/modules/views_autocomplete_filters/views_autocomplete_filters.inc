@@ -142,7 +142,7 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
           $fff=render($img);
           //added by thuypx
           //demo
-          $html=' <div class="image">'.render($img).'</div><Div class="pd-info"><div class="title">'.$row->nid.'-'.$row->node_title.'</div><div class="code">'.render($row->field_field_code).'</div><div class="price">'.render($row->field_field_price).'</div></Div>';
+          $html=' <div class="image"></div><Div class="pd-info"><div class="title">'.$row->nid.'-'.$row->node_title.'</div><div class="code">'.render($row->field_field_code).'</div><div class="price">'.render($row->field_field_price).'</div></Div>';
           $view->row_index = $index;
           $rendered_field = $raw_field = '';
 
