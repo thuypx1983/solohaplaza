@@ -148,7 +148,6 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
             </Div>
 
 ';
-      $html=htmlentities($html, ENT_QUOTES | ENT_IGNORE, "UTF-8");
     $view->row_index = $index;
     $rendered_field = $raw_field = '';
 
