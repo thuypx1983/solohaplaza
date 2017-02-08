@@ -133,51 +133,56 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
 
   $matches = array();
   $view->row_index = 0;
-  $ids=array();
   foreach ($view->result as $index => $row) {
-      if(!isset($ids[$row->nid])){
-          $ids[$row->nid]=$row->nid;
-          $img=array();
-          $img[0]=$row->field_field_image[0];
-          $fff=render($img);
-          //added by thuypx
-          //demo
-          $html=' <div class="image"></div><Div class="pd-info"><div class="title">'.$row->nid.'-'.$row->node_title.'</div><div class="code">'.render($row->field_field_code).'</div><div class="price">'.render($row->field_field_price).'</div></Div>';
-          $view->row_index = $index;
-          $rendered_field = $raw_field = '';
+      $img=array();
+      $img[0]=$row->field_field_image[0];
+      $fff=render($img);
+      //added by thuypx
+      //demo
+    $html='
+            <div class="image">'.render($img).'</div>
+            <Div class="pd-info">
+            <div class="title">'.$row->node_title.'</div>
+            <div class="code">'.render($row->field_field_code).'</div>
+            <div class="price">'.render($row->field_field_price).'</div>
+            </Div>
 
-          foreach ($field_names as $field_name) {
-              // Render field only if suggestion or dropdown item not in RAW format.
-              if (!$use_raw_suggestion || !$use_raw_dropdown) {
-                  $rendered_field = $view->style_plugin->get_field($index, $field_name);
-              }
-              // Get the raw field value only if suggestion or dropdown item is in RAW format.
-              if ($use_raw_suggestion || $use_raw_dropdown) {
-                  $raw_field = $view->style_plugin->get_field_value($index, $field_name);
-                  if (!is_array($raw_field)) {
-                      $raw_field = array(array('value' => $raw_field));
-                  }
-              }
+';
+      $html=htmlentities($html, ENT_QUOTES | ENT_IGNORE, "UTF-8");
+    $view->row_index = $index;
+    $rendered_field = $raw_field = '';
 
-              if (empty($raw_field)) {
-                  $raw_field = array(array('value' => $rendered_field));
-              }
-
-              foreach ($raw_field as $delta => $item) {
-                  if (isset($item['value']) && strstr(drupal_strtolower($item['value']), drupal_strtolower($string))) {
-                      $dropdown = $use_raw_dropdown ? check_plain($item['value']) : $rendered_field;
-                      if ($dropdown != '') {
-                          $suggestion = $use_raw_suggestion ? check_plain($item['value']) : $rendered_field;
-                          $suggestion = decode_entities($suggestion);
-                          // Add a class wrapper for a few required CSS overrides.
-                          //$matches[$suggestion] = '<div class="reference-autocomplete">' . $dropdown . '</div>';
-                          $matches[$suggestion] = '<div class="reference-autocomplete">' . $html . '</div>';
-                      }
-                  }
-              }
-          }
+    foreach ($field_names as $field_name) {
+      // Render field only if suggestion or dropdown item not in RAW format.
+      if (!$use_raw_suggestion || !$use_raw_dropdown) {
+        $rendered_field = $view->style_plugin->get_field($index, $field_name);
+      }
+      // Get the raw field value only if suggestion or dropdown item is in RAW format.
+      if ($use_raw_suggestion || $use_raw_dropdown) {
+        $raw_field = $view->style_plugin->get_field_value($index, $field_name);
+        if (!is_array($raw_field)) {
+          $raw_field = array(array('value' => $raw_field));
+        }
       }
 
+      if (empty($raw_field)) {
+        $raw_field = array(array('value' => $rendered_field));
+      }
+
+      foreach ($raw_field as $delta => $item) {
+        if (isset($item['value']) && strstr(drupal_strtolower($item['value']), drupal_strtolower($string))) {
+          $dropdown = $use_raw_dropdown ? check_plain($item['value']) : $rendered_field;
+          if ($dropdown != '') {
+            $suggestion = $use_raw_suggestion ? check_plain($item['value']) : $rendered_field;
+            $suggestion = decode_entities($suggestion);
+
+            // Add a class wrapper for a few required CSS overrides.
+            //$matches[$suggestion] = '<div class="reference-autocomplete">' . $dropdown . '</div>';
+            $matches[$suggestion] = '<div class="reference-autocomplete">' . $html . '</div>';
+          }
+        }
+      }
+    }
   }
   unset($view->row_index);
 
