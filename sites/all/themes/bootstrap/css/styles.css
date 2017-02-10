@@ -880,7 +880,7 @@ img {
     padding: 0 0 8px;
     margin-bottom: 12px; }
   .node-type-product .node-product .field-name-body img {
-    height: auto; }
+    height: auto !important; }
 .node-type-product .block-system {
   background-color: #FFFFFF;
   padding: 10px; }
