@@ -140,6 +140,7 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
       $img[0]=$row->field_field_image[0];
       if(!isset($ar[$row->nid])){
           $html='<div class="title">'.$row->nid.$row->node_title.'</div>';
+          $ar[$row->nid]=$row->nid;
       }
       //added by thuypx
       //demo
