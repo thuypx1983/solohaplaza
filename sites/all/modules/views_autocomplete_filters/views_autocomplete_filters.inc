@@ -133,10 +133,14 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
 
   $matches = array();
   $view->row_index = 0;
+    $ar=array();
   foreach ($view->result as $index => $row) {
       $img=array();
       $img[0]=$row->field_field_image[0];
-      $fff=render($img);
+      if(!isset($ar[$row->nid])){
+          $html='<div class="title">'.$row->nid.$row->node_title.'</div>';
+          $ar[$row->nid]=$row['nid'];
+      }
       //added by thuypx
       //demo
     /*$html='<div class="image">'.render($img).'</div>
@@ -145,7 +149,7 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
             <div class="code">'.render($row->field_field_code).'</div>
             <div class="price">'.render($row->field_field_price).'</div>
             </Div>';*/
-    $html='<div class="title">'.$row->node_title.'</div>';
+
     $view->row_index = $index;
     $rendered_field = $raw_field = '';
 
