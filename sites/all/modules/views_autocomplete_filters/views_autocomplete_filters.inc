@@ -134,13 +134,14 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
   $matches = array();
   $view->row_index = 0;
     $ar=array();
+    $i=0;
   foreach ($view->result as $index => $row) {
-
+      $i++;
       $img=array();
       $img[0]=$row->field_field_image[0];
       if(!isset($ar[$row->nid])){
           $ar[$row->nid]=$row->nid;
-          $html='<div class="title">'.$view->row_index.'--'.$row->nid.$row->node_title.'</div>';
+          $html='<div class="title">'.$i.'--'.$row->nid.$row->node_title.'</div>';
       }
       //added by thuypx
       //demo
