@@ -134,6 +134,7 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
   $matches = array();
   $view->row_index = 0;
     $i=0;
+    $ar=array();
   foreach ($view->result as $index => $row) {
       $i++;
       $img=array();
@@ -179,7 +180,11 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
 
             // Add a class wrapper for a few required CSS overrides.
             //$matches[$suggestion] = '<div class="reference-autocomplete">' . $dropdown . '</div>';
-            $matches[$suggestion] = '<div class="reference-autocomplete">' . $html . '</div>';
+              if(!isset($ar[$row->nid])){
+                  $ar[$row->nid]=$row->nid;
+
+                  $matches[$suggestion] = '<div class="reference-autocomplete">' . $html . '</div>';
+              }
           }
         }
       }
