@@ -195,5 +195,6 @@ function views_autocomplete_filter($filter_name, $view_name, $display_name, $vie
   if (empty($matches)) {
     $matches[''] = '<div class="reference-autocomplete">' . t('The %string return no results. Please try something else.', array('%string' => $string)) . '</div>';
   }
+    $matches=array_slice($matches,0,6);
   return drupal_json_output($matches);
 }
