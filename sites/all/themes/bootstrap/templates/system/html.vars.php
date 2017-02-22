@@ -2,6 +2,7 @@
 
 function bootstrap_html_head_alter(&$head_elements) {
     unset($head_elements['system_meta_generator']);
+    unset($head_elements['metatag_generator_0']);
 }
 /**
  * @file
