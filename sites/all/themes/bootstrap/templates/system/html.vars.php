@@ -1,4 +1,8 @@
 <?php
+
+function bootstrap_html_head_alter(&$head_elements) {
+    unset($head_elements['system_meta_generator']);
+}
 /**
  * @file
  * Stub file for "html" theme hook [pre]process functions.
